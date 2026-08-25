@@ -1,8 +1,39 @@
 {
-  "cash_usdt": 99.02562606023825,
-  "positions": {},
+  "cash_usdt": 79.22050084819061,
+  "positions": {
+    "ICPUSDT": {
+      "source": "CORE",
+      "entry_price": 2.393,
+      "qty": 4.133999182372672,
+      "cost_usdt": 9.902562606023826,
+      "entry_fee_usdt": 0.009902562606023827,
+      "peak_price": 2.393,
+      "entry_score": 6.840398569582003,
+      "opened_at": "2026-08-25T23:01:18.484378+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "LTCUSDT": {
+      "source": "CORE",
+      "entry_price": 50.51,
+      "qty": 0.19585547502312023,
+      "cost_usdt": 9.902562606023826,
+      "entry_fee_usdt": 0.009902562606023827,
+      "peak_price": 50.51,
+      "entry_score": 6.0,
+      "opened_at": "2026-08-25T23:01:18.484581+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.9743739397617466,
-  "total_fees_usdt": 0.5559615656294745,
+  "total_fees_usdt": 0.5757666908415222,
   "wins": 10,
   "losses": 24,
   "loss_streak": 11,
@@ -13,6 +44,6 @@
   "sum_win_pnl": 0.558004901343752,
   "sum_loss_pnl": -1.5323788411054986,
   "peak_equity": 100.26173170064335,
-  "max_drawdown_pct": 0.012328788057399651,
+  "max_drawdown_pct": 0.012526322299788005,
   "started_at": "2026-08-25T00:44:02.108377+00:00"
 }
