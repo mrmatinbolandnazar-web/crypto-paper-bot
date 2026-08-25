@@ -1,0 +1,41 @@
+===== TIME =====
+Tue Aug 25 12:03:54 UTC 2026
+
+===== BOT SERVICE =====
+● crypto-bot.service - Crypto Paper Bot V5.1
+     Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
+     Active: activating (start) since Tue 2026-08-25 12:03:27 UTC; 26s ago
+TriggeredBy: ● crypto-bot.timer
+   Main PID: 10038 (python3)
+      Tasks: 1 (limit: 2315)
+     Memory: 101.4M (peak: 121.9M)
+        CPU: 379ms
+     CGroup: /system.slice/crypto-bot.service
+             └─10038 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_1.py
+
+Aug 25 12:03:27 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.1...
+
+===== BOT TIMER =====
+● crypto-bot.timer - Run Crypto Paper Bot V5.1 every 5 minutes
+     Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
+     Active: active (running) since Tue 2026-08-25 00:54:55 UTC; 11h ago
+    Trigger: n/a
+   Triggers: ● crypto-bot.service
+
+Aug 25 00:54:55 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.1 every 5 minutes.
+
+===== TIMERS =====
+Tue 2026-08-25 12:07:49 UTC      3min 55s Tue 2026-08-25 11:52:49 UTC    11min ago crypto-bot-report.timer        crypto-bot-report.service
+-                                       - Tue 2026-08-25 12:03:27 UTC      27s ago crypto-bot.timer               crypto-bot.service
+
+===== MEMORY =====
+               total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       436Mi       745Mi       1.0Mi       950Mi       1.5Gi
+Swap:             0B          0B          0B
+
+===== DISK =====
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda1        38G  2.6G   36G   7% /
+
+===== PYTHON =====
+Python 3.12.3
