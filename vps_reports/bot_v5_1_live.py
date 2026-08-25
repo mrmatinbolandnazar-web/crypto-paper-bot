@@ -24,7 +24,7 @@ CONFIG = {
 
     "starting_usdt": 100.0,
     "fee_rate": 0.001,
-    "absolute_max_positions": 4,
+    "absolute_max_positions": 0,
     "max_trend_positions": 1,
     "max_new_positions_per_run": 2,
 
