@@ -1,42 +1,42 @@
 ===== TIME =====
-Tue Aug 25 13:11:58 UTC 2026
+Tue Aug 25 13:17:02 UTC 2026
 
 ===== BOT SERVICE =====
 ○ crypto-bot.service - Crypto Paper Bot V5.1
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: inactive (dead) since Tue 2026-08-25 13:09:53 UTC; 2min 5s ago
+     Active: inactive (dead) since Tue 2026-08-25 13:16:25 UTC; 37s ago
 TriggeredBy: ● crypto-bot.timer
-    Process: 10979 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_1.py (code=exited, status=0/SUCCESS)
-   Main PID: 10979 (code=exited, status=0/SUCCESS)
-        CPU: 592ms
+    Process: 11072 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_1.py (code=exited, status=0/SUCCESS)
+   Main PID: 11072 (code=exited, status=0/SUCCESS)
+        CPU: 566ms
 
-Aug 25 13:09:53 srv6288706486 python3[10979]:   POLUSDT      score=6.35 reason=trend+slope+rsi+mom5+mom15+mom30+volume_ok+gap
-Aug 25 13:09:53 srv6288706486 python3[10979]: Top TREND candidates:
-Aug 25 13:09:53 srv6288706486 python3[10979]:   ASTERUSDT    score=6.51 24h=+2.5% reason=trend+slope+rsi_ok+mom5+mom15+mom30+volume+gap
-Aug 25 13:09:53 srv6288706486 python3[10979]: No free risk slots for new positions this run.
-Aug 25 13:09:53 srv6288706486 python3[10979]: Cash $87.6911 | Equity $99.6409 | Realized P/L $-0.3497 | W/L 10/13 | WinRate 43.5% | LossStreak 0
-Aug 25 13:09:53 srv6288706486 python3[10979]: AvgWin $+0.0558 | AvgLoss $-0.0698 | ProfitFactor 0.61 | Expectancy $-0.0152/trade | MaxDD 0.67%
-Aug 25 13:09:53 srv6288706486 python3[10979]: Open TAOUSDT(CORE), UNIUSDT(CORE)
-Aug 25 13:09:53 srv6288706486 python3[10979]: Run complete. V5.1 state saved for next scheduled run.
-Aug 25 13:09:53 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
-Aug 25 13:09:53 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.1.
+Aug 25 13:16:25 srv6288706486 python3[11072]: Market regime: RISK_OFF | breadth=12.0% | breadth_risk_off | max_pos=0 | min_score=99.00 | size=0.0% equity
+Aug 25 13:16:25 srv6288706486 python3[11072]: No CORE candidate passed the current adaptive threshold.
+Aug 25 13:16:25 srv6288706486 python3[11072]: No TREND candidate passed the stricter trend rules.
+Aug 25 13:16:25 srv6288706486 python3[11072]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
+Aug 25 13:16:25 srv6288706486 python3[11072]: Cash $94.6048 | Equity $99.5823 | Realized P/L $-0.4127 | W/L 10/14 | WinRate 41.7% | LossStreak 1
+Aug 25 13:16:25 srv6288706486 python3[11072]: AvgWin $+0.0558 | AvgLoss $-0.0693 | ProfitFactor 0.57 | Expectancy $-0.0172/trade | MaxDD 0.68%
+Aug 25 13:16:25 srv6288706486 python3[11072]: Open TAOUSDT(CORE)
+Aug 25 13:16:25 srv6288706486 python3[11072]: Run complete. V5.1 state saved for next scheduled run.
+Aug 25 13:16:25 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
+Aug 25 13:16:25 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.1.
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.1 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
      Active: active (waiting) since Tue 2026-08-25 00:54:55 UTC; 12h ago
-    Trigger: Tue 2026-08-25 13:14:53 UTC; 2min 54s left
+    Trigger: Tue 2026-08-25 13:21:25 UTC; 4min 22s left
    Triggers: ● crypto-bot.service
 
 Aug 25 00:54:55 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.1 every 5 minutes.
 
 ===== TIMERS =====
-Tue 2026-08-25 13:14:53 UTC      2min 54s Tue 2026-08-25 13:08:14 UTC 3min 43s ago crypto-bot.timer               crypto-bot.service
--                                       - Tue 2026-08-25 13:11:57 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
+Tue 2026-08-25 13:21:25 UTC      4min 22s Tue 2026-08-25 13:15:06 UTC 1min 56s ago crypto-bot.timer               crypto-bot.service
+-                                       - Tue 2026-08-25 13:17:01 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       311Mi       866Mi       1.0Mi       953Mi       1.6Gi
+Mem:           1.9Gi       350Mi       827Mi       1.0Mi       953Mi       1.6Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
