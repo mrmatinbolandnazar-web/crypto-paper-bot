@@ -4212,3 +4212,33 @@ ONDOUSDT     CORE  p=0.36960000 RSI= 57.7 M5=+0.24% M15=-0.35% VOLx=0.98 ATR=0.3
 STXUSDT      CORE  p=0.26620000 RSI= 26.5 M5=-0.08% M15=-0.34% VOLx=0.29 ATR=0.58% TF15=N TF1H=N EXT=-0.18% SCORE=0.00 ENTRY=N
 INJUSDT      CORE  p=5.45800000 RSI= 58.2 M5=+0.18% M15=-0.62% VOLx=0.10 ATR=0.38% TF15=N TF1H=N EXT=+0.02% SCORE=4.92 ENTRY=N
 ASTERUSDT    CORE  p=0.72100000 RSI= 66.7 M5=+0.42% M15=-0.41% VOLx=1.00 ATR=0.54% TF15=N TF1H=N EXT=+0.14% SCORE=3.53 ENTRY=N
+ACEUSDT      CORE  p=0.21490000 RSI= 15.3 M5=-0.19% M15=-0.28% VOLx=0.26 ATR=0.38% TF15=N TF1H=N EXT=-0.33% SCORE=0.00 ENTRY=N
+DASHUSDT     CORE  p=38.68000000 RSI= 65.1 M5=+0.55% M15=-0.05% VOLx=1.64 ATR=0.40% TF15=N TF1H=N EXT=+0.42% SCORE=5.88 ENTRY=N
+BCHUSDT      CORE  p=266.70000000 RSI= 62.1 M5=+0.19% M15=-0.30% VOLx=0.20 ATR=0.24% TF15=N TF1H=N EXT=+0.06% SCORE=4.51 ENTRY=N
+NVDABUSDT    CORE  p=218.49000000 RSI= 46.6 M5=+0.23% M15=+0.33% VOLx=0.03 ATR=0.37% TF15=N TF1H=N EXT=+0.18% SCORE=4.99 ENTRY=N
+VIRTUALUSDT  CORE  p=0.73960000 RSI= 81.3 M5=+0.15% M15=+0.46% VOLx=0.91 ATR=0.42% TF15=N TF1H=N EXT=+0.73% SCORE=4.17 ENTRY=N
+WLFIUSDT     CORE  p=0.05850000 RSI= 69.2 M5=+0.34% M15=+0.17% VOLx=0.83 ATR=0.26% TF15=N TF1H=N EXT=+0.24% SCORE=2.92 ENTRY=N
+HEMIUSDT     CORE  p=0.00751000 RSI= 45.1 M5=+0.27% M15=-0.92% VOLx=0.55 ATR=1.27% TF15=N TF1H=N EXT=-0.75% SCORE=0.80 ENTRY=N
+Market regime: RISK_OFF | breadth=71.7% | btc_eth_15m_soft | max_pos=0 | min_score=99.00 | size=0.0% equity
+REJECTION DIAGNOSTICS:
+Reject totals | PRECHECK=43 | TF15=12 | TF1H=4 | CHASE=0 | SPREAD=0 | ENTRY_RULES=1
+CORE diag | total=47 | entry_ready=0 | score_ready=0 | fully_ready=0
+TREND diag | total=13 | entry_ready=0 | score_ready=0 | fully_ready=0
+Top rejected candidates:
+  TUTUSDT      TREND score=6.60/99.35 reject=TF15 TF15=N TF1H=N CHASE=Y SPREAD=Y
+  DASHUSDT     CORE  score=5.88/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+  PROMUSDT     CORE  score=5.83/99.00 reject=TF15 TF15=N TF1H=Y CHASE=N SPREAD=Y
+  EDENUSDT     CORE  score=5.81/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=N SPREAD=N
+  FFUSDT       CORE  score=5.77/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+  SNXXBUSDT    CORE  score=5.59/99.00 reject=TF15 TF15=N TF1H=N CHASE=Y SPREAD=Y
+  ONDOUSDT     CORE  score=5.43/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+  BNBUSDT      CORE  score=5.04/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+No CORE candidate passed the current adaptive threshold.
+No TREND candidate passed the stricter trend rules.
+New buys blocked only because market is in genuine RISK_OFF / hard pause.
+Cash $100.0000 | Equity $100.0000 | Realized P/L $+0.0000 | W/L 0/0 | WinRate 0.0% | LossStreak 0
+AvgWin $+0.0000 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0000/trade | MaxDD 0.00%
+Open none
+Run complete. V5.2 state saved for next scheduled run.
+crypto-bot.service: Deactivated successfully.
+Finished crypto-bot.service - Crypto Paper Bot V5.2.
