@@ -48,7 +48,7 @@ CONFIG = {
     "rsi_min": 49.0,
     "rsi_max": 66.0,
     "momentum_5m_floor": 0.0000,
-    "momentum_15m_min": 0.0020,
+    "momentum_15m_min": 0.0010,
     "momentum_30m_min": 0.0000,
     "volume_ratio_min": 0.90,
 
