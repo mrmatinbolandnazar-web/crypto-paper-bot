@@ -1119,6 +1119,98 @@ def main():
         f"size={profile['size_fraction']*100:.1f}% equity"
     )
 
+    # Entry rejection diagnostics
+    diag_counts = {
+        "TF15": 0,
+        "TF1H": 0,
+        "CHASE": 0,
+        "SPREAD": 0,
+        "ENTRY_RULES": 0,
+    }
+
+    source_stats = {
+        "CORE": {"total": 0, "entry_ready": 0, "score_ready": 0, "fully_ready": 0},
+        "TREND": {"total": 0, "entry_ready": 0, "score_ready": 0, "fully_ready": 0},
+    }
+
+    near_misses = []
+
+    for a in analyses:
+        source = a.get("source", "CORE")
+        if source not in source_stats:
+            continue
+
+        source_stats[source]["total"] += 1
+
+        entry_ready = (
+            a["trend_entry_ok"]
+            if source == "TREND"
+            else a["core_entry_ok"]
+        )
+
+        required_score = profile["min_score"]
+        if source == "TREND":
+            required_score += CONFIG["trend_score_bonus_required"]
+
+        score_ready = a["score"] >= required_score
+
+        if entry_ready:
+            source_stats[source]["entry_ready"] += 1
+        if score_ready:
+            source_stats[source]["score_ready"] += 1
+        if entry_ready and score_ready:
+            source_stats[source]["fully_ready"] += 1
+
+        if not entry_ready:
+            reason = a.get("reject_reason", "ENTRY_RULES")
+            if reason in diag_counts:
+                diag_counts[reason] += 1
+
+            near_misses.append({
+                "symbol": a["symbol"],
+                "source": source,
+                "score": a["score"],
+                "required_score": required_score,
+                "reject_reason": reason,
+                "tf15": a.get("tf15_ok", False),
+                "tf1h": a.get("tf1h_ok", False),
+                "chase": a.get("chase_ok", False),
+                "spread": a.get("spread_ok", False),
+            })
+
+    print("\nREJECTION DIAGNOSTICS:")
+    print(
+        "Reject totals | "
+        f"TF15={diag_counts['TF15']} | "
+        f"TF1H={diag_counts['TF1H']} | "
+        f"CHASE={diag_counts['CHASE']} | "
+        f"SPREAD={diag_counts['SPREAD']} | "
+        f"ENTRY_RULES={diag_counts['ENTRY_RULES']}"
+    )
+
+    for source in ("CORE", "TREND"):
+        st = source_stats[source]
+        print(
+            f"{source} diag | total={st['total']} | "
+            f"entry_ready={st['entry_ready']} | "
+            f"score_ready={st['score_ready']} | "
+            f"fully_ready={st['fully_ready']}"
+        )
+
+    near_misses.sort(key=lambda x: x["score"], reverse=True)
+
+    print("Top rejected candidates:")
+    for x in near_misses[:8]:
+        print(
+            f"  {x['symbol']:12} {x['source']:5} "
+            f"score={x['score']:.2f}/{x['required_score']:.2f} "
+            f"reject={x['reject_reason']} "
+            f"TF15={'Y' if x['tf15'] else 'N'} "
+            f"TF1H={'Y' if x['tf1h'] else 'N'} "
+            f"CHASE={'Y' if x['chase'] else 'N'} "
+            f"SPREAD={'Y' if x['spread'] else 'N'}"
+        )
+
     core_eligible = [
         a for a in analyses if a["source"] == "CORE"
         and a["symbol"] not in state["positions"]
