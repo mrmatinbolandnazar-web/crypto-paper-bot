@@ -538,9 +538,9 @@ def analyze(symbol, source="CORE", trend_meta=None):
             tf15_ok = (
                 tf15["price"] > tf15["ema_fast"] > tf15["ema_slow"]
                 and tf15["fast_slope"] > 0
-                and 49.0 <= tf15["rsi"] <= 67.0
+                and 47.0 <= tf15["rsi"] <= 72.0
                 and tf15["mom1"] >= 0
-                and tf15["mom3"] >= 0.0010
+                and tf15["mom3"] >= 0.0005
             )
 
             tf1h_ok = (
