@@ -659,13 +659,16 @@ def analyze(symbol, source="CORE", trend_meta=None):
         "core_entry_ok": core_entry_ok,
         "tf15_ok": tf15_ok,
         "tf1h_ok": tf1h_ok,
+        "mtf_checked": must_check_mtf,
         "mtf_ok": mtf_ok,
         "chase_ok": chase_ok,
         "spread_ok": spread_ok,
         "spread_pct": spread_pct,
         "extension_pct": extension_pct,
         "reject_reason": (
-            "TF15"
+            "PRECHECK"
+            if not must_check_mtf
+            else "TF15"
             if not tf15_ok
             else "TF1H"
             if not tf1h_ok
@@ -1121,6 +1124,7 @@ def main():
 
     # Entry rejection diagnostics
     diag_counts = {
+        "PRECHECK": 0,
         "TF15": 0,
         "TF1H": 0,
         "CHASE": 0,
@@ -1181,6 +1185,7 @@ def main():
     print("\nREJECTION DIAGNOSTICS:")
     print(
         "Reject totals | "
+        f"PRECHECK={diag_counts['PRECHECK']} | "
         f"TF15={diag_counts['TF15']} | "
         f"TF1H={diag_counts['TF1H']} | "
         f"CHASE={diag_counts['CHASE']} | "
