@@ -1,36 +1,36 @@
 ===== TIME =====
-Wed Aug 26 08:08:09 UTC 2026
+Wed Aug 26 08:13:38 UTC 2026
 
 ===== BOT SERVICE =====
 ● crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: activating (start) since Wed 2026-08-26 08:06:37 UTC; 1min 31s ago
+     Active: activating (start) since Wed 2026-08-26 08:13:37 UTC; 1s ago
 TriggeredBy: ● crypto-bot.timer
-   Main PID: 35335 (python3)
+   Main PID: 35401 (python3)
       Tasks: 1 (limit: 2315)
-     Memory: 101.9M (peak: 122.4M)
-        CPU: 608ms
+     Memory: 12.5M (peak: 12.7M)
+        CPU: 55ms
      CGroup: /system.slice/crypto-bot.service
-             └─35335 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
+             └─35401 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
 
-Aug 26 08:06:37 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
+Aug 26 08:13:37 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
-     Active: active (running) since Wed 2026-08-26 03:21:21 UTC; 4h 46min ago
+     Active: active (running) since Wed 2026-08-26 03:21:21 UTC; 4h 52min ago
     Trigger: n/a
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
--                                  - Wed 2026-08-26 08:08:07 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
--                                  - Wed 2026-08-26 08:06:37 UTC 1min 32s ago crypto-bot.timer               crypto-bot.service
+-                                  - Wed 2026-08-26 08:13:37 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
+-                                  - Wed 2026-08-26 08:13:37 UTC       1s ago crypto-bot.timer               crypto-bot.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       418Mi       607Mi       1.0Mi       1.1Gi       1.5Gi
+Mem:           1.9Gi       333Mi       691Mi       1.0Mi       1.1Gi       1.6Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
