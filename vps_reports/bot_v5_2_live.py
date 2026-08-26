@@ -64,6 +64,7 @@ CONFIG = {
     "risk_off_breadth": 0.30,
     "weak_breadth": 0.55,
     "strong_breadth": 0.78,
+    "hot_recovery_breadth": 0.88,
     "btc_15m_crash_pct": -0.0045,
 
     "min_stop_pct": 0.0060,
@@ -894,6 +895,16 @@ def classify_regime(core_analyses, state=None):
         reason = "breadth_weak"
 
     else:
+        hot_recovery_ok = bool(
+            breadth >= CONFIG["hot_recovery_breadth"]
+            and btc
+            and eth
+            and btc["mom15"] > 0
+            and eth["mom15"] > 0
+            and btc.get("tf15_ok", False)
+            and eth.get("tf15_ok", False)
+        )
+
         btc_ok = bool(
             btc
             and btc["ema_fast"] > btc["ema_slow"]
@@ -915,6 +926,9 @@ def classify_regime(core_analyses, state=None):
         if breadth >= CONFIG["strong_breadth"] and btc_ok and eth_ok:
             raw_regime = "STRONG"
             reason = "broad_strength_btc_eth_confirmed"
+        elif hot_recovery_ok:
+            raw_regime = "HOT_RECOVERY"
+            reason = "hot_breadth_15m_confirmed"
         elif not btc_ok:
             raw_regime = "WEAK"
             reason = "btc_not_confirmed"
@@ -923,6 +937,11 @@ def classify_regime(core_analyses, state=None):
             reason = "market_normal"
 
     if state is not None:
+        if raw_regime == "HOT_RECOVERY":
+            state["recovery_confirm_runs"] = 0
+            state["last_regime"] = "HOT_RECOVERY"
+            return raw_regime, breadth, reason
+
         if raw_regime == "RISK_OFF":
             state["recovery_confirm_runs"] = 0
             state["last_regime"] = "RISK_OFF"
@@ -960,6 +979,11 @@ def risk_profile(regime, loss_streak):
             "max_positions": 0,
             "min_score": 99.0,
             "size_fraction": 0.0,
+        },
+        "HOT_RECOVERY": {
+            "max_positions": 1,
+            "min_score": 7.50,
+            "size_fraction": 0.03,
         },
         "NORMAL": {
             "max_positions": 1,
