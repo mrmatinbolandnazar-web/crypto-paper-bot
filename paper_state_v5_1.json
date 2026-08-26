@@ -1,8 +1,39 @@
 {
-  "cash_usdt": 19.628392849358324,
-  "positions": {},
+  "cash_usdt": 13.739874994550828,
+  "positions": {
+    "ENAUSDT": {
+      "source": "CORE",
+      "entry_price": 0.1443,
+      "qty": 20.383331035872104,
+      "cost_usdt": 2.9442589274037485,
+      "entry_fee_usdt": 0.0029442589274037484,
+      "peak_price": 0.1443,
+      "entry_score": 6.388702428558698,
+      "opened_at": "2026-08-26T07:17:26.543824+00:00",
+      "stop_pct": 0.006296406296406312,
+      "take_profit_pct": 0.011648351648351677,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.003777843777843787,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "ARBUSDT": {
+      "source": "CORE",
+      "entry_price": 0.0936,
+      "qty": 31.42430201363616,
+      "cost_usdt": 2.9442589274037485,
+      "entry_fee_usdt": 0.0029442589274037484,
+      "peak_price": 0.0936,
+      "entry_score": 6.35,
+      "opened_at": "2026-08-26T07:17:26.544002+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.37160715064168537,
-  "total_fees_usdt": 0.21799050313547091,
+  "total_fees_usdt": 0.2238790209902784,
   "wins": 8,
   "losses": 24,
   "loss_streak": 3,
@@ -11,6 +42,6 @@
   "sum_win_pnl": 0.2778968537928632,
   "sum_loss_pnl": -0.6495040044345486,
   "peak_equity": 20.0,
-  "max_drawdown_pct": 0.018580357532083803,
+  "max_drawdown_pct": 0.018874783424824137,
   "started_at": "2026-08-24T11:00:07.094922+00:00"
 }
