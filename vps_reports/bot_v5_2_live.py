@@ -65,6 +65,7 @@ CONFIG = {
     "weak_breadth": 0.55,
     "strong_breadth": 0.78,
     "hot_recovery_breadth": 0.88,
+    "probe_breadth": 0.72,
     "btc_15m_crash_pct": -0.0045,
 
     "min_stop_pct": 0.0060,
@@ -930,8 +931,12 @@ def classify_regime(core_analyses, state=None):
             raw_regime = "HOT_RECOVERY"
             reason = "hot_breadth_15m_confirmed"
         elif not btc_ok:
-            raw_regime = "WEAK"
-            reason = "btc_not_confirmed"
+            if breadth >= CONFIG["probe_breadth"]:
+                raw_regime = "PROBE"
+                reason = "broad_market_probe_btc_unconfirmed"
+            else:
+                raw_regime = "WEAK"
+                reason = "btc_not_confirmed"
         else:
             raw_regime = "NORMAL"
             reason = "market_normal"
@@ -979,6 +984,11 @@ def risk_profile(regime, loss_streak):
             "max_positions": 0,
             "min_score": 99.0,
             "size_fraction": 0.0,
+        },
+        "PROBE": {
+            "max_positions": 1,
+            "min_score": 7.70,
+            "size_fraction": 0.02,
         },
         "HOT_RECOVERY": {
             "max_positions": 1,
