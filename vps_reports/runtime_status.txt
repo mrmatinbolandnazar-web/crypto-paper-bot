@@ -1,38 +1,38 @@
 ===== TIME =====
-Wed Aug 26 23:11:37 UTC 2026
+Wed Aug 26 23:16:38 UTC 2026
 
 ===== BOT SERVICE =====
 ○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: inactive (dead) since Wed 2026-08-26 23:08:31 UTC; 3min 5s ago
+     Active: inactive (dead) since Wed 2026-08-26 23:16:00 UTC; 37s ago
 TriggeredBy: ● crypto-bot.timer
-    Process: 53261 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
-   Main PID: 53261 (code=exited, status=0/SUCCESS)
-        CPU: 960ms
+    Process: 53373 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
+   Main PID: 53373 (code=exited, status=0/SUCCESS)
+        CPU: 814ms
 
-Aug 26 23:08:31 srv6288706486 python3[53261]:   AVAXUSDT     CORE  score=5.54/99.00 reject=TF15 TF15=N TF1H=N CHASE=Y SPREAD=Y
-Aug 26 23:08:31 srv6288706486 python3[53261]: No CORE candidate passed the current adaptive threshold.
-Aug 26 23:08:31 srv6288706486 python3[53261]: No TREND candidate passed the stricter trend rules.
-Aug 26 23:08:31 srv6288706486 python3[53261]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
-Aug 26 23:08:31 srv6288706486 python3[53261]: Cash $100.0000 | Equity $100.0000 | Realized P/L $+0.0000 | W/L 0/0 | WinRate 0.0% | LossStreak 0
-Aug 26 23:08:31 srv6288706486 python3[53261]: AvgWin $+0.0000 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0000/trade | MaxDD 0.00%
-Aug 26 23:08:31 srv6288706486 python3[53261]: Open none
-Aug 26 23:08:31 srv6288706486 python3[53261]: Run complete. V5.2 state saved for next scheduled run.
-Aug 26 23:08:31 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
-Aug 26 23:08:31 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
+Aug 26 23:16:00 srv6288706486 python3[53373]:   NEARUSDT     CORE  score=5.10/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+Aug 26 23:16:00 srv6288706486 python3[53373]: No CORE candidate passed the current adaptive threshold.
+Aug 26 23:16:00 srv6288706486 python3[53373]: No TREND candidate passed the stricter trend rules.
+Aug 26 23:16:00 srv6288706486 python3[53373]: No free risk slots for new positions this run.
+Aug 26 23:16:00 srv6288706486 python3[53373]: Cash $100.0000 | Equity $100.0000 | Realized P/L $+0.0000 | W/L 0/0 | WinRate 0.0% | LossStreak 0
+Aug 26 23:16:00 srv6288706486 python3[53373]: AvgWin $+0.0000 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0000/trade | MaxDD 0.00%
+Aug 26 23:16:00 srv6288706486 python3[53373]: Open none
+Aug 26 23:16:00 srv6288706486 python3[53373]: Run complete. V5.2 state saved for next scheduled run.
+Aug 26 23:16:00 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
+Aug 26 23:16:00 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
      Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 19h ago
-    Trigger: Wed 2026-08-26 23:13:31 UTC; 1min 54s left
+    Trigger: Wed 2026-08-26 23:21:00 UTC; 4min 22s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Wed 2026-08-26 23:13:31 UTC 1min 54s Wed 2026-08-26 23:05:37 UTC     5min ago crypto-bot.timer               crypto-bot.service
--                                  - Wed 2026-08-26 23:11:35 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
+Wed 2026-08-26 23:21:00 UTC 4min 22s Wed 2026-08-26 23:13:37 UTC 3min 1s ago crypto-bot.timer               crypto-bot.service
+-                                  - Wed 2026-08-26 23:16:37 UTC      1s ago crypto-bot-report.timer        crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
