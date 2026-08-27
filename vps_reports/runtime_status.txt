@@ -1,42 +1,42 @@
 ===== TIME =====
-Thu Aug 27 11:59:24 UTC 2026
+Thu Aug 27 12:04:38 UTC 2026
 
 ===== BOT SERVICE =====
 ○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: inactive (dead) since Thu 2026-08-27 11:55:29 UTC; 3min 55s ago
+     Active: inactive (dead) since Thu 2026-08-27 12:03:02 UTC; 1min 36s ago
 TriggeredBy: ● crypto-bot.timer
-    Process: 65950 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
-   Main PID: 65950 (code=exited, status=0/SUCCESS)
-        CPU: 936ms
+    Process: 66073 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
+   Main PID: 66073 (code=exited, status=0/SUCCESS)
+        CPU: 828ms
 
-Aug 27 11:55:29 srv6288706486 python3[65950]:   HBARUSDT     CORE  score=3.61/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
-Aug 27 11:55:29 srv6288706486 python3[65950]: No CORE candidate passed the current adaptive threshold.
-Aug 27 11:55:29 srv6288706486 python3[65950]: No TREND candidate passed the stricter trend rules.
-Aug 27 11:55:29 srv6288706486 python3[65950]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
-Aug 27 11:55:29 srv6288706486 python3[65950]: Cash $100.0000 | Equity $100.0000 | Realized P/L $+0.0000 | W/L 0/0 | WinRate 0.0% | LossStreak 0
-Aug 27 11:55:29 srv6288706486 python3[65950]: AvgWin $+0.0000 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0000/trade | MaxDD 0.00%
-Aug 27 11:55:29 srv6288706486 python3[65950]: Open none
-Aug 27 11:55:29 srv6288706486 python3[65950]: Run complete. V5.2 state saved for next scheduled run.
-Aug 27 11:55:29 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
-Aug 27 11:55:29 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
+Aug 27 12:03:02 srv6288706486 python3[66073]:   PUMPUSDT     CORE  score=3.74/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+Aug 27 12:03:02 srv6288706486 python3[66073]: No CORE candidate passed the current adaptive threshold.
+Aug 27 12:03:02 srv6288706486 python3[66073]: No TREND candidate passed the stricter trend rules.
+Aug 27 12:03:02 srv6288706486 python3[66073]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
+Aug 27 12:03:02 srv6288706486 python3[66073]: Cash $100.0000 | Equity $100.0000 | Realized P/L $+0.0000 | W/L 0/0 | WinRate 0.0% | LossStreak 0
+Aug 27 12:03:02 srv6288706486 python3[66073]: AvgWin $+0.0000 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0000/trade | MaxDD 0.00%
+Aug 27 12:03:02 srv6288706486 python3[66073]: Open none
+Aug 27 12:03:02 srv6288706486 python3[66073]: Run complete. V5.2 state saved for next scheduled run.
+Aug 27 12:03:02 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
+Aug 27 12:03:02 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
      Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 1 day 8h ago
-    Trigger: Thu 2026-08-27 12:00:29 UTC; 1min 4s left
+    Trigger: Thu 2026-08-27 12:08:02 UTC; 3min 23s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Thu 2026-08-27 12:00:29 UTC  1min 4s Thu 2026-08-27 11:53:05 UTC     6min ago crypto-bot.timer               crypto-bot.service
--                                  - Thu 2026-08-27 11:59:23 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
+Thu 2026-08-27 12:08:02 UTC 3min 23s Thu 2026-08-27 12:00:37 UTC  4min 1s ago crypto-bot.timer               crypto-bot.service
+-                                  - Thu 2026-08-27 12:04:37 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       360Mi       636Mi       1.0Mi       1.1Gi       1.6Gi
+Mem:           1.9Gi       358Mi       638Mi       1.0Mi       1.1Gi       1.6Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
