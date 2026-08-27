@@ -1,42 +1,42 @@
 ===== TIME =====
-Thu Aug 27 14:37:19 UTC 2026
+Thu Aug 27 14:42:38 UTC 2026
 
 ===== BOT SERVICE =====
 ○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: inactive (dead) since Thu 2026-08-27 14:32:41 UTC; 4min 37s ago
+     Active: inactive (dead) since Thu 2026-08-27 14:41:11 UTC; 1min 27s ago
 TriggeredBy: ● crypto-bot.timer
-    Process: 70157 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
-   Main PID: 70157 (code=exited, status=0/SUCCESS)
-        CPU: 916ms
+    Process: 70473 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
+   Main PID: 70473 (code=exited, status=0/SUCCESS)
+        CPU: 1.066s
 
-Aug 27 14:32:41 srv6288706486 python3[70157]:   PUMPUSDT     TREND score=6.88/8.05 reject=TF15 TF15=N TF1H=Y CHASE=Y SPREAD=Y
-Aug 27 14:32:41 srv6288706486 python3[70157]: No CORE candidate passed the current adaptive threshold.
-Aug 27 14:32:41 srv6288706486 python3[70157]: No TREND candidate passed the stricter trend rules.
-Aug 27 14:32:41 srv6288706486 python3[70157]: No free risk slots for new positions this run.
-Aug 27 14:32:41 srv6288706486 python3[70157]: Cash $98.0000 | Equity $99.9979 | Realized P/L $+0.0000 | W/L 0/0 | WinRate 0.0% | LossStreak 0
-Aug 27 14:32:41 srv6288706486 python3[70157]: AvgWin $+0.0000 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0000/trade | MaxDD 0.01%
-Aug 27 14:32:41 srv6288706486 python3[70157]: Open HBARUSDT(CORE)
-Aug 27 14:32:41 srv6288706486 python3[70157]: Run complete. V5.2 state saved for next scheduled run.
-Aug 27 14:32:41 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
-Aug 27 14:32:41 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
+Aug 27 14:41:11 srv6288706486 python3[70473]: No CORE candidate passed the current adaptive threshold.
+Aug 27 14:41:11 srv6288706486 python3[70473]: No TREND candidate passed the stricter trend rules.
+Aug 27 14:41:11 srv6288706486 python3[70473]: No free risk slots for new positions this run.
+Aug 27 14:41:11 srv6288706486 python3[70473]: Cash $98.0000 | Equity $100.0052 | Realized P/L $+0.0000 | W/L 0/0 | WinRate 0.0% | LossStreak 0
+Aug 27 14:41:11 srv6288706486 python3[70473]: AvgWin $+0.0000 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0000/trade | MaxDD 0.01%
+Aug 27 14:41:11 srv6288706486 python3[70473]: Open HBARUSDT(CORE)
+Aug 27 14:41:11 srv6288706486 python3[70473]: Run complete. V5.2 state saved for next scheduled run.
+Aug 27 14:41:11 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
+Aug 27 14:41:11 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
+Aug 27 14:41:11 srv6288706486 systemd[1]: crypto-bot.service: Consumed 1.066s CPU time.
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
      Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 1 day 11h ago
-    Trigger: Thu 2026-08-27 14:37:41 UTC; 22s left
+    Trigger: Thu 2026-08-27 14:46:11 UTC; 3min 32s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Thu 2026-08-27 14:37:41 UTC      22s Thu 2026-08-27 14:29:42 UTC     7min ago crypto-bot.timer               crypto-bot.service
--                                  - Thu 2026-08-27 14:37:17 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
+Thu 2026-08-27 14:46:11 UTC 3min 32s Thu 2026-08-27 14:38:02 UTC 4min 36s ago crypto-bot.timer               crypto-bot.service
+-                                  - Thu 2026-08-27 14:42:37 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       756Mi       147Mi       1.0Mi       1.2Gi       1.2Gi
+Mem:           1.9Gi       845Mi       163Mi       1.0Mi       1.1Gi       1.1Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
