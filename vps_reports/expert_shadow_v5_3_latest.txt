@@ -1,6 +1,13 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-08-27T23:09:23.067077+00:00
-Regime: RISK_OFF | breadth=26.7% | breadth_risk_off | candidates=0
+Updated UTC: 2026-08-27T23:14:30.214019+00:00
+Regime: RISK_OFF | breadth=30.0% | btc_eth_15m_soft | candidates=4
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-No technical / near-ready candidate this run.
+BEAMXUSDT    CORE  tech=7.98/99.00 entry=N pass=N | expert=+0.20 SUPPORT cov=6/6 | OBSERVE
+  topPos=0.76 topAcct=1.16 taker=2.17 global=1.10 OI5m=+1.10% funding=+0.0050%
+ENAUSDT      CORE  tech=7.02/99.00 entry=N pass=N | expert=+0.11 SUPPORT cov=6/6 | OBSERVE
+  topPos=1.42 topAcct=1.60 taker=0.79 global=1.55 OI5m=+0.15% funding=+0.0050%
+XRPUSDT      TREND tech=6.93/99.35 entry=N pass=N | expert=+0.26 SUPPORT cov=6/6 | OBSERVE
+  topPos=2.10 topAcct=2.76 taker=0.84 global=2.47 OI5m=+0.07% funding=-0.0000%
+BICOUSDT     TREND tech=6.91/99.35 entry=N pass=N | expert=+0.45 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.43 topAcct=1.11 taker=1.52 global=0.90 OI5m=+1.00% funding=-0.3305%
