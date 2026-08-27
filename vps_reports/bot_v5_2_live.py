@@ -78,7 +78,7 @@ CONFIG = {
     "min_trailing_trigger_pct": 0.0075,
     "min_trailing_distance_pct": 0.0035,
     "min_breakeven_trigger_pct": 0.0065,
-    "breakeven_floor_pct": 0.0020,
+    "breakeven_floor_pct": 0.0030,
     "min_hold_minutes_for_trend_exit": 15,
     "max_hold_minutes": 150,
     "stale_profit_ceiling_pct": 0.0020,
