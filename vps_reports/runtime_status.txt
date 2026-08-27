@@ -1,42 +1,42 @@
 ===== TIME =====
-Thu Aug 27 14:11:59 UTC 2026
+Thu Aug 27 14:17:03 UTC 2026
 
 ===== BOT SERVICE =====
 ○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: inactive (dead) since Thu 2026-08-27 14:09:06 UTC; 2min 53s ago
+     Active: inactive (dead) since Thu 2026-08-27 14:16:48 UTC; 15s ago
 TriggeredBy: ● crypto-bot.timer
-    Process: 68585 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
-   Main PID: 68585 (code=exited, status=0/SUCCESS)
-        CPU: 1.015s
+    Process: 69355 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
+   Main PID: 69355 (code=exited, status=0/SUCCESS)
+        CPU: 864ms
 
-Aug 27 14:09:06 srv6288706486 python3[68585]:   HBARUSDT     score=7.94 reason=trend+slope+rsi+mom5+mom15+mom30+volume+gap
-Aug 27 14:09:06 srv6288706486 python3[68585]: No TREND candidate passed the stricter trend rules.
-Aug 27 14:09:06 srv6288706486 python3[68585]: >>> BUY HBARUSDT [CORE] @ 0.07905371 | $2.00 paper | score=7.94 | SL=0.60% TP=1.56% | CORE|PROBE|trend+slope+rsi+mom5+mom15+mom30+volume+gap
-Aug 27 14:09:06 srv6288706486 python3[68585]: Cash $98.0000 | Equity $99.9974 | Realized P/L $+0.0000 | W/L 0/0 | WinRate 0.0% | LossStreak 0
-Aug 27 14:09:06 srv6288706486 python3[68585]: AvgWin $+0.0000 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0000/trade | MaxDD 0.00%
-Aug 27 14:09:06 srv6288706486 python3[68585]: Open HBARUSDT(CORE)
-Aug 27 14:09:06 srv6288706486 python3[68585]: Run complete. V5.2 state saved for next scheduled run.
-Aug 27 14:09:06 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
-Aug 27 14:09:06 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
-Aug 27 14:09:06 srv6288706486 systemd[1]: crypto-bot.service: Consumed 1.015s CPU time, 122.6M memory peak, 0B memory swap peak.
+Aug 27 14:16:48 srv6288706486 python3[69355]:   NVDABUSDT    CORE  score=5.70/99.00 reject=TF1H TF15=Y TF1H=N CHASE=Y SPREAD=Y
+Aug 27 14:16:48 srv6288706486 python3[69355]: No CORE candidate passed the current adaptive threshold.
+Aug 27 14:16:48 srv6288706486 python3[69355]: No TREND candidate passed the stricter trend rules.
+Aug 27 14:16:48 srv6288706486 python3[69355]: No free risk slots for new positions this run.
+Aug 27 14:16:48 srv6288706486 python3[69355]: Cash $98.0000 | Equity $99.9906 | Realized P/L $+0.0000 | W/L 0/0 | WinRate 0.0% | LossStreak 0
+Aug 27 14:16:48 srv6288706486 python3[69355]: AvgWin $+0.0000 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0000/trade | MaxDD 0.01%
+Aug 27 14:16:48 srv6288706486 python3[69355]: Open HBARUSDT(CORE)
+Aug 27 14:16:48 srv6288706486 python3[69355]: Run complete. V5.2 state saved for next scheduled run.
+Aug 27 14:16:48 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
+Aug 27 14:16:48 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
      Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 1 day 10h ago
-    Trigger: Thu 2026-08-27 14:14:06 UTC; 2min 6s left
+    Trigger: Thu 2026-08-27 14:21:48 UTC; 4min 44s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Thu 2026-08-27 14:14:06 UTC 2min 6s Thu 2026-08-27 14:05:58 UTC     6min ago crypto-bot.timer               crypto-bot.service
--                                 - Thu 2026-08-27 14:11:58 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
+Thu 2026-08-27 14:21:48 UTC 4min 44s Thu 2026-08-27 14:14:07 UTC 2min 56s ago crypto-bot.timer               crypto-bot.service
+-                                  - Thu 2026-08-27 14:17:02 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       876Mi       113Mi       1.0Mi       1.1Gi       1.1Gi
+Mem:           1.9Gi       348Mi       639Mi       1.0Mi       1.1Gi       1.6Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
