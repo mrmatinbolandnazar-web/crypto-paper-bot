@@ -1,8 +1,24 @@
 {
-  "cash_usdt": 100.0,
-  "positions": {},
+  "cash_usdt": 98.0,
+  "positions": {
+    "MORPHOUSDT": {
+      "source": "CORE",
+      "entry_price": 2.6087824,
+      "qty": 0.765874532118892,
+      "cost_usdt": 2.0,
+      "entry_fee_usdt": 0.002,
+      "peak_price": 2.6087824,
+      "entry_score": 7.801974047987653,
+      "opened_at": "2026-08-28T10:42:36.335536+00:00",
+      "stop_pct": 0.0100939417177914,
+      "take_profit_pct": 0.022567811733761545,
+      "trailing_trigger_pct": 0.014669077626945004,
+      "trailing_distance_pct": 0.00605636503067484,
+      "breakeven_trigger_pct": 0.0100939417177914
+    }
+  },
   "realized_pnl_usdt": 0.0,
-  "total_fees_usdt": 0.0,
+  "total_fees_usdt": 0.002,
   "wins": 0,
   "losses": 0,
   "loss_streak": 0,
@@ -11,8 +27,8 @@
   "sum_win_pnl": 0.0,
   "sum_loss_pnl": 0.0,
   "peak_equity": 100.0,
-  "max_drawdown_pct": 0.0,
-  "recovery_confirm_runs": 1,
-  "last_regime": "WEAK",
+  "max_drawdown_pct": 2.599220233932442e-05,
+  "recovery_confirm_runs": 0,
+  "last_regime": "PROBE",
   "started_at": "2026-08-28T01:45:15.400536+00:00"
 }
