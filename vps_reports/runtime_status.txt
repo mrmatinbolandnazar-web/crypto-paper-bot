@@ -1,15 +1,15 @@
 ===== TIME =====
-Fri Aug 28 22:52:17 UTC 2026
+Fri Aug 28 22:54:35 UTC 2026
 
 ===== BOT SERVICE =====
 ● crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: activating (start) since Fri 2026-08-28 22:52:01 UTC; 16s ago
+     Active: activating (start) since Fri 2026-08-28 22:52:01 UTC; 2min 34s ago
 TriggeredBy: ● crypto-bot.timer
    Main PID: 113762 (python3)
       Tasks: 1 (limit: 2315)
      Memory: 102.1M (peak: 122.7M)
-        CPU: 345ms
+        CPU: 847ms
      CGroup: /system.slice/crypto-bot.service
              └─113762 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
 
@@ -25,13 +25,13 @@ Aug 28 22:52:01 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto P
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Fri 2026-08-28 22:55:00 UTC 2min 42s Fri 2026-08-28 22:40:01 UTC    12min ago crypto-bot-active.timer        crypto-bot-active.service
--                                  - Fri 2026-08-28 22:52:15 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
--                                  - Fri 2026-08-28 22:52:01 UTC      16s ago crypto-bot.timer               crypto-bot.service
+Fri 2026-08-28 22:55:00 UTC      24s Fri 2026-08-28 22:40:01 UTC    14min ago crypto-bot-active.timer        crypto-bot-active.service
+Fri 2026-08-28 22:57:15 UTC 2min 39s Fri 2026-08-28 22:52:15 UTC 2min 20s ago crypto-bot-report.timer        crypto-bot-report.service
+-                                  - Fri 2026-08-28 22:52:01 UTC 2min 34s ago crypto-bot.timer               crypto-bot.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       529Mi       639Mi       1.0Mi       973Mi       1.4Gi
+Mem:           1.9Gi       533Mi       635Mi       1.0Mi       973Mi       1.4Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
