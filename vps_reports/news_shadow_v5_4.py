@@ -351,6 +351,58 @@ def third_party_product_incident(a,sym):
  return any(re.search(r'\b'+re.escape(name)+r'\b',full,re.I) for name in names)
 
 
+def incidental_security_mention(a,sym):
+ b=base(sym)
+ title=(a.get('title','') or '')
+ summary=(a.get('summary','') or '')
+ tl=title.lower()
+ sl=summary.lower()
+ full=tl+' '+sl
+
+ severe=any(
+  x in full
+  for x in (
+   'hack','hacked','exploit','exploited',
+   'breach','stolen','drained','vulnerability'
+  )
+ )
+
+ if not severe:
+  return False
+
+ aliases=[x.lower() for x in ALIASES.get(b,()) if len(x)>=3]
+ if not aliases:
+  aliases=[b.lower()]
+
+ # If asset itself is named in headline, keep normal relevance logic.
+ for name in aliases:
+  if re.search(r'\b'+re.escape(name)+r'\b',tl,re.I):
+   return False
+
+ # Only a summary/body mention exists.
+ mentioned=any(
+  re.search(r'\b'+re.escape(name)+r'\b',sl,re.I)
+  for name in aliases
+ )
+
+ if not mentioned:
+  return False
+
+ # Explicit network/protocol impact remains direct news.
+ for name in aliases:
+  if re.search(
+   r'\b'+re.escape(name)+r'\b.{0,35}\b'
+   r'(?:network|protocol|blockchain|mainnet|validators?|consensus)\b',
+   full,
+   re.I
+  ):
+   return False
+
+ # Security event is about another named project/product;
+ # incidental ecosystem mention must not penalize this asset.
+ return True
+
+
 def symbol_relevance(a,sym):
  b=base(sym)
  title=a.get('title','')
@@ -362,6 +414,9 @@ def symbol_relevance(a,sym):
  # Example: a Ledger "Ethereum app" exploit is a Ledger/app incident,
  # not an Ethereum-network exploit.
  if third_party_product_incident(a,sym):
+  return .30
+
+ if incidental_security_mention(a,sym):
   return .30
 
  title_low=title.lower()
