@@ -123,38 +123,234 @@ def parse_feed(src,rel,blob):
  return out
 
 def base(sym): return sym[:-4] if sym.upper().endswith('USDT') else sym.upper()
-def symmatch(a,sym):
- b=base(sym); raw=a['title']+' '+a['summary']; low=raw.lower()
- for alias in ALIASES.get(b,()):
-  if len(alias)>=3 and re.search(r'\b'+re.escape(alias.lower())+r'\b',low):return True
- return len(b)>=3 and bool(re.search(r'(?<![A-Z0-9])'+re.escape(b)+r'(?![A-Z0-9])',raw))
-def impact(a):
- t=(a['title']+' '+a['summary']).lower(); s=0
+
+AMBIGUOUS_TICKERS={
+ 'LINK','OP','DOT','UNI','ATOM','FIL','RENDER'
+}
+
+SECURITY_NEGATIVE_TERMS={
+ 'hack','hacked','exploit','breach','stolen',
+ 'vulnerability','outage','withdrawals halted',
+ 'halts withdrawals','bankruptcy','insolvent'
+}
+
+RESOLUTION_PATTERNS=(
+ r"\b(?:wasn['’]?t|was not|isn['’]?t|is not|not)\b.{0,18}\b(?:hacked|breached|exploited)\b",
+ r"\bno\b.{0,20}\b(?:hack|breach|exploit|exploitation)\b",
+ r"\b(?:patched|fixed|resolved|remediated)\b.{0,80}\b(?:before|prior to)\b.{0,40}\b(?:exploit|exploitation|attack)\b",
+ r"\b(?:vulnerability|flaw|exploit)\b.{0,80}\b(?:patched|fixed|resolved|remediated)\b",
+ r"\bno\b.{0,25}\b(?:funds|assets|money)\b.{0,25}\b(?:lost|stolen|drained)\b",
+ r"\b(?:prevented|blocked|stopped|avoided|foiled)\b.{0,50}\b(?:exploit|attack|hack|breach)\b",
+)
+
+ACTUAL_COMPROMISE_PATTERNS=(
+ r"\b(?:funds|assets|tokens|crypto|money)\b.{0,35}\b(?:stolen|drained|lost)\b",
+ r"\b(?:attacker|attackers|hacker|hackers)\b.{0,45}\b(?:stole|drained|exploited)\b",
+ r"\b(?:successfully|actively)\b.{0,25}\b(?:exploited|hacked|breached)\b",
+ r"\bexploit(?:ed)?\b.{0,30}\b(?:in the wild|funds|assets|drain)\b",
+)
+
+BROAD_CRYPTO_MARKET_TERMS=(
+ 'crypto market','crypto markets','cryptocurrency market',
+ 'digital asset market','digital asset markets',
+ 'crypto regulation','crypto legislation',
+ 'digital asset regulation','digital asset legislation',
+ 'stablecoin regulation','stablecoin legislation',
+)
+
+BTC_MARKET_RE=(
+ r"\bbitcoin\b.{0,45}\b(?:price|rises|rose|falls|fell|slides|slid|drops|dropped|"
+ r"rallies|rally|surges|surged|plunges|plunged|steadies|selloff|"
+ r"above|below|etf|inflows|outflows)\b"
+)
+
+def _boundary(text, token):
+ return bool(re.search(r'\b'+re.escape(token.lower())+r'\b',text.lower()))
+
+def security_resolved(text):
+ t=text.lower()
+ resolved=any(re.search(x,t,re.I) for x in RESOLUTION_PATTERNS)
+ actual=any(re.search(x,t,re.I) for x in ACTUAL_COMPROMISE_PATTERNS)
+ return resolved and not actual
+
+def _has_unnegated(text, term):
+ low=text.lower()
+ found=False
+
+ for m in re.finditer(re.escape(term.lower()),low):
+  found=True
+  prefix=low[max(0,m.start()-60):m.start()]
+
+  if re.search(
+   r"(?:\bno\b|\bnot\b|\bnever\b|\bwithout\b|"
+   r"wasn['’]?t|isn['’]?t|aren['’]?t|weren['’]?t|didn['’]?t)"
+   r"(?:\W+\w+){0,5}\W*$",
+   prefix,
+   re.I,
+  ):
+   continue
+
+  return True
+
+ return False if found else False
+
+def _score_text(text, security_safe=False):
+ t=(text or '').lower()
+ s=0.0
+
  for k,v in POS.items():
-  if k in t:s+=v
+  if k in t:
+   s+=v
+
  for k,v in NEG.items():
-  if k in t:s+=v
+  if k not in t:
+   continue
+
+  if security_safe and k in SECURITY_NEGATIVE_TERMS:
+   continue
+
+  if _has_unnegated(t,k):
+   s+=v
+
+ if security_safe:
+  s+=0.10
+
  return clamp(s)
+
+def impact(a):
+ title=a.get('title','')
+ summary=a.get('summary','')
+ combined=title+' '+summary
+
+ safe=security_resolved(combined)
+
+ ts=_score_text(title,safe)
+ ss=_score_text(summary,safe)
+
+ if not summary:
+  return ts
+
+ # Headlines carry most of the meaning.
+ # If headline is neutral but body contains a severe event,
+ # let the summary still carry meaningful weight.
+ if abs(ts)<.05 and abs(ss)>=.65:
+  return clamp(ss*.70)
+
+ return clamp(ts*.72 + ss*.28)
+
+def symbol_relevance(a,sym):
+ b=base(sym)
+ title=a.get('title','')
+ summary=a.get('summary','')
+
+ title_low=title.lower()
+ summary_low=summary.lower()
+
+ aliases=ALIASES.get(b,())
+
+ # Full asset/project name in headline = strongest evidence.
+ for alias in aliases:
+  al=alias.lower()
+
+  if al==b.lower():
+   continue
+
+  if len(al)>=3 and _boundary(title_low,al):
+   return 1.00
+
+ # Ticker in headline. Ambiguous English words require uppercase ticker.
+ if re.search(r'(?<![A-Z0-9])'+re.escape(b)+r'(?![A-Z0-9])',title):
+  return .95
+
+ if b not in AMBIGUOUS_TICKERS and len(b)>=3:
+  if _boundary(title_low,b):
+   return .88
+
+ # Summary-only matches are intentionally strict.
+ # One casual mention in a long article is NOT enough.
+ for alias in aliases:
+  al=alias.lower()
+
+  if al==b.lower() or len(al)<4:
+   continue
+
+  count=len(re.findall(r'\b'+re.escape(al)+r'\b',summary_low))
+
+  if count>=2:
+   return .68
+
+  if count==1 and _boundary(summary_low[:180],al):
+   return .58
+
+ ticker_hits=len(
+  re.findall(
+   r'(?<![A-Z0-9])'+re.escape(b)+r'(?![A-Z0-9])',
+   summary
+  )
+ )
+
+ if ticker_hits>=2:
+  return .58
+
+ return 0.0
+
+def symmatch(a,sym):
+ return symbol_relevance(a,sym)>=.55
+
+def article_emergency(a,sym,score,relevance):
+ if relevance<.85:
+  return False
+
+ text=(a.get('title','')+' '+a.get('summary','')).lower()
+
+ if security_resolved(text):
+  return False
+
+ severe=any(
+  k in text
+  for k in (
+   'hack','hacked','exploit','breach','stolen',
+   'bankruptcy','insolvent','delist','delisting',
+   'halts withdrawals','withdrawals halted'
+  )
+ )
+
+ return bool(severe and score<=-.45)
+
+
 def fresh(dt):
  if dt is None:return .35
  h=max(0,(now()-dt).total_seconds()/3600)
  return 1 if h<=1 else .85 if h<=3 else .65 if h<=6 else .45 if h<=12 else .25 if h<=LOOKBACK_HOURS else 0
+
 def globalnews(a):
- t=(a['title']+' '+a['summary']).lower()
+ title=(a.get('title','') or '').lower()
+ summary=(a.get('summary','') or '').lower()
+ full=title+' '+summary
 
- if any(k in t for k in MACRO_TERMS):
+ # Macro policy can genuinely affect the whole crypto market.
+ if any(k in full for k in MACRO_TERMS):
   return True
 
- if any(k in t for k in CRYPTO_GLOBAL_TERMS):
+ # Explicitly broad crypto-market/regulatory stories.
+ if any(k in full for k in BROAD_CRYPTO_MARKET_TERMS):
   return True
 
+ # Bitcoin price / ETF / market-action stories can be market-wide,
+ # but a narrow Bitcoin wallet/technical story is NOT automatically global.
+ if re.search(BTC_MARKET_RE,title,re.I):
+  return True
+
+ # Systemic exchange incidents are global only when the exchange
+ # and the severe event are both materially present.
  if (
-  any(k in t for k in SYSTEMIC_EXCHANGES)
-  and any(k in t for k in SYSTEMIC_TERMS)
+  any(k in title for k in SYSTEMIC_EXCHANGES)
+  and any(k in full for k in SYSTEMIC_TERMS)
  ):
   return True
 
  return False
+
 
 def aggregate(ev):
  if not ev:return 0,0
@@ -210,19 +406,21 @@ def main():
  for r in sorted(cands,key=lambda q:float(q.get('technical_score',0) or 0),reverse=True):
   sym=r['symbol']; ev=[]; matched=[]; emergency=False
   for a in articles:
-   if not symmatch(a,sym):continue
-   s=impact(a); w=a['rel']*fresh(a['published']); matched.append((s,w,a))
+   rel=symbol_relevance(a,sym)
+   if rel<.55:continue
+   s=impact(a)
+   w=a['rel']*fresh(a['published'])*rel
+   matched.append((s,w,a,rel))
    if w and abs(s)>0:ev.append((s,w,a))
-   text=(a['title']+' '+a['summary']).lower()
-   if s<=-.65 and any(k in text for k in ('hack','hacked','exploit','breach','stolen','bankruptcy','insolvent','delist','delisting','halts withdrawals','withdrawals halted')):emergency=True
+   if article_emergency(a,sym,s,rel):emergency=True
   ss,sc=aggregate(ev); sv=verdict(ss,sc)
   act='WOULD_EMERGENCY_VETO' if emergency else 'WOULD_CAUTION' if sv in ('NEGATIVE','NEGATIVE_HIGH') else 'WOULD_SUPPORT' if sv in ('POSITIVE','POSITIVE_HIGH') else 'WOULD_MARKET_CAUTION' if mv=='NEGATIVE_HIGH' else 'OBSERVE'
   tech=float(r.get('technical_score',0) or 0); expert=float(r.get('expert_score',0) or 0)
   with open(OUT_CSV,'a',newline='',encoding='utf-8') as f:
    csv.writer(f).writerow([iso(),sym,f'{tech:.4f}',r.get('technical_pass','N'),f'{expert:.4f}',r.get('expert_verdict',''),f'{ms:.4f}',f'{mc:.4f}',mv,f'{ss:.4f}',f'{sc:.4f}',sv,'Y' if emergency else 'N',len(matched),act])
   lines.append(f"{sym:12} tech={tech:.2f} expert={expert:+.2f} {r.get('expert_verdict','')} | news={ss:+.2f} conf={sc:.2f} {sv} | matched={len(matched)} | {act}")
-  for s,w,a in sorted(matched,key=lambda z:abs(z[0])*z[1],reverse=True)[:2]:
-   dt=a['published'].isoformat() if a['published'] else 'time_unknown'; lines.append(f"  [{a['source']}] {s:+.2f} {dt} | {a['title'][:150]}")
+  for s,w,a,rel in sorted(matched,key=lambda z:abs(z[0])*z[1],reverse=True)[:2]:
+   dt=a['published'].isoformat() if a['published'] else 'time_unknown'; lines.append(f"  [{a['source']}] {s:+.2f} rel={rel:.2f} {dt} | {a['title'][:150]}")
  top.sort(reverse=True,key=lambda z:z[0])
  if top:
   lines+=['','Top market-impact headlines:']
