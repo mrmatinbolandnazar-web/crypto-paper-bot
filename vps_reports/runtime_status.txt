@@ -1,10 +1,10 @@
 ===== TIME =====
-Fri Aug 28 18:20:38 UTC 2026
+Fri Aug 28 18:23:29 UTC 2026
 
 ===== BOT SERVICE =====
 ○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: inactive (dead) since Fri 2026-08-28 18:19:35 UTC; 1min 2s ago
+     Active: inactive (dead) since Fri 2026-08-28 18:19:35 UTC; 3min 53s ago
 TriggeredBy: ● crypto-bot.timer
     Process: 107907 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
    Main PID: 107907 (code=exited, status=0/SUCCESS)
@@ -25,19 +25,19 @@ Aug 28 18:19:35 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto P
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
      Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 2 days ago
-    Trigger: Fri 2026-08-28 18:24:35 UTC; 3min 57s left
+    Trigger: Fri 2026-08-28 18:24:35 UTC; 1min 6s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Fri 2026-08-28 18:24:35 UTC 3min 57s Fri 2026-08-28 18:17:59 UTC 2min 38s ago crypto-bot.timer               crypto-bot.service
-Fri 2026-08-28 18:25:00 UTC 4min 21s Fri 2026-08-28 18:10:01 UTC    10min ago crypto-bot-active.timer        crypto-bot-active.service
--                                  - Fri 2026-08-28 18:20:37 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
+Fri 2026-08-28 18:24:35 UTC  1min 6s Fri 2026-08-28 18:17:59 UTC     5min ago crypto-bot.timer               crypto-bot.service
+Fri 2026-08-28 18:25:00 UTC 1min 30s Fri 2026-08-28 18:10:01 UTC    13min ago crypto-bot-active.timer        crypto-bot-active.service
+Fri 2026-08-28 18:25:37 UTC  2min 7s Fri 2026-08-28 18:20:37 UTC 2min 52s ago crypto-bot-report.timer        crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       354Mi       836Mi       1.0Mi       950Mi       1.6Gi
+Mem:           1.9Gi       438Mi       751Mi       1.0Mi       951Mi       1.5Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
