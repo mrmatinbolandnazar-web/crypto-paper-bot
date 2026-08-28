@@ -125,7 +125,7 @@ def parse_feed(src,rel,blob):
 def base(sym): return sym[:-4] if sym.upper().endswith('USDT') else sym.upper()
 
 AMBIGUOUS_TICKERS={
- 'LINK','OP','DOT','UNI','ATOM','FIL','RENDER'
+ 'LINK','OP','DOT','UNI','ATOM','FIL','RENDER','TRUMP'
 }
 
 SECURITY_NEGATIVE_TERMS={
@@ -238,10 +238,131 @@ def impact(a):
 
  return clamp(ts*.72 + ss*.28)
 
+def trump_token_relevance(a):
+ title=a.get('title','') or ''
+ summary=a.get('summary','') or ''
+ tl=title.lower()
+ sl=summary.lower()
+
+ # Explicit ticker notation is very strong evidence.
+ if re.search(r'(?<![A-Z0-9])\$TRUMP(?![A-Z0-9])', title):
+  return 1.00
+
+ # Uppercase TRUMP in a crypto headline.
+ if re.search(r'(?<![A-Z0-9])TRUMP(?![A-Z0-9])', title):
+  if re.search(
+   r'\b(token|coin|memecoin|meme coin|crypto|cryptocurrency|'
+   r'price|trading|trades|market cap|holders|wallet|exchange|'
+   r'binance|coinbase|solana)\b',
+   tl,
+   re.I
+  ):
+   return .98
+
+ # Proper-name "Trump" is accepted only with nearby crypto context.
+ crypto_after = re.search(
+  r'\b(?:official\s+)?trump\b.{0,45}\b'
+  r'(?:token|coin|memecoin|meme coin|crypto|cryptocurrency|'
+  r'price|trading|market cap|holders)\b',
+  tl,
+  re.I
+ )
+
+ crypto_before = re.search(
+  r'\b(?:token|coin|memecoin|meme coin|crypto|cryptocurrency)\b'
+  r'.{0,45}\b(?:official\s+)?trump\b',
+  tl,
+  re.I
+ )
+
+ if crypto_after or crypto_before:
+  return .95
+
+ # Summary-only evidence must also explicitly describe the crypto asset.
+ if (
+  re.search(r'\$TRUMP\b', summary)
+  or re.search(
+   r'\btrump\b.{0,35}\b(?:token|coin|memecoin|meme coin|crypto)\b',
+   sl,
+   re.I
+  )
+  or re.search(
+   r'\b(?:token|coin|memecoin|meme coin|crypto)\b.{0,35}\btrump\b',
+   sl,
+   re.I
+  )
+ ):
+  return .62
+
+ # A person, administration or political story is NOT token news.
+ return 0.0
+
+
+THIRD_PARTY_SECURITY_PRODUCTS=(
+ 'ledger','onekey','metamask','trezor','trust wallet',
+ 'phantom wallet','rabby','hardware wallet',
+ 'wallet app','browser extension'
+)
+
+DIRECT_PROTOCOL_TERMS=(
+ 'network','protocol','blockchain','mainnet',
+ 'consensus','validator','validators'
+)
+
+def third_party_product_incident(a,sym):
+ b=base(sym)
+ title=(a.get('title','') or '').lower()
+ summary=(a.get('summary','') or '').lower()
+ full=title+' '+summary
+
+ severe=any(
+  k in full
+  for k in (
+   'hack','hacked','exploit','exploited','attack',
+   'breach','stolen','vulnerability'
+  )
+ )
+
+ if not severe:
+  return False
+
+ if not any(x in full for x in THIRD_PARTY_SECURITY_PRODUCTS):
+  return False
+
+ aliases=list(ALIASES.get(b,()))
+ names=[x.lower() for x in aliases if len(x)>=3]
+
+ if not names:
+  names=[b.lower()]
+
+ # If the story explicitly says the asset's own network/protocol/
+ # blockchain/mainnet is affected, it is direct asset news.
+ for name in names:
+  for ctx in DIRECT_PROTOCOL_TERMS:
+   if re.search(
+    r'\b'+re.escape(name)+r'\b.{0,35}\b'+re.escape(ctx)+r'\b',
+    full,
+    re.I
+   ):
+    return False
+
+ # Otherwise a third-party wallet/app security incident should
+ # not be treated as an asset/protocol emergency.
+ return any(re.search(r'\b'+re.escape(name)+r'\b',full,re.I) for name in names)
+
+
 def symbol_relevance(a,sym):
  b=base(sym)
  title=a.get('title','')
  summary=a.get('summary','')
+
+ if b=='TRUMP':
+  return trump_token_relevance(a)
+
+ # Example: a Ledger "Ethereum app" exploit is a Ledger/app incident,
+ # not an Ethereum-network exploit.
+ if third_party_product_incident(a,sym):
+  return .30
 
  title_low=title.lower()
  summary_low=summary.lower()
@@ -298,6 +419,9 @@ def symmatch(a,sym):
  return symbol_relevance(a,sym)>=.55
 
 def article_emergency(a,sym,score,relevance):
+ if third_party_product_incident(a,sym):
+  return False
+
  if relevance<.85:
   return False
 
