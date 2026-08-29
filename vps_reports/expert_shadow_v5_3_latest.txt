@@ -1,6 +1,11 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-08-29T07:14:18.084240+00:00
-Regime: WEAK | breadth=60.0% | btc_not_confirmed | candidates=0
+Updated UTC: 2026-08-29T07:19:18.648943+00:00
+Regime: RISK_OFF | breadth=45.0% | btc_eth_15m_soft | candidates=3
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-No technical / near-ready candidate this run.
+TSTUSDT      CORE  tech=8.00/99.00 entry=N pass=N | expert=+0.53 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.65 topAcct=1.98 taker=2.22 global=1.49 OI5m=+0.67% funding=+0.0184%
+ONGUSDT      TREND tech=7.60/99.35 entry=N pass=N | expert=+0.27 SUPPORT cov=6/6 | OBSERVE
+  topPos=1.25 topAcct=1.37 taker=1.19 global=1.24 OI5m=+1.20% funding=-0.0450%
+PUMPUSDT     CORE  tech=7.28/99.00 entry=N pass=N | expert=+0.38 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.47 topAcct=1.17 taker=1.90 global=1.13 OI5m=+0.42% funding=+0.0050%
