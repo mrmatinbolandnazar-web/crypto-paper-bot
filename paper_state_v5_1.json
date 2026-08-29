@@ -1,8 +1,39 @@
 {
-  "cash_usdt": 19.51058435547009,
-  "positions": {},
+  "cash_usdt": 11.706350613282055,
+  "positions": {
+    "SHIBUSDT": {
+      "source": "CORE",
+      "entry_price": 5.11e-06,
+      "qty": 762860.0301806113,
+      "cost_usdt": 3.902116871094018,
+      "entry_fee_usdt": 0.0039021168710940183,
+      "peak_price": 5.11e-06,
+      "entry_score": 6.521878994477683,
+      "opened_at": "2026-08-29T10:28:25.248707+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "ADAUSDT": {
+      "source": "CORE",
+      "entry_price": 0.2004,
+      "qty": 19.45216943225012,
+      "cost_usdt": 3.902116871094018,
+      "entry_fee_usdt": 0.0039021168710940183,
+      "peak_price": 0.2004,
+      "entry_score": 6.4,
+      "opened_at": "2026-08-29T10:28:25.248862+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.48941564452992337,
-  "total_fees_usdt": 0.26157910393737366,
+  "total_fees_usdt": 0.26938333767956174,
   "wins": 9,
   "losses": 31,
   "loss_streak": 5,
@@ -11,6 +42,6 @@
   "sum_win_pnl": 0.2935275803355557,
   "sum_loss_pnl": -0.7829432248654791,
   "peak_equity": 20.0,
-  "max_drawdown_pct": 0.02447078222649548,
+  "max_drawdown_pct": 0.0248609939136049,
   "started_at": "2026-08-24T11:00:07.094922+00:00"
 }
