@@ -1,6 +1,11 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-08-29T09:39:24.917383+00:00
-Regime: RISK_OFF | breadth=69.5% | recovery_confirm_1of2 | candidates=0
+Updated UTC: 2026-08-29T09:44:17.987396+00:00
+Regime: PROBE | breadth=78.0% | broad_market_probe_btc_unconfirmed | candidates=3
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-No technical / near-ready candidate this run.
+PROMUSDT     CORE  tech=7.23/7.70 entry=N pass=N | expert=+0.09 NEUTRAL cov=6/6 | OBSERVE
+  topPos=1.11 topAcct=0.70 taker=1.24 global=0.79 OI5m=+0.31% funding=+0.0050%
+FETUSDT      CORE  tech=6.92/7.70 entry=N pass=N | expert=+0.57 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.79 topAcct=1.94 taker=4.00 global=1.32 OI5m=+0.31% funding=-0.0238%
+ZECUSDT      CORE  tech=6.76/7.70 entry=N pass=N | expert=+0.11 SUPPORT cov=6/6 | OBSERVE
+  topPos=0.96 topAcct=0.60 taker=2.80 global=0.65 OI5m=+0.09% funding=+0.0100%
