@@ -1,23 +1,3 @@
-Aug 30 00:42:23 srv6288706486 nice[151663]: CORE diag | total=36 | entry_ready=0 | score_ready=0 | fully_ready=0
-Aug 30 00:42:23 srv6288706486 nice[151663]: TREND diag | total=10 | entry_ready=0 | score_ready=0 | fully_ready=0
-Aug 30 00:42:23 srv6288706486 nice[151663]: Top rejected candidates:
-Aug 30 00:42:23 srv6288706486 nice[151663]:   DASHUSDT     TREND score=6.23/99.20 reject=TF15 TF15=N TF1H=N CHASE=Y SPREAD=Y
-Aug 30 00:42:23 srv6288706486 nice[151663]:   ADAUSDT      CORE  score=5.92/99.00 reject=TF15 TF15=N TF1H=N CHASE=Y SPREAD=Y
-Aug 30 00:42:23 srv6288706486 nice[151663]:   ETHUSDT      CORE  score=5.88/99.00 reject=TF15 TF15=N TF1H=N CHASE=Y SPREAD=Y
-Aug 30 00:42:23 srv6288706486 nice[151663]:   PUMPUSDT     TREND score=5.79/99.20 reject=TF15 TF15=N TF1H=N CHASE=Y SPREAD=Y
-Aug 30 00:42:23 srv6288706486 nice[151663]:   HEMIUSDT     CORE  score=5.65/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
-Aug 30 00:42:23 srv6288706486 nice[151663]:   OPGUSDT      CORE  score=5.58/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
-Aug 30 00:42:23 srv6288706486 nice[151663]:   TRUMPUSDT    CORE  score=5.15/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=N SPREAD=N
-Aug 30 00:42:23 srv6288706486 nice[151663]:   DOGEUSDT     CORE  score=5.05/99.00 reject=TF1H TF15=Y TF1H=N CHASE=Y SPREAD=Y
-Aug 30 00:42:23 srv6288706486 nice[151663]: No CORE candidate passed the current adaptive threshold.
-Aug 30 00:42:23 srv6288706486 nice[151663]: No TREND candidate passed the stricter trend rules.
-Aug 30 00:42:23 srv6288706486 nice[151663]: No free risk slots for new positions this run.
-Aug 30 00:42:23 srv6288706486 nice[151663]: Cash $100.0185 | Equity $100.0185 | Realized P/L $+0.0185 | W/L 1/0 | WinRate 100.0% | LossStreak 0
-Aug 30 00:42:23 srv6288706486 nice[151663]: AvgWin $+0.0185 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0185/trade | MaxDD 0.01%
-Aug 30 00:42:23 srv6288706486 nice[151663]: Open none
-Aug 30 00:42:23 srv6288706486 nice[151663]: Run complete. V5.2 state saved for next scheduled run.
-Aug 30 00:42:23 srv6288706486 systemd[1]: crypto-bot-active.service: Deactivated successfully.
-Aug 30 00:42:23 srv6288706486 systemd[1]: Finished crypto-bot-active.service - Crypto Paper Bot V5.2B Active.
 Aug 30 00:55:00 srv6288706486 systemd[1]: Starting crypto-bot-active.service - Crypto Paper Bot V5.2B Active...
 Aug 30 00:55:00 srv6288706486 nice[152171]: ================================================================================================
 Aug 30 00:55:00 srv6288706486 nice[152171]: BINANCE PAPER TRADING BOT V5.2B ACTIVE — PARALLEL SIMULATION ONLY
@@ -178,3 +158,23 @@ Aug 30 01:12:02 srv6288706486 nice[152780]: Open none
 Aug 30 01:12:02 srv6288706486 nice[152780]: Run complete. V5.2 state saved for next scheduled run.
 Aug 30 01:12:02 srv6288706486 systemd[1]: crypto-bot-active.service: Deactivated successfully.
 Aug 30 01:12:02 srv6288706486 systemd[1]: Finished crypto-bot-active.service - Crypto Paper Bot V5.2B Active.
+Aug 30 01:25:00 srv6288706486 systemd[1]: Starting crypto-bot-active.service - Crypto Paper Bot V5.2B Active...
+Aug 30 01:25:00 srv6288706486 nice[153542]: ================================================================================================
+Aug 30 01:25:00 srv6288706486 nice[153542]: BINANCE PAPER TRADING BOT V5.2B ACTIVE — PARALLEL SIMULATION ONLY
+Aug 30 01:25:00 srv6288706486 nice[153542]: 50 guaranteed core pairs + dynamic trend pool | adaptive regime | dynamic risk | no real orders
+Aug 30 01:25:00 srv6288706486 nice[153542]: ================================================================================================
+Aug 30 01:25:27 srv6288706486 nice[153542]: Full USDT market discovered: 470 eligible ticker records
+Aug 30 01:25:27 srv6288706486 nice[153542]: Dynamic liquid deep-scan universe: 46
+Aug 30 01:25:27 srv6288706486 nice[153542]: LIQUID SCAN: BTCUSDT, ETHUSDT, SOLUSDT, ZECUSDT, BMTUSDT, TRUMPUSDT, XRPUSDT, BNBUSDT, PUMPUSDT, ENAUSDT, DOGEUSDT, TUTUSDT, SUIUSDT, DEXEUSDT, ONGUSDT, PROMUSDT, TRXUSDT, UNIUSDT, NEARUSDT, GIGGLEUSDT, LINKUSDT, ENSOUSDT, DASHUSDT, PEPEUSDT, FETUSDT, NILUSDT, HEMIUSDT, LTCUSDT, BANKUSDT, WLDUSDT, ADAUSDT, AAVEUSDT, COTIUSDT, TAOUSDT, ASTERUSDT, CHIPUSDT, ZKPUSDT, ZROUSDT, PENGUUSDT, POLUSDT, AVAXUSDT, ICPUSDT, OPGUSDT, ONDOUSDT, GRAMUSDT, ROBOUSDT
+Aug 30 01:25:27 srv6288706486 nice[153542]: Trend watch: 9
+Aug 30 01:25:27 srv6288706486 nice[153542]: TREND: GIGGLEUSDT, PUMPUSDT, DASHUSDT, UNIUSDT, NILUSDT, ONGUSDT, ZECUSDT, NEARUSDT, BMTUSDT
+Aug 30 01:25:27 srv6288706486 nice[153542]: [2026-08-30T01:25:27.200015+00:00]
+Aug 30 01:25:33 srv6288706486 nice[153542]: BTCUSDT      CORE  p=78048.28000000 RSI= 36.8 M5=+0.01% M15=-0.08% VOLx=1.10 ATR=0.08% TF15=N TF1H=N EXT=-0.10% SCORE=0.80 ENTRY=N
+Aug 30 01:25:37 srv6288706486 nice[153542]: ETHUSDT      CORE  p=2455.59000000 RSI= 48.8 M5=-0.02% M15=-0.08% VOLx=0.65 ATR=0.14% TF15=N TF1H=N EXT=-0.10% SCORE=0.00 ENTRY=N
+Aug 30 01:25:39 srv6288706486 nice[153542]: SOLUSDT      CORE  p=105.29000000 RSI= 48.0 M5=+0.07% M15=+0.07% VOLx=1.29 ATR=0.17% TF15=N TF1H=N EXT=-0.00% SCORE=1.85 ENTRY=N
+Aug 30 01:25:43 srv6288706486 nice[153542]: ZECUSDT      TREND p=835.77000000 RSI= 37.0 M5=+0.01% M15=+0.02% VOLx=0.57 ATR=0.35% TF15=N TF1H=N EXT=-0.15% SCORE=0.25 ENTRY=N 24h=+4.1%
+Aug 30 01:25:50 srv6288706486 nice[153542]: BMTUSDT      TREND p=0.02228000 RSI= 31.0 M5=+0.09% M15=+0.36% VOLx=0.74 ATR=0.64% TF15=N TF1H=N EXT=-0.46% SCORE=1.87 ENTRY=N 24h=+1.5%
+Aug 30 01:25:51 srv6288706486 nice[153542]: TRUMPUSDT    CORE  p=2.63900000 RSI= 42.6 M5=-0.49% M15=-0.30% VOLx=0.51 ATR=0.87% TF15=N TF1H=N EXT=-0.52% SCORE=0.00 ENTRY=N
+Aug 30 01:25:53 srv6288706486 nice[153542]: XRPUSDT      CORE  p=1.39090000 RSI= 39.6 M5=-0.01% M15=-0.10% VOLx=1.01 ATR=0.18% TF15=N TF1H=N EXT=-0.15% SCORE=0.53 ENTRY=N
+Aug 30 01:25:54 srv6288706486 nice[153542]: BNBUSDT      CORE  p=690.81000000 RSI= 33.9 M5=-0.06% M15=-0.23% VOLx=2.45 ATR=0.09% TF15=N TF1H=N EXT=-0.16% SCORE=1.40 ENTRY=N
+Aug 30 01:25:58 srv6288706486 nice[153542]: PUMPUSDT     TREND p=0.00497200 RSI= 29.7 M5=+0.00% M15=-0.88% VOLx=0.53 ATR=0.69% TF15=N TF1H=N EXT=-0.76% SCORE=0.25 ENTRY=N 24h=+6.9%
