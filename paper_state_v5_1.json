@@ -1,16 +1,44 @@
 {
-  "cash_usdt": 19.53258352559667,
-  "positions": {},
+  "cash_usdt": 12.891505126893804,
+  "positions": {
+    "RENDERUSDT": {
+      "source": "CORE",
+      "entry_price": 1.468,
+      "qty": 2.2596857357984215,
+      "cost_usdt": 3.320539199351434,
+      "entry_fee_usdt": 0.003320539199351434,
+      "peak_price": 1.468,
+      "entry_score": 6.949999999999999,
+      "opened_at": "2026-08-30T06:51:58.983642+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "UNIUSDT": {
+      "source": "CORE",
+      "entry_price": 4.932,
+      "qty": 0.6725909692116956,
+      "cost_usdt": 3.320539199351434,
+      "entry_fee_usdt": 0.003320539199351434,
+      "peak_price": 4.932,
+      "entry_score": 6.35,
+      "opened_at": "2026-08-30T06:51:58.983869+00:00",
+      "stop_pct": 0.005804657629475141,
+      "take_profit_pct": 0.01073861661452901,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.46741647440334155,
-  "total_fees_usdt": 0.29051163007115294,
+  "total_fees_usdt": 0.2971527084698558,
   "wins": 12,
   "losses": 32,
   "loss_streak": 1,
   "cooldown_until": null,
-  "symbol_cooldowns": {
-    "NEARUSDT": "2026-08-30T01:40:56.701468+00:00",
-    "TRUMPUSDT": "2026-08-30T02:21:32.456072+00:00"
-  },
+  "symbol_cooldowns": {},
   "sum_win_pnl": 0.3398677787383293,
   "sum_loss_pnl": -0.8072842531416708,
   "peak_equity": 20.0,
