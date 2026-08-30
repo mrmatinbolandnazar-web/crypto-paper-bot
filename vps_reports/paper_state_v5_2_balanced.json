@@ -1,8 +1,24 @@
 {
-  "cash_usdt": 100.0,
-  "positions": {},
+  "cash_usdt": 98.6,
+  "positions": {
+    "ADAUSDT": {
+      "source": "TREND",
+      "entry_price": 0.20536159,
+      "qty": 6.810426428817578,
+      "cost_usdt": 1.4,
+      "entry_fee_usdt": 0.0014,
+      "peak_price": 0.20536159,
+      "entry_score": 7.750510504627158,
+      "opened_at": "2026-08-30T16:22:32.403730+00:00",
+      "stop_pct": 0.006,
+      "take_profit_pct": 0.017208711614517425,
+      "trailing_trigger_pct": 0.011185662549436327,
+      "trailing_distance_pct": 0.0036,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": 0.0,
-  "total_fees_usdt": 0.0,
+  "total_fees_usdt": 0.0014,
   "wins": 0,
   "losses": 0,
   "loss_streak": 0,
@@ -11,8 +27,8 @@
   "sum_win_pnl": 0.0,
   "sum_loss_pnl": 0.0,
   "peak_equity": 100.0,
-  "max_drawdown_pct": 0.0,
-  "recovery_confirm_runs": 1,
-  "last_regime": "CAUTIOUS",
+  "max_drawdown_pct": 1.8194541637512885e-05,
+  "recovery_confirm_runs": 0,
+  "last_regime": "PROBE",
   "started_at": "2026-08-29T23:24:04.415428+00:00"
 }
