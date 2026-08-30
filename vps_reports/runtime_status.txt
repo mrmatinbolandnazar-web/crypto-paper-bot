@@ -1,10 +1,10 @@
 ===== TIME =====
-Sun Aug 30 01:25:59 UTC 2026
+Sun Aug 30 01:27:26 UTC 2026
 
 ===== BOT SERVICE =====
 ○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: inactive (dead) since Sun 2026-08-30 01:24:26 UTC; 1min 32s ago
+     Active: inactive (dead) since Sun 2026-08-30 01:24:26 UTC; 2min 59s ago
 TriggeredBy: ● crypto-bot.timer
     Process: 153395 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
    Main PID: 153395 (code=exited, status=0/SUCCESS)
@@ -25,20 +25,20 @@ Aug 30 01:24:26 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto P
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
      Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 3 days ago
-    Trigger: Sun 2026-08-30 01:29:26 UTC; 3min 27s left
+    Trigger: Sun 2026-08-30 01:29:26 UTC; 2min 0s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Sun 2026-08-30 01:27:24 UTC 1min 25s Sun 2026-08-30 01:22:24 UTC 3min 34s ago crypto-bot-report.timer        crypto-bot-report.service
-Sun 2026-08-30 01:29:26 UTC 3min 27s Sun 2026-08-30 01:22:06 UTC 3min 52s ago crypto-bot.timer               crypto-bot.service
-Sun 2026-08-30 01:35:00 UTC     9min Sun 2026-08-30 01:20:00 UTC     5min ago crypto-bot-balanced.timer      crypto-bot-balanced.service
--                                  - Sun 2026-08-30 01:25:00 UTC      58s ago crypto-bot-active.timer        crypto-bot-active.service
+Sun 2026-08-30 01:29:26 UTC  2min 0s Sun 2026-08-30 01:22:06 UTC     5min ago crypto-bot.timer               crypto-bot.service
+Sun 2026-08-30 01:35:00 UTC     7min Sun 2026-08-30 01:20:00 UTC     7min ago crypto-bot-balanced.timer      crypto-bot-balanced.service
+Sun 2026-08-30 01:40:00 UTC    12min Sun 2026-08-30 01:25:00 UTC 2min 25s ago crypto-bot-active.timer        crypto-bot-active.service
+-                                  - Sun 2026-08-30 01:27:24 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       437Mi       679Mi       1.0Mi       1.0Gi       1.5Gi
+Mem:           1.9Gi       430Mi       686Mi       1.0Mi       1.0Gi       1.5Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
