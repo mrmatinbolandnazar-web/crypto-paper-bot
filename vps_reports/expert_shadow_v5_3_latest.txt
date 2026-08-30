@@ -1,13 +1,21 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-08-30T12:04:44.676460+00:00
-Regime: RISK_OFF | breadth=57.8% | recovery_confirm_1of2 | candidates=4
+Updated UTC: 2026-08-30T12:09:41.021712+00:00
+Regime: PROBE | breadth=73.3% | broad_market_probe_btc_unconfirmed | candidates=8
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-ONDOUSDT     CORE  tech=6.96/99.00 entry=Y pass=N | expert=+0.58 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=2.12 topAcct=1.95 taker=2.63 global=1.39 OI5m=+0.19% funding=+0.0050%
-LTCUSDT      CORE  tech=6.87/99.00 entry=Y pass=N | expert=+0.57 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=2.88 topAcct=3.03 taker=10.41 global=2.13 OI5m=+0.47% funding=-0.0020%
-AVAXUSDT     CORE  tech=7.31/99.00 entry=N pass=N | expert=+0.53 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=2.73 topAcct=2.76 taker=1.71 global=2.08 OI5m=+0.32% funding=+0.0094%
-GIGGLEUSDT   CORE  tech=7.29/99.00 entry=N pass=N | expert=+0.57 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=3.05 topAcct=1.77 taker=5.00 global=1.35 OI5m=+0.46% funding=-0.0010%
+DASHUSDT     TREND tech=7.20/8.05 entry=Y pass=N | expert=+0.33 SUPPORT cov=6/6 | OBSERVE
+  topPos=3.20 topAcct=1.82 taker=1.07 global=1.39 OI5m=+0.18% funding=+0.0100%
+LTCUSDT      CORE  tech=6.26/7.70 entry=Y pass=N | expert=+0.23 SUPPORT cov=6/6 | OBSERVE
+  topPos=2.88 topAcct=3.04 taker=0.70 global=2.13 OI5m=+0.10% funding=-0.0018%
+GIGGLEUSDT   CORE  tech=7.49/7.70 entry=N pass=N | expert=+0.26 SUPPORT cov=6/6 | OBSERVE
+  topPos=3.05 topAcct=1.77 taker=0.82 global=1.35 OI5m=+0.08% funding=-0.0003%
+AVAXUSDT     CORE  tech=7.42/7.70 entry=N pass=N | expert=+0.37 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.73 topAcct=2.76 taker=1.30 global=2.09 OI5m=+0.20% funding=+0.0093%
+TAOUSDT      CORE  tech=7.38/7.70 entry=N pass=N | expert=+0.29 SUPPORT cov=6/6 | OBSERVE
+  topPos=3.95 topAcct=2.30 taker=0.85 global=1.81 OI5m=+0.21% funding=+0.0050%
+SOLUSDT      TREND tech=7.37/8.05 entry=N pass=N | expert=+0.25 SUPPORT cov=6/6 | OBSERVE
+  topPos=2.13 topAcct=2.03 taker=0.73 global=1.88 OI5m=+0.16% funding=+0.0055%
+DOGEUSDT     CORE  tech=7.32/7.70 entry=N pass=N | expert=+0.34 SUPPORT cov=6/6 | OBSERVE
+  topPos=3.42 topAcct=3.24 taker=1.13 global=2.52 OI5m=+0.11% funding=+0.0048%
+SUIUSDT      CORE  tech=7.14/7.70 entry=N pass=N | expert=+0.28 SUPPORT cov=6/6 | OBSERVE
+  topPos=2.31 topAcct=2.88 taker=0.89 global=2.26 OI5m=+0.16% funding=+0.0083%
