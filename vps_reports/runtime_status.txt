@@ -1,44 +1,44 @@
 ===== TIME =====
-Sun Aug 30 02:17:29 UTC 2026
+Sun Aug 30 02:22:29 UTC 2026
 
 ===== BOT SERVICE =====
 ○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: inactive (dead) since Sun 2026-08-30 02:15:05 UTC; 2min 23s ago
+     Active: inactive (dead) since Sun 2026-08-30 02:21:56 UTC; 32s ago
 TriggeredBy: ● crypto-bot.timer
-    Process: 155284 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
-   Main PID: 155284 (code=exited, status=0/SUCCESS)
-        CPU: 757ms
+    Process: 155503 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
+   Main PID: 155503 (code=exited, status=0/SUCCESS)
+        CPU: 665ms
 
-Aug 30 02:15:05 srv6288706486 python3[155284]:   ZKPUSDT      CORE  score=3.95/99.00 reject=TF15 TF15=N TF1H=N CHASE=N SPREAD=N
-Aug 30 02:15:05 srv6288706486 python3[155284]: No CORE candidate passed the current adaptive threshold.
-Aug 30 02:15:05 srv6288706486 python3[155284]: No TREND candidate passed the stricter trend rules.
-Aug 30 02:15:05 srv6288706486 python3[155284]: No free risk slots for new positions this run.
-Aug 30 02:15:05 srv6288706486 python3[155284]: Cash $100.0014 | Equity $100.0014 | Realized P/L $+0.0014 | W/L 1/0 | WinRate 100.0% | LossStreak 0
-Aug 30 02:15:05 srv6288706486 python3[155284]: AvgWin $+0.0014 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0014/trade | MaxDD 0.01%
-Aug 30 02:15:05 srv6288706486 python3[155284]: Open none
-Aug 30 02:15:05 srv6288706486 python3[155284]: Run complete. V5.2 state saved for next scheduled run.
-Aug 30 02:15:05 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
-Aug 30 02:15:05 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
+Aug 30 02:21:56 srv6288706486 python3[155503]:   SOLUSDT      CORE  score=3.72/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+Aug 30 02:21:56 srv6288706486 python3[155503]: No CORE candidate passed the current adaptive threshold.
+Aug 30 02:21:56 srv6288706486 python3[155503]: No TREND candidate passed the stricter trend rules.
+Aug 30 02:21:56 srv6288706486 python3[155503]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
+Aug 30 02:21:56 srv6288706486 python3[155503]: Cash $100.0014 | Equity $100.0014 | Realized P/L $+0.0014 | W/L 1/0 | WinRate 100.0% | LossStreak 0
+Aug 30 02:21:56 srv6288706486 python3[155503]: AvgWin $+0.0014 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0014/trade | MaxDD 0.01%
+Aug 30 02:21:56 srv6288706486 python3[155503]: Open none
+Aug 30 02:21:56 srv6288706486 python3[155503]: Run complete. V5.2 state saved for next scheduled run.
+Aug 30 02:21:56 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
+Aug 30 02:21:56 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
      Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 3 days ago
-    Trigger: Sun 2026-08-30 02:20:05 UTC; 2min 36s left
+    Trigger: Sun 2026-08-30 02:26:56 UTC; 4min 27s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Sun 2026-08-30 02:20:00 UTC 2min 30s Sun 2026-08-30 02:05:01 UTC    12min ago crypto-bot-balanced.timer      crypto-bot-balanced.service
-Sun 2026-08-30 02:20:05 UTC 2min 36s Sun 2026-08-30 02:12:35 UTC 4min 53s ago crypto-bot.timer               crypto-bot.service
-Sun 2026-08-30 02:25:00 UTC     7min Sun 2026-08-30 02:10:01 UTC     7min ago crypto-bot-active.timer        crypto-bot-active.service
--                                  - Sun 2026-08-30 02:17:27 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
+Sun 2026-08-30 02:25:00 UTC 2min 30s Sun 2026-08-30 02:10:01 UTC    12min ago crypto-bot-active.timer        crypto-bot-active.service
+Sun 2026-08-30 02:26:56 UTC 4min 27s Sun 2026-08-30 02:20:05 UTC 2min 23s ago crypto-bot.timer               crypto-bot.service
+Sun 2026-08-30 02:35:00 UTC    12min Sun 2026-08-30 02:20:01 UTC 2min 28s ago crypto-bot-balanced.timer      crypto-bot-balanced.service
+-                                  - Sun 2026-08-30 02:22:28 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       346Mi       764Mi       1.0Mi       1.0Gi       1.6Gi
+Mem:           1.9Gi       448Mi       662Mi       1.0Mi       1.0Gi       1.5Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
