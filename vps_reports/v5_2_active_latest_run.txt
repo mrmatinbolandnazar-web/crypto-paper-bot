@@ -1,15 +1,3 @@
-Aug 30 22:56:28 srv6288706486 nice[187516]:   ASTERUSDT    CORE  score=3.19/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
-Aug 30 22:56:28 srv6288706486 nice[187516]:   PROMUSDT     CORE  score=3.02/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
-Aug 30 22:56:28 srv6288706486 nice[187516]: No CORE candidate passed the current adaptive threshold.
-Aug 30 22:56:28 srv6288706486 nice[187516]: No TREND candidate passed the stricter trend rules.
-Aug 30 22:56:28 srv6288706486 nice[187516]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
-Aug 30 22:56:28 srv6288706486 nice[187516]: Cash $100.0158 | Equity $100.0158 | Realized P/L $+0.0158 | W/L 1/1 | WinRate 50.0% | LossStreak 1
-Aug 30 22:56:28 srv6288706486 nice[187516]: AvgWin $+0.0185 | AvgLoss $-0.0027 | ProfitFactor 6.90 | Expectancy $+0.0079/trade | MaxDD 0.02%
-Aug 30 22:56:28 srv6288706486 nice[187516]: Open none
-Aug 30 22:56:28 srv6288706486 nice[187516]: Run complete. V5.2 state saved for next scheduled run.
-Aug 30 22:56:28 srv6288706486 systemd[1]: crypto-bot-active.service: Deactivated successfully.
-Aug 30 22:56:28 srv6288706486 systemd[1]: Finished crypto-bot-active.service - Crypto Paper Bot V5.2B Active.
-Aug 30 23:10:00 srv6288706486 systemd[1]: Starting crypto-bot-active.service - Crypto Paper Bot V5.2B Active...
 Aug 30 23:10:00 srv6288706486 nice[188074]: ================================================================================================
 Aug 30 23:10:00 srv6288706486 nice[188074]: BINANCE PAPER TRADING BOT V5.2B ACTIVE — PARALLEL SIMULATION ONLY
 Aug 30 23:10:00 srv6288706486 nice[188074]: 50 guaranteed core pairs + dynamic trend pool | adaptive regime | dynamic risk | no real orders
@@ -178,3 +166,15 @@ Aug 30 23:26:30 srv6288706486 nice[188485]: Open none
 Aug 30 23:26:30 srv6288706486 nice[188485]: Run complete. V5.2 state saved for next scheduled run.
 Aug 30 23:26:30 srv6288706486 systemd[1]: crypto-bot-active.service: Deactivated successfully.
 Aug 30 23:26:30 srv6288706486 systemd[1]: Finished crypto-bot-active.service - Crypto Paper Bot V5.2B Active.
+Aug 30 23:40:01 srv6288706486 systemd[1]: Starting crypto-bot-active.service - Crypto Paper Bot V5.2B Active...
+Aug 30 23:40:01 srv6288706486 nice[188846]: ================================================================================================
+Aug 30 23:40:01 srv6288706486 nice[188846]: BINANCE PAPER TRADING BOT V5.2B ACTIVE — PARALLEL SIMULATION ONLY
+Aug 30 23:40:01 srv6288706486 nice[188846]: 50 guaranteed core pairs + dynamic trend pool | adaptive regime | dynamic risk | no real orders
+Aug 30 23:40:01 srv6288706486 nice[188846]: ================================================================================================
+Aug 30 23:40:08 srv6288706486 nice[188846]: Full USDT market discovered: 470 eligible ticker records
+Aug 30 23:40:08 srv6288706486 nice[188846]: Dynamic liquid deep-scan universe: 54
+Aug 30 23:40:08 srv6288706486 nice[188846]: LIQUID SCAN: BTCUSDT, ETHUSDT, SOLUSDT, ZECUSDT, XRPUSDT, ENSOUSDT, UNIUSDT, BNBUSDT, DOGEUSDT, TRUMPUSDT, SUIUSDT, ENAUSDT, PUMPUSDT, ZKCUSDT, NEARUSDT, PEPEUSDT, TRXUSDT, PROMUSDT, ADAUSDT, LINKUSDT, AAVEUSDT, WLDUSDT, BMTUSDT, TAOUSDT, DASHUSDT, AUCTIONUSDT, HEMIUSDT, ZKUSDT, FETUSDT, ZKPUSDT, AVAXUSDT, TUTUSDT, ASTERUSDT, XLMUSDT, LTCUSDT, GIGGLEUSDT, ONDOUSDT, TNSRUSDT, POLUSDT, CAKEUSDT, CRCLBUSDT, MSTRBUSDT, SNDKBUSDT, BICOUSDT, PENGUUSDT, ERAUSDT, XPLUSDT, ZROUSDT, DEXEUSDT, ONGUSDT, BCHUSDT, HBARUSDT, GRAMUSDT, ARBUSDT
+Aug 30 23:40:08 srv6288706486 nice[188846]: Trend watch: 3
+Aug 30 23:40:08 srv6288706486 nice[188846]: TREND: ZKUSDT, UNIUSDT, ZKPUSDT
+Aug 30 23:40:08 srv6288706486 nice[188846]: [2026-08-30T23:40:08.652573+00:00]
+Aug 30 23:40:12 srv6288706486 nice[188846]: BTCUSDT      CORE  p=77530.00000000 RSI= 18.9 M5=-0.29% M15=-0.58% VOLx=2.63 ATR=0.25% TF15=N TF1H=N EXT=-0.59% SCORE=1.40 ENTRY=N
