@@ -62,6 +62,7 @@ CONFIG = {
     "trend_score_bonus_required": 0.20,
 
     "risk_off_breadth": 0.30,
+    "guarded_breadth": 0.40,
     "weak_breadth": 0.55,
     "strong_breadth": 0.78,
     "hot_recovery_breadth": 0.88,
@@ -902,13 +903,20 @@ def classify_regime(core_analyses, state=None):
         if breadth >= CONFIG["weak_breadth"]:
             raw_regime = "CAUTIOUS"
             reason = "btc_eth_15m_soft_cautious"
+        elif breadth >= CONFIG["guarded_breadth"]:
+            raw_regime = "GUARDED"
+            reason = "btc_eth_15m_soft_guarded"
         else:
             raw_regime = "WEAK"
             reason = "btc_eth_15m_soft_weak"
 
-    elif breadth < CONFIG["weak_breadth"]:
+    elif breadth < CONFIG["guarded_breadth"]:
         raw_regime = "WEAK"
         reason = "breadth_weak"
+
+    elif breadth < CONFIG["weak_breadth"]:
+        raw_regime = "GUARDED"
+        reason = "breadth_guarded"
 
     else:
         hot_recovery_ok = bool(
@@ -999,6 +1007,11 @@ def risk_profile(regime, loss_streak):
             "max_positions": 0,
             "min_score": 99.0,
             "size_fraction": 0.0,
+        },
+        "GUARDED": {
+            "max_positions": 1,
+            "min_score": 7.30,
+            "size_fraction": 0.010,
         },
         "CAUTIOUS": {
             "max_positions": 1,
