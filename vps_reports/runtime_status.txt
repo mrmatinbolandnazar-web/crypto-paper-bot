@@ -1,44 +1,38 @@
 ===== TIME =====
-Sun Aug 30 00:12:21 UTC 2026
+Sun Aug 30 00:17:22 UTC 2026
 
 ===== BOT SERVICE =====
-○ crypto-bot.service - Crypto Paper Bot V5.2
+● crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: inactive (dead) since Sun 2026-08-30 00:11:53 UTC; 28s ago
+     Active: activating (start) since Sun 2026-08-30 00:17:01 UTC; 21s ago
 TriggeredBy: ● crypto-bot.timer
-    Process: 151113 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
-   Main PID: 151113 (code=exited, status=0/SUCCESS)
-        CPU: 675ms
+   Main PID: 151209 (python3)
+      Tasks: 1 (limit: 2315)
+     Memory: 102.1M (peak: 122.7M)
+        CPU: 371ms
+     CGroup: /system.slice/crypto-bot.service
+             └─151209 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
 
-Aug 30 00:11:53 srv6288706486 python3[151113]:   ZKPUSDT      CORE  score=5.48/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
-Aug 30 00:11:53 srv6288706486 python3[151113]: No CORE candidate passed the current adaptive threshold.
-Aug 30 00:11:53 srv6288706486 python3[151113]: No TREND candidate passed the stricter trend rules.
-Aug 30 00:11:53 srv6288706486 python3[151113]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
-Aug 30 00:11:53 srv6288706486 python3[151113]: Cash $100.0014 | Equity $100.0014 | Realized P/L $+0.0014 | W/L 1/0 | WinRate 100.0% | LossStreak 0
-Aug 30 00:11:53 srv6288706486 python3[151113]: AvgWin $+0.0014 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0014/trade | MaxDD 0.01%
-Aug 30 00:11:53 srv6288706486 python3[151113]: Open none
-Aug 30 00:11:53 srv6288706486 python3[151113]: Run complete. V5.2 state saved for next scheduled run.
-Aug 30 00:11:53 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
-Aug 30 00:11:53 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
+Aug 30 00:17:01 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
-     Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 3 days ago
-    Trigger: Sun 2026-08-30 00:16:53 UTC; 4min 31s left
+     Active: active (running) since Wed 2026-08-26 03:21:21 UTC; 3 days ago
+    Trigger: n/a
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Sun 2026-08-30 00:16:53 UTC 4min 31s Sun 2026-08-30 00:10:04 UTC 2min 17s ago crypto-bot.timer               crypto-bot.service
-Sun 2026-08-30 00:20:00 UTC     7min Sun 2026-08-30 00:05:00 UTC     7min ago crypto-bot-balanced.timer      crypto-bot-balanced.service
-Sun 2026-08-30 00:25:00 UTC    12min Sun 2026-08-30 00:10:01 UTC 2min 20s ago crypto-bot-active.timer        crypto-bot-active.service
--                                  - Sun 2026-08-30 00:12:20 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
+Sun 2026-08-30 00:20:00 UTC 2min 37s Sun 2026-08-30 00:05:00 UTC    12min ago crypto-bot-balanced.timer      crypto-bot-balanced.service
+Sun 2026-08-30 00:25:00 UTC     7min Sun 2026-08-30 00:10:01 UTC     7min ago crypto-bot-active.timer        crypto-bot-active.service
+-                                  - Sun 2026-08-30 00:17:20 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
+-                                  - Sun 2026-08-30 00:17:01 UTC      21s ago crypto-bot.timer               crypto-bot.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       445Mi       679Mi       1.0Mi       1.0Gi       1.5Gi
+Mem:           1.9Gi       536Mi       587Mi       1.0Mi       1.0Gi       1.4Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
