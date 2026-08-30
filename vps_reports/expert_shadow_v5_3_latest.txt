@@ -1,9 +1,15 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-08-30T06:39:08.274824+00:00
-Regime: WEAK | breadth=60.4% | btc_not_confirmed | candidates=2
+Updated UTC: 2026-08-30T06:44:05.480261+00:00
+Regime: PROBE | breadth=72.9% | broad_market_probe_btc_unconfirmed | candidates=5
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-NEARUSDT     TREND tech=7.39/99.35 entry=N pass=N | expert=+0.39 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=2.30 topAcct=1.74 taker=1.51 global=1.35 OI5m=+0.11% funding=-0.0067%
-UNIUSDT      TREND tech=6.81/99.35 entry=N pass=N | expert=+0.37 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=2.76 topAcct=1.77 taker=1.28 global=1.68 OI5m=-0.04% funding=+0.0100%
+TAOUSDT      CORE  tech=7.31/7.70 entry=N pass=N | expert=+0.34 SUPPORT cov=6/6 | OBSERVE
+  topPos=3.97 topAcct=2.24 taker=1.10 global=1.76 OI5m=+0.15% funding=+0.0049%
+UNIUSDT      TREND tech=7.26/8.05 entry=N pass=N | expert=+0.37 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.75 topAcct=1.77 taker=1.21 global=1.69 OI5m=+0.36% funding=+0.0100%
+PEPEUSDT     CORE  tech=6.85/7.70 entry=N pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
+  topPos=NA topAcct=NA taker=NA global=NA OI5m=NA funding=NA
+PENGUUSDT    CORE  tech=6.63/7.70 entry=N pass=N | expert=+0.50 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=3.10 topAcct=1.54 taker=1.74 global=1.18 OI5m=+0.08% funding=+0.0050%
+FETUSDT      TREND tech=6.62/8.05 entry=N pass=N | expert=+0.58 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.93 topAcct=2.03 taker=3.85 global=1.37 OI5m=+0.10% funding=-0.0025%
