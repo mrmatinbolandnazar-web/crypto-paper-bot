@@ -1,34 +1,20 @@
 {
-  "cash_usdt": 99.02130393456085,
-  "positions": {
-    "AAVEUSDT": {
-      "source": "CORE",
-      "entry_price": 124.287275,
-      "qty": 0.008039559770434523,
-      "cost_usdt": 1.0002151912581905,
-      "entry_fee_usdt": 0.0010002151912581905,
-      "peak_price": 125.04,
-      "entry_score": 7.361229667495402,
-      "opened_at": "2026-08-31T20:06:54.578821+00:00",
-      "stop_pct": 0.006,
-      "take_profit_pct": 0.015608110813516207,
-      "trailing_trigger_pct": 0.010145272028785535,
-      "trailing_distance_pct": 0.0036,
-      "breakeven_trigger_pct": 0.0065
-    }
-  },
-  "realized_pnl_usdt": 0.02151912581904969,
-  "total_fees_usdt": 0.008024771982373871,
+  "cash_usdt": 100.01707425034645,
+  "positions": {},
+  "realized_pnl_usdt": 0.017074250346461595,
+  "total_fees_usdt": 0.009021539065242343,
   "wins": 1,
-  "losses": 1,
-  "loss_streak": 0,
+  "losses": 2,
+  "loss_streak": 1,
   "cooldown_until": null,
-  "symbol_cooldowns": {},
+  "symbol_cooldowns": {
+    "AAVEUSDT": "2026-09-01T01:06:12.291599+00:00"
+  },
   "sum_win_pnl": 0.03311757967652973,
-  "sum_loss_pnl": -0.01159845385748004,
+  "sum_loss_pnl": -0.016043329330068135,
   "peak_equity": 100.02576653227894,
   "max_drawdown_pct": 0.0001432731856029079,
-  "recovery_confirm_runs": 1,
-  "last_regime": "WEAK",
+  "recovery_confirm_runs": 0,
+  "last_regime": "RISK_OFF",
   "started_at": "2026-08-29T23:24:04.415428+00:00"
 }
