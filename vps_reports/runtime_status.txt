@@ -1,38 +1,44 @@
 ===== TIME =====
-Mon Aug 31 04:05:35 UTC 2026
+Mon Aug 31 04:10:35 UTC 2026
 
 ===== BOT SERVICE =====
-● crypto-bot.service - Crypto Paper Bot V5.2
+○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: activating (start) since Mon 2026-08-31 04:04:12 UTC; 1min 23s ago
+     Active: inactive (dead) since Mon 2026-08-31 04:05:50 UTC; 4min 45s ago
 TriggeredBy: ● crypto-bot.timer
-   Main PID: 196219 (python3)
-      Tasks: 1 (limit: 2315)
-     Memory: 102.1M (peak: 122.8M)
-        CPU: 585ms
-     CGroup: /system.slice/crypto-bot.service
-             └─196219 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
+    Process: 196219 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
+   Main PID: 196219 (code=exited, status=0/SUCCESS)
+        CPU: 652ms
 
-Aug 31 04:04:12 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
+Aug 31 04:05:50 srv6288706486 python3[196219]:   XRPUSDT      CORE  score=3.64/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+Aug 31 04:05:50 srv6288706486 python3[196219]: No CORE candidate passed the current adaptive threshold.
+Aug 31 04:05:50 srv6288706486 python3[196219]: No TREND candidate passed the stricter trend rules.
+Aug 31 04:05:50 srv6288706486 python3[196219]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
+Aug 31 04:05:50 srv6288706486 python3[196219]: Cash $100.0014 | Equity $100.0014 | Realized P/L $+0.0014 | W/L 1/0 | WinRate 100.0% | LossStreak 0
+Aug 31 04:05:50 srv6288706486 python3[196219]: AvgWin $+0.0014 | AvgLoss $+0.0000 | ProfitFactor 0.00 | Expectancy $+0.0014/trade | MaxDD 0.01%
+Aug 31 04:05:50 srv6288706486 python3[196219]: Open none
+Aug 31 04:05:50 srv6288706486 python3[196219]: Run complete. V5.2 state saved for next scheduled run.
+Aug 31 04:05:50 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
+Aug 31 04:05:50 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
-     Active: active (running) since Wed 2026-08-26 03:21:21 UTC; 5 days ago
-    Trigger: n/a
+     Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 5 days ago
+    Trigger: Mon 2026-08-31 04:10:50 UTC; 14s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Mon 2026-08-31 04:10:00 UTC 4min 24s Mon 2026-08-31 03:55:01 UTC    10min ago crypto-bot-active.timer        crypto-bot-active.service
--                                  - Mon 2026-08-31 04:05:00 UTC      35s ago crypto-bot-balanced.timer      crypto-bot-balanced.service
--                                  - Mon 2026-08-31 04:05:33 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
--                                  - Mon 2026-08-31 04:04:12 UTC 1min 23s ago crypto-bot.timer               crypto-bot.service
+Mon 2026-08-31 04:10:50 UTC      14s Mon 2026-08-31 04:04:12 UTC     6min ago crypto-bot.timer               crypto-bot.service
+Mon 2026-08-31 04:20:00 UTC     9min Mon 2026-08-31 04:05:00 UTC     5min ago crypto-bot-balanced.timer      crypto-bot-balanced.service
+-                                  - Mon 2026-08-31 04:10:01 UTC      34s ago crypto-bot-active.timer        crypto-bot-active.service
+-                                  - Mon 2026-08-31 04:10:34 UTC       1s ago crypto-bot-report.timer        crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       500Mi       1.2Gi       1.0Mi       364Mi       1.4Gi
+Mem:           1.9Gi       402Mi       1.3Gi       1.0Mi       365Mi       1.5Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
