@@ -1,8 +1,24 @@
 {
-  "cash_usdt": 100.0013894089982,
-  "positions": {},
+  "cash_usdt": 96.00133383263827,
+  "positions": {
+    "BTCUSDT": {
+      "source": "CORE",
+      "entry_price": 78733.62300299999,
+      "qty": 5.07541170896112e-05,
+      "cost_usdt": 4.0000555763599275,
+      "entry_fee_usdt": 0.004000055576359927,
+      "peak_price": 78733.62300299999,
+      "entry_score": 7.381762974936934,
+      "opened_at": "2026-08-31T11:02:02.658667+00:00",
+      "stop_pct": 0.006,
+      "take_profit_pct": 0.015608110813516207,
+      "trailing_trigger_pct": 0.010145272028785535,
+      "trailing_distance_pct": 0.0036,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": 0.001389408998199837,
-  "total_fees_usdt": 0.0040033928018,
+  "total_fees_usdt": 0.008003448378159927,
   "wins": 1,
   "losses": 0,
   "loss_streak": 0,
@@ -11,8 +27,8 @@
   "sum_win_pnl": 0.001389408998199837,
   "sum_loss_pnl": 0.0,
   "peak_equity": 100.01130145582417,
-  "max_drawdown_pct": 9.910926746966056e-05,
+  "max_drawdown_pct": 0.00015108852001197355,
   "recovery_confirm_runs": 0,
-  "last_regime": "PROBE",
+  "last_regime": "NORMAL",
   "started_at": "2026-08-25T23:53:17.400073+00:00"
 }
