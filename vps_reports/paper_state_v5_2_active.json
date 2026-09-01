@@ -1,8 +1,24 @@
 {
-  "cash_usdt": 100.09111243308034,
-  "positions": {},
+  "cash_usdt": 97.08837906008793,
+  "positions": {
+    "LINKUSDT": {
+      "source": "CORE",
+      "entry_price": 11.4894458,
+      "qty": 0.2610857557306565,
+      "cost_usdt": 3.00273337299241,
+      "entry_fee_usdt": 0.00300273337299241,
+      "peak_price": 11.4894458,
+      "entry_score": 7.526989908082575,
+      "opened_at": "2026-09-01T05:42:55.056432+00:00",
+      "stop_pct": 0.006,
+      "take_profit_pct": 0.015608110813516207,
+      "trailing_trigger_pct": 0.010145272028785535,
+      "trailing_distance_pct": 0.0036,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": 0.09111243308032901,
-  "total_fees_usdt": 0.018904834929554235,
+  "total_fees_usdt": 0.021907568302546643,
   "wins": 3,
   "losses": 1,
   "loss_streak": 0,
@@ -15,6 +31,6 @@
   "peak_equity": 100.09111243308034,
   "max_drawdown_pct": 0.00016230820309585942,
   "recovery_confirm_runs": 0,
-  "last_regime": "RISK_OFF",
+  "last_regime": "HOT_RECOVERY",
   "started_at": "2026-08-28T01:45:15.400536+00:00"
 }
