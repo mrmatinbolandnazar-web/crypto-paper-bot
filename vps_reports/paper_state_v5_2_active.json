@@ -1,8 +1,24 @@
 {
-  "cash_usdt": 100.03799691118061,
-  "positions": {},
+  "cash_usdt": 96.0364770347334,
+  "positions": {
+    "BMTUSDT": {
+      "source": "CORE",
+      "entry_price": 0.020496147,
+      "qty": 195.03755298841176,
+      "cost_usdt": 4.001519876447224,
+      "entry_fee_usdt": 0.004001519876447224,
+      "peak_price": 0.020496147,
+      "entry_score": 7.231223850320482,
+      "opened_at": "2026-09-01T05:12:52.613721+00:00",
+      "stop_pct": 0.006,
+      "take_profit_pct": 0.015608110813516207,
+      "trailing_trigger_pct": 0.010145272028785535,
+      "trailing_distance_pct": 0.0036,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": 0.03799691118061177,
-  "total_fees_usdt": 0.01084462096066763,
+  "total_fees_usdt": 0.014846140837114854,
   "wins": 2,
   "losses": 1,
   "loss_streak": 0,
@@ -12,7 +28,7 @@
   "sum_loss_pnl": -0.0026759824127078335,
   "peak_equity": 100.03799691118061,
   "max_drawdown_pct": 0.00016230820309585942,
-  "recovery_confirm_runs": 1,
-  "last_regime": "WEAK",
+  "recovery_confirm_runs": 0,
+  "last_regime": "NORMAL",
   "started_at": "2026-08-28T01:45:15.400536+00:00"
 }
