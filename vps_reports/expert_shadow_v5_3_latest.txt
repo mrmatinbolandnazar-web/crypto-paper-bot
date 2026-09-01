@@ -1,6 +1,13 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-09-01T05:29:19.115514+00:00
-Regime: RISK_OFF | breadth=62.5% | btc_eth_15m_soft | candidates=0
+Updated UTC: 2026-09-01T05:34:50.264006+00:00
+Regime: RISK_OFF | breadth=81.8% | recovery_confirm_1of2 | candidates=4
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-No technical / near-ready candidate this run.
+ZECUSDT      TREND tech=7.34/99.35 entry=N pass=N | expert=-0.04 NEUTRAL cov=6/6 | OBSERVE
+  topPos=0.90 topAcct=0.40 taker=1.21 global=0.45 OI5m=+0.41% funding=+0.0095%
+UNIUSDT      TREND tech=7.22/99.35 entry=N pass=N | expert=+0.42 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.79 topAcct=1.62 taker=1.20 global=1.63 OI5m=+0.26% funding=+0.0100%
+ENAUSDT      CORE  tech=6.75/99.00 entry=N pass=N | expert=+0.39 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.23 topAcct=1.63 taker=2.91 global=1.46 OI5m=+0.57% funding=+0.0050%
+XRPUSDT      TREND tech=6.65/99.35 entry=N pass=N | expert=+0.57 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.23 topAcct=2.68 taker=2.13 global=2.38 OI5m=+0.35% funding=+0.0096%
