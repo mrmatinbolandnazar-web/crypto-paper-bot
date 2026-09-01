@@ -1,7 +1,13 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-09-01T17:18:58.652192+00:00
-Regime: RISK_OFF | breadth=30.0% | recovery_confirm_1of2 | candidates=1
+Updated UTC: 2026-09-01T17:24:02.869048+00:00
+Regime: WEAK | breadth=41.7% | breadth_weak | candidates=4
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-ENAUSDT      TREND tech=6.60/99.35 entry=N pass=N | expert=+0.17 SUPPORT cov=6/6 | OBSERVE
-  topPos=1.27 topAcct=1.54 taker=1.23 global=1.46 OI5m=+0.24% funding=+0.0050%
+CRVUSDT      CORE  tech=6.76/99.25 entry=Y pass=N | expert=-0.03 NEUTRAL cov=6/6 | OBSERVE
+  topPos=0.97 topAcct=1.26 taker=0.93 global=1.29 OI5m=+0.23% funding=-0.0051%
+XPLUSDT      TREND tech=7.95/99.60 entry=N pass=N | expert=+0.51 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=4.70 topAcct=1.06 taker=1.52 global=0.74 OI5m=+1.90% funding=+0.0050%
+FETUSDT      CORE  tech=7.56/99.25 entry=N pass=N | expert=+0.60 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.33 topAcct=2.22 taker=2.03 global=1.53 OI5m=+0.50% funding=+0.0084%
+ENAUSDT      TREND tech=7.56/99.60 entry=N pass=N | expert=+0.37 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.27 topAcct=1.54 taker=1.88 global=1.47 OI5m=+0.51% funding=+0.0050%
