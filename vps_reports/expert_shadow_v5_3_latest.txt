@@ -1,11 +1,13 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-09-02T04:59:01.711059+00:00
-Regime: PROBE | breadth=81.7% | broad_market_probe_btc_unconfirmed | candidates=3
+Updated UTC: 2026-09-02T05:04:27.323455+00:00
+Regime: RISK_OFF | breadth=81.7% | btc_eth_15m_soft | candidates=4
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-GRAMUSDT     CORE  tech=7.03/7.95 entry=N pass=N | expert=+0.51 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=2.59 topAcct=1.30 taker=1.94 global=0.90 OI5m=+0.12% funding=-0.0026%
-LINKUSDT     CORE  tech=6.87/7.95 entry=N pass=N | expert=+0.21 SUPPORT cov=6/6 | OBSERVE
-  topPos=2.49 topAcct=1.68 taker=0.69 global=1.41 OI5m=-0.07% funding=+0.0100%
-FFUSDT       CORE  tech=6.55/7.95 entry=N pass=N | expert=+0.39 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=3.05 topAcct=0.72 taker=1.69 global=0.63 OI5m=+0.53% funding=+0.0050%
+DOTUSDT      CORE  tech=6.96/99.00 entry=Y pass=N | expert=+0.28 SUPPORT cov=6/6 | OBSERVE
+  topPos=2.41 topAcct=2.63 taker=0.84 global=2.13 OI5m=+0.33% funding=+0.0100%
+LINKUSDT     CORE  tech=7.47/99.00 entry=N pass=N | expert=+0.49 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.48 topAcct=1.67 taker=1.63 global=1.41 OI5m=-0.00% funding=+0.0100%
+GRAMUSDT     CORE  tech=7.31/99.00 entry=N pass=N | expert=+0.31 SUPPORT cov=6/6 | OBSERVE
+  topPos=2.59 topAcct=1.30 taker=1.28 global=0.90 OI5m=+0.00% funding=-0.0034%
+FFUSDT       CORE  tech=6.86/99.00 entry=N pass=N | expert=+0.34 SUPPORT cov=6/6 | OBSERVE
+  topPos=3.04 topAcct=0.71 taker=1.66 global=0.63 OI5m=+0.65% funding=+0.0050%
