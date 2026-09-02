@@ -1,6 +1,17 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-09-02T04:33:46.893501+00:00
-Regime: RISK_OFF | breadth=45.0% | recovery_confirm_1of2 | candidates=0
+Updated UTC: 2026-09-02T04:39:32.326344+00:00
+Regime: WEAK | breadth=65.0% | btc_not_confirmed | candidates=6
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-No technical / near-ready candidate this run.
+BONKUSDT     CORE  tech=7.33/99.25 entry=N pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
+  topPos=NA topAcct=NA taker=NA global=NA OI5m=NA funding=NA
+PUMPUSDT     CORE  tech=7.23/99.25 entry=N pass=N | expert=+0.25 SUPPORT cov=6/6 | OBSERVE
+  topPos=1.94 topAcct=1.01 taker=1.00 global=0.86 OI5m=+0.70% funding=+0.0038%
+CHIPUSDT     CORE  tech=7.03/99.25 entry=N pass=N | expert=+0.55 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.19 topAcct=1.36 taker=2.06 global=1.15 OI5m=+0.80% funding=+0.0050%
+TRUMPUSDT    CORE  tech=6.94/99.25 entry=N pass=N | expert=+0.45 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.73 topAcct=1.96 taker=1.28 global=1.74 OI5m=+0.67% funding=+0.0050%
+DOGEUSDT     CORE  tech=6.90/99.25 entry=N pass=N | expert=+0.56 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=3.38 topAcct=2.80 taker=2.21 global=2.25 OI5m=+0.19% funding=+0.0093%
+GRAMUSDT     CORE  tech=6.71/99.25 entry=N pass=N | expert=+0.40 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.59 topAcct=1.31 taker=1.02 global=0.90 OI5m=+0.50% funding=-0.0008%
