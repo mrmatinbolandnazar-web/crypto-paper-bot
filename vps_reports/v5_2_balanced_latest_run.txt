@@ -1,35 +1,3 @@
-Sep 02 04:52:19 srv6288706486 nice[292271]: ZROUSDT      CORE  p=1.02800000 RSI= 36.7 M5=-0.10% M15=-0.29% VOLx=0.38 ATR=0.37% TF15=N TF1H=N EXT=-0.07% SCORE=0.87 ENTRY=N
-Sep 02 04:52:23 srv6288706486 nice[292271]: HBARUSDT     CORE  p=0.07415000 RSI= 56.8 M5=+0.03% M15=+0.20% VOLx=0.68 ATR=0.18% TF15=Y TF1H=Y EXT=+0.21% SCORE=5.45 ENTRY=N
-Sep 02 04:52:23 srv6288706486 nice[292271]: Market regime: PROBE | breadth=81.7% | broad_market_probe_btc_unconfirmed | max_pos=1 | min_score=7.80 | size=1.0% equity
-Sep 02 04:52:23 srv6288706486 nice[292271]: REJECTION DIAGNOSTICS:
-Sep 02 04:52:23 srv6288706486 nice[292271]: Reject totals | PRECHECK=38 | TF15=14 | TF1H=5 | CHASE=0 | SPREAD=1 | ENTRY_RULES=2
-Sep 02 04:52:23 srv6288706486 nice[292271]: CORE diag | total=55 | entry_ready=0 | score_ready=0 | fully_ready=0
-Sep 02 04:52:23 srv6288706486 nice[292271]: TREND diag | total=5 | entry_ready=0 | score_ready=0 | fully_ready=0
-Sep 02 04:52:23 srv6288706486 nice[292271]: Top rejected candidates:
-Sep 02 04:52:23 srv6288706486 nice[292271]:   FETUSDT      CORE  score=7.59/7.80 reject=TF15 TF15=N TF1H=Y CHASE=Y SPREAD=Y
-Sep 02 04:52:23 srv6288706486 nice[292271]:   ONDOUSDT     CORE  score=7.34/7.80 reject=TF1H TF15=Y TF1H=N CHASE=Y SPREAD=Y
-Sep 02 04:52:23 srv6288706486 nice[292271]:   FILUSDT      CORE  score=7.23/7.80 reject=TF15 TF15=N TF1H=Y CHASE=N SPREAD=Y
-Sep 02 04:52:23 srv6288706486 nice[292271]:   CHIPUSDT     CORE  score=7.03/7.80 reject=TF15 TF15=N TF1H=Y CHASE=N SPREAD=Y
-Sep 02 04:52:23 srv6288706486 nice[292271]:   AVAXUSDT     CORE  score=6.55/7.80 reject=TF1H TF15=Y TF1H=N CHASE=Y SPREAD=Y
-Sep 02 04:52:23 srv6288706486 nice[292271]:   APTUSDT      CORE  score=6.51/7.80 reject=TF15 TF15=N TF1H=Y CHASE=Y SPREAD=N
-Sep 02 04:52:23 srv6288706486 nice[292271]:   ARUSDT       CORE  score=6.39/7.80 reject=PRECHECK TF15=N TF1H=N CHASE=N SPREAD=N
-Sep 02 04:52:23 srv6288706486 nice[292271]:   DOTUSDT      CORE  score=6.39/7.80 reject=TF15 TF15=N TF1H=Y CHASE=Y SPREAD=Y
-Sep 02 04:52:23 srv6288706486 nice[292271]: No CORE candidate passed the current adaptive threshold.
-Sep 02 04:52:23 srv6288706486 nice[292271]: No TREND candidate passed the stricter trend rules.
-Sep 02 04:52:23 srv6288706486 nice[292271]: Cash $99.9974 | Equity $99.9974 | Realized P/L $-0.0026 | W/L 1/3 | WinRate 25.0% | LossStreak 2
-Sep 02 04:52:23 srv6288706486 nice[292271]: AvgWin $+0.0331 | AvgLoss $-0.0119 | ProfitFactor 0.93 | Expectancy $-0.0007/trade | MaxDD 0.03%
-Sep 02 04:52:23 srv6288706486 nice[292271]: Open none
-Sep 02 04:52:23 srv6288706486 nice[292271]: Run complete. V5.2C Balanced state saved for next scheduled run.
-Sep 02 04:52:23 srv6288706486 systemd[1]: crypto-bot-balanced.service: Deactivated successfully.
-Sep 02 04:52:23 srv6288706486 systemd[1]: Finished crypto-bot-balanced.service - Crypto Paper Bot V5.2C Balanced.
-Sep 02 05:05:00 srv6288706486 systemd[1]: Starting crypto-bot-balanced.service - Crypto Paper Bot V5.2C Balanced...
-Sep 02 05:05:00 srv6288706486 nice[292729]: ================================================================================================
-Sep 02 05:05:00 srv6288706486 nice[292729]: BINANCE PAPER TRADING BOT V5.2C BALANCED — PARALLEL SIMULATION ONLY
-Sep 02 05:05:00 srv6288706486 nice[292729]: 50 guaranteed core pairs + dynamic trend pool | adaptive regime | dynamic risk | no real orders
-Sep 02 05:05:00 srv6288706486 nice[292729]: ================================================================================================
-Sep 02 05:05:09 srv6288706486 nice[292729]: Full USDT market discovered: 470 eligible ticker records
-Sep 02 05:05:09 srv6288706486 nice[292729]: Dynamic liquid deep-scan universe: 60
-Sep 02 05:05:09 srv6288706486 nice[292729]: LIQUID SCAN: BTCUSDT, ETHUSDT, SOLUSDT, XRPUSDT, ZECUSDT, UNIUSDT, BNBUSDT, ENAUSDT, DOGEUSDT, NEARUSDT, SUIUSDT, TRXUSDT, ARBUSDT, ENSOUSDT, HEMIUSDT, SNDKBUSDT, FILUSDT, TRUMPUSDT, LINKUSDT, AAVEUSDT, PUMPUSDT, ACEUSDT, PEPEUSDT, ADAUSDT, TUTUSDT, CRVUSDT, LTCUSDT, ONGUSDT, WLDUSDT, CRCLBUSDT, TAOUSDT, AVAXUSDT, SPCXBUSDT, DASHUSDT, XPLUSDT, OPUSDT, GRAMUSDT, BMTUSDT, MSTRBUSDT, 0GUSDT, SCUSDT, XLMUSDT, ONDOUSDT, CHIPUSDT, APTUSDT, FFUSDT, BCHUSDT, PROMUSDT, ASTERUSDT, INJUSDT, DOTUSDT, SOXLBUSDT, FETUSDT, PENGUUSDT, QQQBUSDT, ARUSDT, USDEUSDT, BONKUSDT, ZROUSDT, HBARUSDT
 Sep 02 05:05:09 srv6288706486 nice[292729]: Trend watch: 6
 Sep 02 05:05:09 srv6288706486 nice[292729]: TREND: ONGUSDT, ENAUSDT, AAVEUSDT, CRVUSDT, SCUSDT, HEMIUSDT
 Sep 02 05:05:09 srv6288706486 nice[292729]: [2026-09-02T05:05:09.089256+00:00]
@@ -178,3 +146,35 @@ Sep 02 05:22:20 srv6288706486 nice[294158]: ASTERUSDT    CORE  p=0.70500000 RSI=
 Sep 02 05:22:24 srv6288706486 nice[294158]: PROMUSDT     CORE  p=4.98000000 RSI= 47.7 M5=+0.28% M15=+0.48% VOLx=0.32 ATR=0.81% TF15=N TF1H=N EXT=+0.25% SCORE=5.10 ENTRY=N
 Sep 02 05:22:27 srv6288706486 nice[294158]: DOTUSDT      CORE  p=0.88500000 RSI= 52.3 M5=+0.45% M15=+0.68% VOLx=0.68 ATR=0.51% TF15=N TF1H=Y EXT=+0.10% SCORE=5.25 ENTRY=N
 Sep 02 05:22:29 srv6288706486 nice[294158]: INJUSDT      CORE  p=4.87900000 RSI= 57.7 M5=-0.04% M15=+0.37% VOLx=1.06 ATR=0.34% TF15=N TF1H=N EXT=+0.14% SCORE=5.38 ENTRY=N
+Sep 02 05:22:30 srv6288706486 nice[294158]: SOXLBUSDT    CORE  p=103.95000000 RSI= 63.8 M5=+0.28% M15=+0.71% VOLx=77.20 ATR=0.29% TF15=N TF1H=N EXT=+0.38% SCORE=5.50 ENTRY=N
+Sep 02 05:22:34 srv6288706486 nice[294158]: FETUSDT      CORE  p=0.15560000 RSI= 64.4 M5=+0.32% M15=+0.58% VOLx=1.94 ATR=0.33% TF15=N TF1H=Y EXT=+0.33% SCORE=7.09 ENTRY=N
+Sep 02 05:22:35 srv6288706486 nice[294158]: PENGUUSDT    CORE  p=0.00842400 RSI= 79.0 M5=+0.05% M15=+0.43% VOLx=0.78 ATR=0.32% TF15=N TF1H=N EXT=+0.25% SCORE=3.36 ENTRY=N
+Sep 02 05:22:36 srv6288706486 nice[294158]: QQQBUSDT     CORE  p=706.89000000 RSI= 68.8 M5=+0.05% M15=+0.11% VOLx=0.65 ATR=0.02% TF15=N TF1H=N EXT=+0.07% SCORE=4.78 ENTRY=N
+Sep 02 05:22:38 srv6288706486 nice[294158]: ARUSDT       CORE  p=2.31300000 RSI= 66.2 M5=+0.00% M15=-0.43% VOLx=0.60 ATR=0.81% TF15=N TF1H=N EXT=+0.14% SCORE=3.80 ENTRY=N
+Sep 02 05:22:39 srv6288706486 nice[294158]: USDEUSDT     CORE  p=1.00000000 RSI= 66.7 M5=+0.00% M15=+0.00% VOLx=0.03 ATR=0.00% TF15=N TF1H=N EXT=+0.00% SCORE=3.34 ENTRY=N
+Sep 02 05:22:40 srv6288706486 nice[294158]: ACTUSDT      CORE  p=0.01012000 RSI= 68.8 M5=+0.10% M15=+0.30% VOLx=0.06 ATR=0.23% TF15=N TF1H=N EXT=+0.21% SCORE=5.24 ENTRY=N
+Sep 02 05:22:41 srv6288706486 nice[294158]: HBARUSDT     CORE  p=0.07422000 RSI= 69.9 M5=+0.00% M15=+0.27% VOLx=2.20 ATR=0.16% TF15=N TF1H=N EXT=+0.15% SCORE=6.05 ENTRY=N
+Sep 02 05:22:45 srv6288706486 nice[294158]: BONKUSDT     CORE  p=0.00000303 RSI= 57.1 M5=+0.33% M15=+0.33% VOLx=1.10 ATR=0.52% TF15=N TF1H=N EXT=+0.22% SCORE=6.54 ENTRY=N
+Sep 02 05:22:45 srv6288706486 nice[294158]: Market regime: RISK_OFF | breadth=91.7% | recovery_confirm_1of2 | max_pos=0 | min_score=99.00 | size=0.0% equity
+Sep 02 05:22:45 srv6288706486 nice[294158]: REJECTION DIAGNOSTICS:
+Sep 02 05:22:45 srv6288706486 nice[294158]: Reject totals | PRECHECK=31 | TF15=23 | TF1H=5 | CHASE=0 | SPREAD=0 | ENTRY_RULES=1
+Sep 02 05:22:45 srv6288706486 nice[294158]: CORE diag | total=53 | entry_ready=0 | score_ready=0 | fully_ready=0
+Sep 02 05:22:45 srv6288706486 nice[294158]: TREND diag | total=7 | entry_ready=0 | score_ready=0 | fully_ready=0
+Sep 02 05:22:45 srv6288706486 nice[294158]: Top rejected candidates:
+Sep 02 05:22:45 srv6288706486 nice[294158]:   OPUSDT       CORE  score=7.42/99.00 reject=TF15 TF15=N TF1H=N CHASE=Y SPREAD=Y
+Sep 02 05:22:45 srv6288706486 nice[294158]:   ENSOUSDT     CORE  score=7.37/99.00 reject=TF1H TF15=Y TF1H=N CHASE=Y SPREAD=Y
+Sep 02 05:22:45 srv6288706486 nice[294158]:   APTUSDT      CORE  score=7.36/99.00 reject=TF15 TF15=N TF1H=Y CHASE=Y SPREAD=N
+Sep 02 05:22:45 srv6288706486 nice[294158]:   FETUSDT      CORE  score=7.09/99.00 reject=TF15 TF15=N TF1H=Y CHASE=Y SPREAD=Y
+Sep 02 05:22:45 srv6288706486 nice[294158]:   FILUSDT      CORE  score=7.03/99.00 reject=TF15 TF15=N TF1H=Y CHASE=N SPREAD=Y
+Sep 02 05:22:45 srv6288706486 nice[294158]:   XRPUSDT      CORE  score=6.93/99.00 reject=TF1H TF15=Y TF1H=N CHASE=Y SPREAD=Y
+Sep 02 05:22:45 srv6288706486 nice[294158]:   SUIUSDT      CORE  score=6.64/99.00 reject=TF15 TF15=N TF1H=N CHASE=Y SPREAD=Y
+Sep 02 05:22:45 srv6288706486 nice[294158]:   BONKUSDT     CORE  score=6.54/99.00 reject=TF15 TF15=N TF1H=N CHASE=Y SPREAD=N
+Sep 02 05:22:45 srv6288706486 nice[294158]: No CORE candidate passed the current adaptive threshold.
+Sep 02 05:22:45 srv6288706486 nice[294158]: No TREND candidate passed the stricter trend rules.
+Sep 02 05:22:45 srv6288706486 nice[294158]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
+Sep 02 05:22:45 srv6288706486 nice[294158]: Cash $99.9974 | Equity $99.9974 | Realized P/L $-0.0026 | W/L 1/3 | WinRate 25.0% | LossStreak 2
+Sep 02 05:22:45 srv6288706486 nice[294158]: AvgWin $+0.0331 | AvgLoss $-0.0119 | ProfitFactor 0.93 | Expectancy $-0.0007/trade | MaxDD 0.03%
+Sep 02 05:22:45 srv6288706486 nice[294158]: Open none
+Sep 02 05:22:45 srv6288706486 nice[294158]: Run complete. V5.2C Balanced state saved for next scheduled run.
+Sep 02 05:22:45 srv6288706486 systemd[1]: crypto-bot-balanced.service: Deactivated successfully.
+Sep 02 05:22:45 srv6288706486 systemd[1]: Finished crypto-bot-balanced.service - Crypto Paper Bot V5.2C Balanced.
