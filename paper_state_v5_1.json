@@ -1,28 +1,13 @@
 {
-  "cash_usdt": 13.695514191356537,
+  "cash_usdt": 14.117676326963755,
   "positions": {
-    "LTCUSDT": {
-      "source": "CORE",
-      "entry_price": 50.04,
-      "qty": 0.05858949416394817,
-      "cost_usdt": 2.9347530410049716,
-      "entry_fee_usdt": 0.0029347530410049716,
-      "peak_price": 50.04,
-      "entry_score": 6.550000000000001,
-      "opened_at": "2026-09-01T22:06:04.675369+00:00",
-      "stop_pct": 0.0045,
-      "take_profit_pct": 0.01,
-      "trailing_trigger_pct": 0.0075,
-      "trailing_distance_pct": 0.0035,
-      "breakeven_trigger_pct": 0.0065
-    },
     "PYTHUSDT": {
       "source": "CORE",
       "entry_price": 0.05172,
       "qty": 56.68635514238141,
       "cost_usdt": 2.9347530410049716,
       "entry_fee_usdt": 0.0029347530410049716,
-      "peak_price": 0.05172,
+      "peak_price": 0.05215,
       "entry_score": 6.550000000000001,
       "opened_at": "2026-09-01T22:06:04.675521+00:00",
       "stop_pct": 0.007706330792177651,
@@ -30,17 +15,34 @@
       "trailing_trigger_pct": 0.008476963871395416,
       "trailing_distance_pct": 0.00462379847530659,
       "breakeven_trigger_pct": 0.006935697712959886
+    },
+    "RUNEUSDT": {
+      "source": "CORE",
+      "entry_price": 0.471,
+      "qty": 5.288855202994238,
+      "cost_usdt": 2.4935443449552412,
+      "entry_fee_usdt": 0.0024935443449552413,
+      "peak_price": 0.471,
+      "entry_score": 6.550000000000001,
+      "opened_at": "2026-09-02T00:07:13.305374+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
     }
   },
-  "realized_pnl_usdt": -0.43497972663353246,
-  "total_fees_usdt": 0.34312928598693476,
+  "realized_pnl_usdt": -0.4540262870760434,
+  "total_fees_usdt": 0.34854145543755816,
   "wins": 16,
-  "losses": 36,
-  "loss_streak": 0,
+  "losses": 37,
+  "loss_streak": 1,
   "cooldown_until": null,
-  "symbol_cooldowns": {},
+  "symbol_cooldowns": {
+    "LTCUSDT": "2026-09-02T01:06:44.954444+00:00"
+  },
   "sum_win_pnl": 0.43844673332571804,
-  "sum_loss_pnl": -0.8734264599592505,
+  "sum_loss_pnl": -0.8924730204017615,
   "peak_equity": 20.0,
   "max_drawdown_pct": 0.02499559393377453,
   "started_at": "2026-08-24T11:00:07.094922+00:00"
