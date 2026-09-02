@@ -1,25 +1,25 @@
 V5.5 CROWD PSYCHOLOGY SHADOW
-Updated UTC: 2026-09-02T02:15:00.217909+00:00
+Updated UTC: 2026-09-02T02:30:01.141392+00:00
 Candidates analyzed: 12
 Mode: SHADOW ONLY - no trading influence.
 
 Highest crowd temptation:
-HEMIUSDT     tempt=83.1 trap=53.1 squeeze=66.8 panic=18.0 | FOMO_BUILDING | cov=6/6
-CRVUSDT      tempt=53.0 trap=42.6 squeeze=46.2 panic=11.6 | EARLY_INTEREST | cov=6/6
-ETHUSDT      tempt=26.6 trap=27.5 squeeze=26.1 panic=8.1 | NEUTRAL | cov=6/6
-FILUSDT      tempt=25.0 trap=18.5 squeeze=22.2 panic=14.5 | NEUTRAL | cov=6/6
-PUMPUSDT     tempt=24.0 trap=12.9 squeeze=29.3 panic=30.0 | NEUTRAL | cov=6/6
+HEMIUSDT     tempt=79.5 trap=62.6 squeeze=64.9 panic=18.0 | DO_NOT_CHASE_LONG_TRAP | cov=6/6
+UNIUSDT      tempt=48.9 trap=50.3 squeeze=27.2 panic=16.4 | NEUTRAL | cov=6/6
+DASHUSDT     tempt=28.8 trap=27.8 squeeze=33.2 panic=4.5 | NEUTRAL | cov=6/6
+BTCUSDT      tempt=27.2 trap=38.8 squeeze=34.6 panic=7.6 | NEUTRAL | cov=6/6
+PUMPUSDT     tempt=25.3 trap=26.4 squeeze=17.2 panic=21.4 | NEUTRAL | cov=6/6
 
 Highest trap risk:
-HEMIUSDT     trap=53.1 tempt=83.1 | FOMO_BUILDING
-CRVUSDT      trap=42.6 tempt=53.0 | EARLY_INTEREST
-ETHUSDT      trap=27.5 tempt=26.6 | NEUTRAL
-DASHUSDT     trap=21.8 tempt=18.9 | NEUTRAL
-BTCUSDT      trap=21.5 tempt=12.0 | NEUTRAL
+HEMIUSDT     trap=62.6 tempt=79.5 | DO_NOT_CHASE_LONG_TRAP
+UNIUSDT      trap=50.3 tempt=48.9 | NEUTRAL
+ETHUSDT      trap=40.8 tempt=24.1 | NEUTRAL
+BTCUSDT      trap=38.8 tempt=27.2 | NEUTRAL
+FILUSDT      trap=28.4 tempt=23.3 | NEUTRAL
 
 Highest panic / exhaustion:
-PUMPUSDT     panic=30.0 | NEUTRAL
-GRAMUSDT     panic=29.1 | NEUTRAL
-DASHUSDT     panic=20.4 | NEUTRAL
-HEMIUSDT     panic=18.0 | FOMO_BUILDING
-ACEUSDT      panic=17.7 | NEUTRAL
+ACEUSDT      panic=82.8 | PANIC_EXHAUSTION_WATCH
+PUMPUSDT     panic=21.4 | NEUTRAL
+HEMIUSDT     panic=18.0 | DO_NOT_CHASE_LONG_TRAP
+UNIUSDT      panic=16.4 | NEUTRAL
+0GUSDT       panic=13.8 | NEUTRAL
