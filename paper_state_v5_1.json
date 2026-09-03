@@ -1,15 +1,44 @@
 {
-  "cash_usdt": 19.64042983165858,
-  "positions": {},
+  "cash_usdt": 11.784257898995147,
+  "positions": {
+    "OPUSDT": {
+      "source": "CORE",
+      "entry_price": 0.104,
+      "qty": 37.732287311205624,
+      "cost_usdt": 3.9280859663317163,
+      "entry_fee_usdt": 0.0039280859663317165,
+      "peak_price": 0.104,
+      "entry_score": 6.790531480299178,
+      "opened_at": "2026-09-03T17:09:44.992132+00:00",
+      "stop_pct": 0.006593406593406623,
+      "take_profit_pct": 0.012197802197802253,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.003956043956043973,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "AAVEUSDT": {
+      "source": "CORE",
+      "entry_price": 133.73,
+      "qty": 0.029343886041766132,
+      "cost_usdt": 3.9280859663317163,
+      "entry_fee_usdt": 0.0039280859663317165,
+      "peak_price": 133.73,
+      "entry_score": 6.414044603431265,
+      "opened_at": "2026-09-03T17:09:44.992365+00:00",
+      "stop_pct": 0.006050570979906243,
+      "take_profit_pct": 0.01119355631282655,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0036303425879437457,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.3595701683414292,
-  "total_fees_usdt": 0.3791311612509274,
+  "total_fees_usdt": 0.3869873331835908,
   "wins": 20,
   "losses": 39,
   "loss_streak": 0,
   "cooldown_until": null,
-  "symbol_cooldowns": {
-    "UNIUSDT": "2026-09-03T13:51:05.379643+00:00"
-  },
+  "symbol_cooldowns": {},
   "sum_win_pnl": 0.5622239747607167,
   "sum_loss_pnl": -0.9217941431021459,
   "peak_equity": 20.0,
