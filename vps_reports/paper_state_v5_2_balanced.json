@@ -1,8 +1,24 @@
 {
-  "cash_usdt": 99.99736482421635,
-  "positions": {},
+  "cash_usdt": 98.4974043518531,
+  "positions": {
+    "ONDOUSDT": {
+      "source": "CORE",
+      "entry_price": 0.35350602,
+      "qty": 4.238854296995797,
+      "cost_usdt": 1.4999604723632451,
+      "entry_fee_usdt": 0.0014999604723632451,
+      "peak_price": 0.35350602,
+      "entry_score": 7.869655447008131,
+      "opened_at": "2026-09-03T02:38:34.450076+00:00",
+      "stop_pct": 0.006,
+      "take_profit_pct": 0.015608110813516207,
+      "trailing_trigger_pct": 0.010145272028785535,
+      "trailing_distance_pct": 0.0036,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.002635175783638699,
-  "total_fees_usdt": 0.014605569349336728,
+  "total_fees_usdt": 0.016105529821699972,
   "wins": 1,
   "losses": 3,
   "loss_streak": 2,
@@ -11,8 +27,8 @@
   "sum_win_pnl": 0.03311757967652973,
   "sum_loss_pnl": -0.03575275546016843,
   "peak_equity": 100.02576653227894,
-  "max_drawdown_pct": 0.0002839439181245692,
-  "recovery_confirm_runs": 1,
-  "last_regime": "PROBE",
+  "max_drawdown_pct": 0.00030343253463316073,
+  "recovery_confirm_runs": 0,
+  "last_regime": "HOT_RECOVERY",
   "started_at": "2026-08-29T23:24:04.415428+00:00"
 }
