@@ -1,9 +1,17 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-09-03T18:04:36.085133+00:00
-Regime: RISK_OFF | breadth=65.0% | btc_eth_15m_soft | candidates=2
+Updated UTC: 2026-09-03T18:09:49.360257+00:00
+Regime: RISK_OFF | breadth=73.3% | recovery_confirm_1of2 | candidates=6
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-CRCLBUSDT    CORE  tech=7.61/99.00 entry=N pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
+BMTUSDT      CORE  tech=7.86/99.00 entry=N pass=N | expert=+0.37 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.55 topAcct=0.79 taker=0.88 global=0.57 OI5m=+1.74% funding=-0.1531%
+SNDKBUSDT    CORE  tech=7.69/99.00 entry=N pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
   topPos=NA topAcct=NA taker=NA global=NA OI5m=NA funding=NA
-FFUSDT       CORE  tech=6.98/99.00 entry=N pass=N | expert=+0.44 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=4.34 topAcct=1.23 taker=1.54 global=0.89 OI5m=+0.04% funding=+0.0050%
+PEPEUSDT     TREND tech=7.10/99.35 entry=N pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
+  topPos=NA topAcct=NA taker=NA global=NA OI5m=NA funding=NA
+ARUSDT       CORE  tech=6.94/99.00 entry=N pass=N | expert=+0.27 SUPPORT cov=6/6 | OBSERVE
+  topPos=1.65 topAcct=1.55 taker=1.10 global=1.35 OI5m=+0.81% funding=+0.0100%
+XRPUSDT      TREND tech=6.54/99.35 entry=N pass=N | expert=+0.42 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.14 topAcct=2.38 taker=1.04 global=2.16 OI5m=+0.25% funding=+0.0100%
+OPUSDT       CORE  tech=6.51/99.00 entry=N pass=N | expert=+0.51 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.08 topAcct=1.64 taker=1.55 global=1.35 OI5m=+0.51% funding=-0.0119%
