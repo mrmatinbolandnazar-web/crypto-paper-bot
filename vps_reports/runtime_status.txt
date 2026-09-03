@@ -1,44 +1,38 @@
 ===== TIME =====
-Thu Sep  3 23:22:19 UTC 2026
+Thu Sep  3 23:27:19 UTC 2026
 
 ===== BOT SERVICE =====
-○ crypto-bot.service - Crypto Paper Bot V5.2
+● crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: inactive (dead) since Thu 2026-09-03 23:20:20 UTC; 1min 59s ago
+     Active: activating (start) since Thu 2026-09-03 23:25:20 UTC; 1min 59s ago
 TriggeredBy: ● crypto-bot.timer
-    Process: 377492 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
-   Main PID: 377492 (code=exited, status=0/SUCCESS)
-        CPU: 774ms
+   Main PID: 377632 (python3)
+      Tasks: 1 (limit: 2315)
+     Memory: 102.3M (peak: 122.8M)
+        CPU: 703ms
+     CGroup: /system.slice/crypto-bot.service
+             └─377632 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
 
-Sep 03 23:20:20 srv6288706486 python3[377492]:   MUBARAKUSDT  TREND score=4.04/99.85 reject=TF15 TF15=N TF1H=N CHASE=N SPREAD=Y
-Sep 03 23:20:20 srv6288706486 python3[377492]: No CORE candidate passed the current adaptive threshold.
-Sep 03 23:20:20 srv6288706486 python3[377492]: No TREND candidate passed the stricter trend rules.
-Sep 03 23:20:20 srv6288706486 python3[377492]: No free risk slots for new positions this run.
-Sep 03 23:20:20 srv6288706486 python3[377492]: Cash $99.9645 | Equity $99.9645 | Realized P/L $-0.0355 | W/L 1/2 | WinRate 33.3% | LossStreak 2
-Sep 03 23:20:20 srv6288706486 python3[377492]: AvgWin $+0.0014 | AvgLoss $-0.0184 | ProfitFactor 0.04 | Expectancy $-0.0118/trade | MaxDD 0.05%
-Sep 03 23:20:20 srv6288706486 python3[377492]: Open none
-Sep 03 23:20:20 srv6288706486 python3[377492]: Run complete. V5.2 state saved for next scheduled run.
-Sep 03 23:20:20 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
-Sep 03 23:20:20 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
+Sep 03 23:25:20 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
-     Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 1 week 1 day ago
-    Trigger: Thu 2026-09-03 23:25:20 UTC; 3min 0s left
+     Active: active (running) since Wed 2026-08-26 03:21:21 UTC; 1 week 1 day ago
+    Trigger: n/a
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Thu 2026-09-03 23:25:00 UTC      2min 40s Thu 2026-09-03 23:10:01 UTC     12min ago crypto-bot-active.timer        crypto-bot-active.service
-Thu 2026-09-03 23:25:20 UTC       3min 0s Thu 2026-09-03 23:17:59 UTC  4min 19s ago crypto-bot.timer               crypto-bot.service
--                                       - Thu 2026-09-03 23:20:00 UTC  2min 18s ago crypto-bot-balanced.timer      crypto-bot-balanced.service
--                                       - Thu 2026-09-03 23:22:17 UTC        1s ago crypto-bot-report.timer        crypto-bot-report.service
+Thu 2026-09-03 23:35:00 UTC          7min Thu 2026-09-03 23:20:00 UTC      7min ago crypto-bot-balanced.timer      crypto-bot-balanced.service
+-                                       - Thu 2026-09-03 23:25:01 UTC  2min 18s ago crypto-bot-active.timer        crypto-bot-active.service
+-                                       - Thu 2026-09-03 23:27:18 UTC        1s ago crypto-bot-report.timer        crypto-bot-report.service
+-                                       - Thu 2026-09-03 23:25:20 UTC  1min 59s ago crypto-bot.timer               crypto-bot.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       534Mi       886Mi       1.0Mi       705Mi       1.4Gi
+Mem:           1.9Gi       630Mi       789Mi       1.0Mi       706Mi       1.3Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
