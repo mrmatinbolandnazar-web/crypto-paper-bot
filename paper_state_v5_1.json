@@ -1,16 +1,29 @@
 {
-  "cash_usdt": 19.60559898181015,
-  "positions": {},
+  "cash_usdt": 16.664759134538627,
+  "positions": {
+    "UNIUSDT": {
+      "source": "CORE",
+      "entry_price": 5.819,
+      "qty": 0.504880393095764,
+      "cost_usdt": 2.9408398472715223,
+      "entry_fee_usdt": 0.0029408398472715223,
+      "peak_price": 5.819,
+      "entry_score": 6.418686670835336,
+      "opened_at": "2026-09-03T09:01:28.750791+00:00",
+      "stop_pct": 0.007497606363390879,
+      "take_profit_pct": 0.013870571772273127,
+      "trailing_trigger_pct": 0.008247366999729968,
+      "trailing_distance_pct": 0.004498563818034528,
+      "breakeven_trigger_pct": 0.006747845727051792
+    }
+  },
   "realized_pnl_usdt": -0.3944010181898594,
-  "total_fees_usdt": 0.37321167205718947,
+  "total_fees_usdt": 0.376152511904461,
   "wins": 19,
   "losses": 39,
   "loss_streak": 0,
   "cooldown_until": null,
-  "symbol_cooldowns": {
-    "XRPUSDT": "2026-09-03T04:38:41.094222+00:00",
-    "VETUSDT": "2026-09-03T04:39:09.948377+00:00"
-  },
+  "symbol_cooldowns": {},
   "sum_win_pnl": 0.5273931249122865,
   "sum_loss_pnl": -0.9217941431021459,
   "peak_equity": 20.0,
