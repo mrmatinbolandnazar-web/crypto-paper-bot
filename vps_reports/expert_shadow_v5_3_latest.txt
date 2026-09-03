@@ -1,17 +1,21 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-09-03T12:50:28.145595+00:00
-Regime: PROBE | breadth=75.0% | broad_market_probe_btc_unconfirmed | candidates=6
+Updated UTC: 2026-09-03T13:00:10.932472+00:00
+Regime: PROBE | breadth=85.0% | broad_market_probe_btc_unconfirmed | candidates=8
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-SNDKBUSDT    CORE  tech=7.72/8.20 entry=N pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
+DOTUSDT      CORE  tech=6.66/8.20 entry=Y pass=N | expert=+0.35 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.26 topAcct=2.74 taker=1.25 global=2.26 OI5m=-0.20% funding=+0.0100%
+PENGUUSDT    CORE  tech=6.39/8.20 entry=Y pass=N | expert=+0.24 SUPPORT cov=6/6 | OBSERVE
+  topPos=3.32 topAcct=1.20 taker=0.89 global=0.86 OI5m=+0.43% funding=+0.0040%
+PEPEUSDT     CORE  tech=7.52/8.20 entry=N pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
   topPos=NA topAcct=NA taker=NA global=NA OI5m=NA funding=NA
-PYTHUSDT     CORE  tech=7.49/8.20 entry=N pass=N | expert=+0.30 SUPPORT cov=6/6 | OBSERVE
-  topPos=2.17 topAcct=1.56 taker=1.00 global=1.32 OI5m=+0.50% funding=+0.0050%
-PENGUUSDT    CORE  tech=7.41/8.20 entry=N pass=N | expert=+0.45 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=3.32 topAcct=1.22 taker=1.59 global=0.86 OI5m=-0.08% funding=+0.0034%
-ONDOUSDT     CORE  tech=7.12/8.20 entry=N pass=N | expert=+0.29 SUPPORT cov=6/6 | OBSERVE
-  topPos=2.33 topAcct=1.88 taker=0.90 global=1.34 OI5m=+0.01% funding=+0.0050%
-FETUSDT      CORE  tech=7.07/8.20 entry=N pass=N | expert=+0.39 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=2.40 topAcct=2.20 taker=0.85 global=1.52 OI5m=-0.01% funding=+0.0014%
-SPCXBUSDT    CORE  tech=6.84/8.20 entry=N pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
-  topPos=NA topAcct=NA taker=NA global=NA OI5m=NA funding=NA
+SUIUSDT      TREND tech=7.51/8.55 entry=N pass=N | expert=+0.33 SUPPORT cov=6/6 | OBSERVE
+  topPos=2.45 topAcct=2.88 taker=1.04 global=2.21 OI5m=+0.38% funding=+0.0100%
+BCHUSDT      CORE  tech=7.30/8.20 entry=N pass=N | expert=+0.28 SUPPORT cov=6/6 | OBSERVE
+  topPos=1.82 topAcct=2.09 taker=0.83 global=1.49 OI5m=+0.20% funding=+0.0095%
+AVAXUSDT     CORE  tech=7.20/8.20 entry=N pass=N | expert=+0.55 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.76 topAcct=2.68 taker=1.76 global=1.95 OI5m=+0.36% funding=+0.0100%
+TAOUSDT      CORE  tech=7.18/8.20 entry=N pass=N | expert=+0.25 SUPPORT cov=6/6 | OBSERVE
+  topPos=3.84 topAcct=1.83 taker=0.75 global=1.28 OI5m=+0.03% funding=-0.0036%
+OPUSDT       CORE  tech=6.78/8.20 entry=N pass=N | expert=+0.58 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.00 topAcct=1.76 taker=2.04 global=1.42 OI5m=+0.55% funding=-0.0026%
