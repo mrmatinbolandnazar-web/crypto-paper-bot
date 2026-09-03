@@ -1,4 +1,3 @@
-Starting crypto-bot.service - Crypto Paper Bot V5.2...
 ================================================================================================
 BINANCE PAPER TRADING BOT V5.2 — GITHUB ACTIONS — SIMULATION ONLY
 50 guaranteed core pairs + dynamic trend pool | adaptive regime | dynamic risk | no real orders
@@ -4757,3 +4756,32 @@ EGLDUSDT     CORE  p=4.95300000 RSI= 24.0 M5=+0.06% M15=-0.14% VOLx=0.88 ATR=2.0
 GRAMUSDT     CORE  p=1.32500000 RSI= 38.1 M5=+0.08% M15=-0.23% VOLx=0.39 ATR=0.20% TF15=N TF1H=N EXT=-0.19% SCORE=0.80 ENTRY=N
 SOXLBUSDT    CORE  p=105.26000000 RSI= 38.5 M5=-0.10% M15=+0.09% VOLx=0.89 ATR=0.27% TF15=N TF1H=N EXT=-0.30% SCORE=0.00 ENTRY=N
 SPCXBUSDT    CORE  p=140.45000000 RSI= 54.2 M5=-0.03% M15=-0.08% VOLx=0.33 ATR=0.05% TF15=N TF1H=N EXT=-0.04% SCORE=1.00 ENTRY=N
+FETUSDT      CORE  p=0.15190000 RSI= 54.5 M5=-0.13% M15=-0.33% VOLx=4.27 ATR=0.27% TF15=N TF1H=N EXT=-0.13% SCORE=2.75 ENTRY=N
+PENGUUSDT    CORE  p=0.00825600 RSI= 35.9 M5=-0.12% M15=-0.73% VOLx=2.75 ATR=0.28% TF15=N TF1H=N EXT=-0.57% SCORE=1.40 ENTRY=N
+OPUSDT       CORE  p=0.09810000 RSI= 41.9 M5=-0.30% M15=-0.41% VOLx=0.55 ATR=0.34% TF15=N TF1H=N EXT=-0.41% SCORE=0.00 ENTRY=N
+ETHFIUSDT    CORE  p=0.55860000 RSI= 34.1 M5=+0.16% M15=-0.27% VOLx=0.62 ATR=0.34% TF15=N TF1H=N EXT=-0.20% SCORE=0.80 ENTRY=N
+BCHUSDT      CORE  p=242.80000000 RSI= 37.1 M5=-0.04% M15=-0.16% VOLx=1.06 ATR=0.18% TF15=N TF1H=N EXT=-0.24% SCORE=0.54 ENTRY=N
+XUSDUSDT     CORE  p=1.00040000 RSI= 50.0 M5=+0.01% M15=+0.01% VOLx=3.84 ATR=0.00% TF15=N TF1H=N EXT=+0.00% SCORE=3.95 ENTRY=N
+Market regime: RISK_OFF | breadth=8.3% | breadth_risk_off | max_pos=0 | min_score=99.00 | size=0.0% equity
+REJECTION DIAGNOSTICS:
+Reject totals | PRECHECK=50 | TF15=7 | TF1H=3 | CHASE=0 | SPREAD=0 | ENTRY_RULES=0
+CORE diag | total=54 | entry_ready=0 | score_ready=0 | fully_ready=0
+TREND diag | total=6 | entry_ready=0 | score_ready=0 | fully_ready=0
+Top rejected candidates:
+  CHIPUSDT     CORE  score=6.99/99.00 reject=TF1H TF15=Y TF1H=N CHASE=Y SPREAD=Y
+  HEMIUSDT     TREND score=6.92/99.35 reject=TF1H TF15=Y TF1H=N CHASE=Y SPREAD=Y
+  FFUSDT       CORE  score=6.01/99.00 reject=TF1H TF15=Y TF1H=N CHASE=N SPREAD=Y
+  LAUSDT       CORE  score=5.39/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+  XUSDUSDT     CORE  score=3.95/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+  ENSOUSDT     CORE  score=3.76/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+  XLMUSDT      CORE  score=2.75/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+  FETUSDT      CORE  score=2.75/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+No CORE candidate passed the current adaptive threshold.
+No TREND candidate passed the stricter trend rules.
+New buys blocked only because market is in genuine RISK_OFF / hard pause.
+Cash $99.9765 | Equity $99.9765 | Realized P/L $-0.0235 | W/L 1/1 | WinRate 50.0% | LossStreak 1
+AvgWin $+0.0014 | AvgLoss $-0.0249 | ProfitFactor 0.06 | Expectancy $-0.0117/trade | MaxDD 0.03%
+Open none
+Run complete. V5.2 state saved for next scheduled run.
+crypto-bot.service: Deactivated successfully.
+Finished crypto-bot.service - Crypto Paper Bot V5.2.
