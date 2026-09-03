@@ -1,8 +1,24 @@
 {
-  "cash_usdt": 100.08574534566151,
-  "positions": {},
+  "cash_usdt": 98.08403043874827,
+  "positions": {
+    "SEIUSDT": {
+      "source": "CORE",
+      "entry_price": 0.049334796,
+      "qty": 40.533525100748705,
+      "cost_usdt": 2.00171490691323,
+      "entry_fee_usdt": 0.00200171490691323,
+      "peak_price": 0.049334796,
+      "entry_score": 7.691101562038826,
+      "opened_at": "2026-09-03T01:27:46.513436+00:00",
+      "stop_pct": 0.006,
+      "take_profit_pct": 0.015608110813516207,
+      "trailing_trigger_pct": 0.010145272028785535,
+      "trailing_distance_pct": 0.0036,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": 0.08574534566150716,
-  "total_fees_usdt": 0.0277111918912423,
+  "total_fees_usdt": 0.02971290679815553,
   "wins": 4,
   "losses": 2,
   "loss_streak": 0,
@@ -12,7 +28,7 @@
   "sum_loss_pnl": -0.02755245703625575,
   "peak_equity": 100.09269285128059,
   "max_drawdown_pct": 0.00028251365124597335,
-  "recovery_confirm_runs": 1,
+  "recovery_confirm_runs": 0,
   "last_regime": "PROBE",
   "started_at": "2026-08-28T01:45:15.400536+00:00"
 }
