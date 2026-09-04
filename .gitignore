@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# CYRUS local/runtime files
+__pycache__/
+*.pyc
+.backtest_cache_v5_2*/
+check.txt
+*_run.txt
+backtest_*_trades.csv
+backtest_*_report.txt
