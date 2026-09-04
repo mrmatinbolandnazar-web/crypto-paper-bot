@@ -1,8 +1,39 @@
 {
-  "cash_usdt": 19.59206689008479,
-  "positions": {},
+  "cash_usdt": 11.755240134050876,
+  "positions": {
+    "VETUSDT": {
+      "source": "CORE",
+      "entry_price": 0.006808,
+      "qty": 574.9845717742277,
+      "cost_usdt": 3.9184133780169583,
+      "entry_fee_usdt": 0.003918413378016959,
+      "peak_price": 0.006808,
+      "entry_score": 6.6,
+      "opened_at": "2026-09-04T11:30:48.068107+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "SHIBUSDT": {
+      "source": "CORE",
+      "entry_price": 5.37e-06,
+      "qty": 728956.2317763391,
+      "cost_usdt": 3.9184133780169583,
+      "entry_fee_usdt": 0.003918413378016959,
+      "peak_price": 5.37e-06,
+      "entry_score": 6.550000000000001,
+      "opened_at": "2026-09-04T11:30:48.068284+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.40793310991521725,
-  "total_fees_usdt": 0.40874590831629065,
+  "total_fees_usdt": 0.4165827350723246,
   "wins": 21,
   "losses": 43,
   "loss_streak": 3,
