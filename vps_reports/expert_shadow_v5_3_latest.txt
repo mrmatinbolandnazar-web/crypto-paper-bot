@@ -1,11 +1,21 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-09-05T09:04:41.967141+00:00
-Regime: WEAK | breadth=65.0% | btc_not_confirmed | candidates=3
+Updated UTC: 2026-09-05T09:09:47.297684+00:00
+Regime: PROBE | breadth=78.3% | broad_market_probe_btc_unconfirmed | candidates=8
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-SPCXBUSDT    CORE  tech=6.98/99.50 entry=Y pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
+SPCXBUSDT    CORE  tech=6.79/8.20 entry=Y pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
   topPos=NA topAcct=NA taker=NA global=NA OI5m=NA funding=NA
-PEPEUSDT     CORE  tech=7.44/99.50 entry=N pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
+BICOUSDT     CORE  tech=7.99/8.20 entry=N pass=N | expert=+0.13 SUPPORT cov=6/6 | OBSERVE
+  topPos=1.58 topAcct=0.95 taker=0.98 global=0.66 OI5m=+0.11% funding=+0.0100%
+PEPEUSDT     CORE  tech=7.84/8.20 entry=N pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
   topPos=NA topAcct=NA taker=NA global=NA OI5m=NA funding=NA
-LINKUSDT     CORE  tech=7.03/99.50 entry=N pass=N | expert=+0.57 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
-  topPos=2.37 topAcct=2.02 taker=3.25 global=1.70 OI5m=+0.10% funding=+0.0053%
+ADAUSDT      CORE  tech=7.64/8.20 entry=N pass=N | expert=+0.51 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.69 topAcct=2.44 taker=5.35 global=2.04 OI5m=+0.02% funding=-0.0123%
+GRAMUSDT     TREND tech=7.50/8.55 entry=N pass=N | expert=+0.34 SUPPORT cov=6/6 | OBSERVE
+  topPos=3.32 topAcct=1.27 taker=1.28 global=0.90 OI5m=+0.25% funding=+0.0050%
+MSTRBUSDT    CORE  tech=7.44/8.20 entry=N pass=N | expert=+0.00 NO_FUTURES_DATA cov=0/6 | OBSERVE
+  topPos=NA topAcct=NA taker=NA global=NA OI5m=NA funding=NA
+LINKUSDT     CORE  tech=7.14/8.20 entry=N pass=N | expert=+0.48 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.37 topAcct=2.01 taker=2.25 global=1.69 OI5m=+0.26% funding=+0.0054%
+AVAXUSDT     CORE  tech=6.92/8.20 entry=N pass=N | expert=+0.60 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=3.02 topAcct=2.90 taker=3.90 global=2.16 OI5m=+0.74% funding=+0.0100%
