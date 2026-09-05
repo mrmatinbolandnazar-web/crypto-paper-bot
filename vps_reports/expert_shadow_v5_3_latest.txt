@@ -1,9 +1,13 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-09-05T08:44:32.766121+00:00
-Regime: RISK_OFF | breadth=53.3% | recovery_confirm_1of2 | candidates=2
+Updated UTC: 2026-09-05T08:49:25.545703+00:00
+Regime: RISK_OFF | breadth=50.0% | btc_eth_15m_soft | candidates=4
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-PROMUSDT     CORE  tech=7.58/99.00 entry=N pass=N | expert=+0.18 SUPPORT cov=6/6 | OBSERVE
-  topPos=1.37 topAcct=0.51 taker=1.32 global=0.46 OI5m=+1.09% funding=+0.0050%
-SIGNUSDT     CORE  tech=7.05/99.00 entry=N pass=N | expert=+0.19 SUPPORT cov=6/6 | OBSERVE
-  topPos=1.17 topAcct=1.50 taker=1.08 global=1.29 OI5m=+0.72% funding=+0.0050%
+SIGNUSDT     CORE  tech=7.78/99.00 entry=N pass=N | expert=+0.07 NEUTRAL cov=6/6 | OBSERVE
+  topPos=1.16 topAcct=1.52 taker=0.91 global=1.32 OI5m=+0.27% funding=+0.0050%
+ENSOUSDT     CORE  tech=7.62/99.00 entry=N pass=N | expert=+0.60 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.04 topAcct=1.12 taker=2.46 global=0.70 OI5m=+2.00% funding=+0.0050%
+BICOUSDT     CORE  tech=7.57/99.00 entry=N pass=N | expert=+0.25 SUPPORT cov=6/6 | OBSERVE
+  topPos=1.58 topAcct=0.95 taker=0.92 global=0.66 OI5m=+0.76% funding=+0.0100%
+TUTUSDT      TREND tech=6.53/99.35 entry=N pass=N | expert=+0.43 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.81 topAcct=1.75 taker=1.13 global=1.29 OI5m=+0.59% funding=-0.0049%
