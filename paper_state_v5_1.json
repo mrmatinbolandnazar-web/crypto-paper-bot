@@ -1,15 +1,30 @@
 {
-  "cash_usdt": 16.6408098735304,
+  "cash_usdt": 11.760516313434149,
   "positions": {
-    "LTCUSDT": {
+    "APTUSDT": {
       "source": "CORE",
-      "entry_price": 54.0,
-      "qty": 0.0543273498812316,
-      "cost_usdt": 2.9366135070936,
-      "entry_fee_usdt": 0.0029366135070936,
-      "peak_price": 54.0,
-      "entry_score": 6.35,
-      "opened_at": "2026-09-05T15:08:37.310567+00:00",
+      "entry_price": 0.601,
+      "qty": 6.516226176994296,
+      "cost_usdt": 3.92017210447805,
+      "entry_fee_usdt": 0.00392017210447805,
+      "peak_price": 0.601,
+      "entry_score": 6.550000000000001,
+      "opened_at": "2026-09-05T17:20:13.249722+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "ETCUSDT": {
+      "source": "CORE",
+      "entry_price": 7.75,
+      "qty": 0.5053228299836867,
+      "cost_usdt": 3.92017210447805,
+      "entry_fee_usdt": 0.00392017210447805,
+      "peak_price": 7.75,
+      "entry_score": 6.550000000000001,
+      "opened_at": "2026-09-05T17:20:13.249877+00:00",
       "stop_pct": 0.0045,
       "take_profit_pct": 0.01,
       "trailing_trigger_pct": 0.0075,
@@ -17,16 +32,16 @@
       "breakeven_trigger_pct": 0.0065
     }
   },
-  "realized_pnl_usdt": -0.42257661937600477,
-  "total_fees_usdt": 0.44690447118041055,
-  "wins": 23,
+  "realized_pnl_usdt": -0.3991394776097559,
+  "total_fees_usdt": 0.457707829051889,
+  "wins": 24,
   "losses": 46,
   "loss_streak": 0,
   "cooldown_until": null,
   "symbol_cooldowns": {
-    "PYTHUSDT": "2026-09-05T15:28:30.156395+00:00"
+    "LTCUSDT": "2026-09-05T17:39:45.263173+00:00"
   },
-  "sum_win_pnl": 0.6247481277916402,
+  "sum_win_pnl": 0.6481852695578891,
   "sum_loss_pnl": -1.047324747167645,
   "peak_equity": 20.0,
   "max_drawdown_pct": 0.025009607615958628,
