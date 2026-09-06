@@ -1,25 +1,25 @@
 V5.5 CROWD PSYCHOLOGY SHADOW
-Updated UTC: 2026-09-06T07:00:01.142999+00:00
+Updated UTC: 2026-09-06T07:15:00.280871+00:00
 Candidates analyzed: 12
 Mode: SHADOW ONLY - no trading influence.
 
 Highest crowd temptation:
-UNIUSDT      tempt=33.2 trap=33.3 squeeze=30.1 panic=10.1 | NEUTRAL | cov=6/6
-ASTERUSDT    tempt=23.3 trap=27.5 squeeze=24.3 panic=20.4 | NEUTRAL | cov=6/6
-ARBUSDT      tempt=22.5 trap=14.3 squeeze=15.8 panic=8.4 | NEUTRAL | cov=6/6
-HEMIUSDT     tempt=21.8 trap=25.1 squeeze=19.8 panic=8.3 | NEUTRAL | cov=6/6
-ZECUSDT      tempt=21.6 trap=17.7 squeeze=47.8 panic=0.0 | NEUTRAL | cov=6/6
+HEMIUSDT     tempt=28.3 trap=30.7 squeeze=16.6 panic=14.9 | NEUTRAL | cov=6/6
+BTCUSDT      tempt=25.9 trap=20.8 squeeze=9.6 panic=65.5 | NEUTRAL | cov=6/6
+OPUSDT       tempt=25.9 trap=21.4 squeeze=14.4 panic=44.2 | NEUTRAL | cov=6/6
+ASTERUSDT    tempt=24.4 trap=25.9 squeeze=0.0 panic=70.4 | PANIC_EXHAUSTION_WATCH | cov=6/6
+ETHUSDT      tempt=23.8 trap=21.9 squeeze=1.2 panic=71.0 | PANIC_EXHAUSTION_WATCH | cov=6/6
 
 Highest trap risk:
-UNIUSDT      trap=33.3 tempt=33.2 | NEUTRAL
-ASTERUSDT    trap=27.5 tempt=23.3 | NEUTRAL
-ETHUSDT      trap=25.3 tempt=11.9 | NEUTRAL
-HEMIUSDT     trap=25.1 tempt=21.8 | NEUTRAL
-CAKEUSDT     trap=22.1 tempt=1.9 | NEUTRAL
+HEMIUSDT     trap=30.7 tempt=28.3 | NEUTRAL
+ASTERUSDT    trap=25.9 tempt=24.4 | PANIC_EXHAUSTION_WATCH
+CAKEUSDT     trap=24.6 tempt=14.4 | NEUTRAL
+UNIUSDT      trap=23.3 tempt=20.8 | PANIC_EXHAUSTION_WATCH
+ETHUSDT      trap=21.9 tempt=23.8 | PANIC_EXHAUSTION_WATCH
 
 Highest panic / exhaustion:
-BTCUSDT      panic=35.9 | NEUTRAL
-ETHUSDT      panic=35.4 | NEUTRAL
-TUTUSDT      panic=23.0 | NEUTRAL
-SUSHIUSDT    panic=20.9 | NEUTRAL
-ASTERUSDT    panic=20.4 | NEUTRAL
+UNIUSDT      panic=73.8 | PANIC_EXHAUSTION_WATCH
+ETHUSDT      panic=71.0 | PANIC_EXHAUSTION_WATCH
+ASTERUSDT    panic=70.4 | PANIC_EXHAUSTION_WATCH
+BTCUSDT      panic=65.5 | NEUTRAL
+CAKEUSDT     panic=53.7 | NEUTRAL
