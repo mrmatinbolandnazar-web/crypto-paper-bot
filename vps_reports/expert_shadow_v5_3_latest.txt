@@ -1,6 +1,13 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-09-06T22:59:21.188566+00:00
-Regime: WEAK | breadth=68.3% | btc_not_confirmed | candidates=0
+Updated UTC: 2026-09-06T23:04:21.601364+00:00
+Regime: NORMAL | breadth=56.7% | market_normal | candidates=4
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-No technical / near-ready candidate this run.
+BTCUSDT      CORE  tech=6.59/7.65 entry=Y pass=N | expert=+0.26 SUPPORT cov=6/6 | OBSERVE
+  topPos=2.01 topAcct=1.14 taker=1.24 global=1.06 OI5m=+0.01% funding=+0.0052%
+ONDOUSDT     TREND tech=7.39/8.00 entry=N pass=N | expert=+0.24 SUPPORT cov=6/6 | OBSERVE
+  topPos=2.48 topAcct=2.45 taker=0.67 global=1.77 OI5m=+0.30% funding=+0.0050%
+LINKUSDT     TREND tech=7.39/8.00 entry=N pass=N | expert=+0.27 SUPPORT cov=6/6 | OBSERVE
+  topPos=2.71 topAcct=2.17 taker=0.85 global=1.90 OI5m=-0.02% funding=+0.0100%
+FIDAUSDT     CORE  tech=7.12/7.65 entry=N pass=N | expert=+0.51 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=1.30 topAcct=1.83 taker=1.74 global=1.66 OI5m=+0.47% funding=-0.3545%
