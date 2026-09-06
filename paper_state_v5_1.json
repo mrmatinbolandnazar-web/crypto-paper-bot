@@ -1,21 +1,6 @@
 {
-  "cash_usdt": 6.7395401631578045,
+  "cash_usdt": 12.70421614785822,
   "positions": {
-    "DASHUSDT": {
-      "source": "TREND",
-      "entry_price": 69.93,
-      "qty": 0.02934243568915418,
-      "cost_usdt": 2.053970498240793,
-      "entry_fee_usdt": 0.0020539704982407933,
-      "peak_price": 70.78,
-      "entry_score": 6.550000000000001,
-      "opened_at": "2026-09-06T18:18:34.865488+00:00",
-      "stop_pct": 0.010872096586382288,
-      "take_profit_pct": 0.021744193172764575,
-      "trailing_trigger_pct": 0.011959306245020517,
-      "trailing_distance_pct": 0.0065232579518293725,
-      "breakeven_trigger_pct": 0.00978488692774406
-    },
     "RUNEUSDT": {
       "source": "CORE",
       "entry_price": 0.486,
@@ -31,28 +16,13 @@
       "trailing_distance_pct": 0.0035,
       "breakeven_trigger_pct": 0.0065
     },
-    "BNBUSDT": {
-      "source": "CORE",
-      "entry_price": 750.79,
-      "qty": 0.005211867295044545,
-      "cost_usdt": 3.916934781227721,
-      "entry_fee_usdt": 0.003916934781227721,
-      "peak_price": 750.79,
-      "entry_score": 6.808565367674415,
-      "opened_at": "2026-09-06T20:31:42.492152+00:00",
-      "stop_pct": 0.0045,
-      "take_profit_pct": 0.01,
-      "trailing_trigger_pct": 0.0075,
-      "trailing_distance_pct": 0.0035,
-      "breakeven_trigger_pct": 0.0065
-    },
     "BCHUSDT": {
       "source": "CORE",
       "entry_price": 257.1,
       "qty": 0.015219828263113548,
       "cost_usdt": 3.916934781227721,
       "entry_fee_usdt": 0.003916934781227721,
-      "peak_price": 257.1,
+      "peak_price": 257.6,
       "entry_score": 6.412491424933176,
       "opened_at": "2026-09-06T20:31:42.492341+00:00",
       "stop_pct": 0.0045,
@@ -62,15 +32,18 @@
       "breakeven_trigger_pct": 0.0065
     }
   },
-  "realized_pnl_usdt": -0.4383762072305457,
-  "total_fees_usdt": 0.5054122991809699,
-  "wins": 26,
-  "losses": 50,
-  "loss_streak": 4,
-  "cooldown_until": null,
-  "symbol_cooldowns": {},
-  "sum_win_pnl": 0.6881256421597723,
-  "sum_loss_pnl": -1.126501849390318,
+  "realized_pnl_usdt": -0.4446055019986448,
+  "total_fees_usdt": 0.5113829458123016,
+  "wins": 27,
+  "losses": 51,
+  "loss_streak": 0,
+  "cooldown_until": "2026-09-06T23:01:46.844294+00:00",
+  "symbol_cooldowns": {
+    "BNBUSDT": "2026-09-06T23:16:46.844310+00:00",
+    "DASHUSDT": "2026-09-06T22:37:32.781691+00:00"
+  },
+  "sum_win_pnl": 0.6954015544355938,
+  "sum_loss_pnl": -1.1400070564342386,
   "peak_equity": 20.0,
   "max_drawdown_pct": 0.025009607615958628,
   "started_at": "2026-08-24T11:00:07.094922+00:00"
