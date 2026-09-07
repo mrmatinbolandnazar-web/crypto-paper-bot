@@ -1,7 +1,11 @@
 V5.3 EXPERT SHADOW
-Updated UTC: 2026-09-07T04:44:21.043685+00:00
-Regime: RISK_OFF | breadth=30.0% | btc_eth_15m_soft | candidates=1
+Updated UTC: 2026-09-07T04:49:27.441354+00:00
+Regime: RISK_OFF | breadth=43.3% | recovery_confirm_1of2 | candidates=3
 Mode: SHADOW ONLY - V5.2 buys/sells are unchanged.
 
-ENAUSDT      CORE  tech=7.71/99.00 entry=N pass=N | expert=+0.22 SUPPORT cov=6/6 | OBSERVE
-  topPos=1.43 topAcct=1.80 taker=1.12 global=1.59 OI5m=+0.27% funding=+0.0050%
+NEARUSDT     TREND tech=7.82/99.35 entry=N pass=N | expert=+0.47 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.64 topAcct=2.30 taker=1.81 global=2.09 OI5m=+0.77% funding=+0.0100%
+WLDUSDT      TREND tech=6.80/99.35 entry=N pass=N | expert=+0.44 CONFIRM cov=6/6 | WOULD_SUPPORT_NEAR_READY
+  topPos=2.36 topAcct=1.82 taker=1.10 global=1.44 OI5m=+0.22% funding=+0.0100%
+ENAUSDT      CORE  tech=6.54/99.00 entry=N pass=N | expert=+0.09 NEUTRAL cov=6/6 | OBSERVE
+  topPos=1.43 topAcct=1.80 taker=0.63 global=1.59 OI5m=+0.17% funding=+0.0050%
