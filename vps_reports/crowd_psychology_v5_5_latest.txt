@@ -1,25 +1,25 @@
 V5.5 CROWD PSYCHOLOGY SHADOW
-Updated UTC: 2026-09-07T07:15:01.138047+00:00
+Updated UTC: 2026-09-07T07:30:01.140864+00:00
 Candidates analyzed: 12
 Mode: SHADOW ONLY - no trading influence.
 
 Highest crowd temptation:
-COTIUSDT     tempt=62.8 trap=52.3 squeeze=47.0 panic=12.9 | NEUTRAL | cov=6/6
-WLDUSDT      tempt=38.1 trap=39.0 squeeze=31.2 panic=0.0 | NEUTRAL | cov=6/6
-BTCUSDT      tempt=27.8 trap=22.9 squeeze=33.7 panic=26.2 | NEUTRAL | cov=6/6
-ETHUSDT      tempt=25.7 trap=28.3 squeeze=13.8 panic=27.2 | NEUTRAL | cov=6/6
-ICPUSDT      tempt=19.7 trap=29.4 squeeze=13.3 panic=2.7 | NEUTRAL | cov=6/6
+WLDUSDT      tempt=46.2 trap=37.2 squeeze=15.3 panic=21.8 | NEUTRAL | cov=6/6
+ICPUSDT      tempt=29.2 trap=44.3 squeeze=27.1 panic=6.8 | NEUTRAL | cov=6/6
+ETHUSDT      tempt=26.0 trap=23.8 squeeze=4.8 panic=71.4 | PANIC_EXHAUSTION_WATCH | cov=6/6
+COTIUSDT     tempt=18.8 trap=10.8 squeeze=0.0 panic=47.0 | NEUTRAL | cov=6/6
+ARBUSDT      tempt=18.5 trap=14.5 squeeze=5.2 panic=41.5 | NEUTRAL | cov=6/6
 
 Highest trap risk:
-COTIUSDT     trap=52.3 tempt=62.8 | NEUTRAL
-WLDUSDT      trap=39.0 tempt=38.1 | NEUTRAL
-ICPUSDT      trap=29.4 tempt=19.7 | NEUTRAL
-ETHUSDT      trap=28.3 tempt=25.7 | NEUTRAL
-LINKUSDT     trap=23.8 tempt=16.0 | NEUTRAL
+ICPUSDT      trap=44.3 tempt=29.2 | NEUTRAL
+WLDUSDT      trap=37.2 tempt=46.2 | NEUTRAL
+TIAUSDT      trap=26.9 tempt=13.8 | NEUTRAL
+ETHUSDT      trap=23.8 tempt=26.0 | PANIC_EXHAUSTION_WATCH
+TAOUSDT      trap=22.3 tempt=9.6 | NEUTRAL
 
 Highest panic / exhaustion:
-MARSCOINUSDT panic=52.4 | NEUTRAL
-ORCAUSDT     panic=32.8 | NEUTRAL
-ETHUSDT      panic=27.2 | NEUTRAL
-BTCUSDT      panic=26.2 | NEUTRAL
-TAOUSDT      panic=22.2 | NEUTRAL
+ETHUSDT      panic=71.4 | PANIC_EXHAUSTION_WATCH
+BTCUSDT      panic=52.8 | NEUTRAL
+TAOUSDT      panic=48.1 | NEUTRAL
+COTIUSDT     panic=47.0 | NEUTRAL
+LINKUSDT     panic=43.5 | NEUTRAL
