@@ -1,43 +1,49 @@
 ===== TIME =====
-Tue Sep  8 09:10:17 UTC 2026
+Tue Sep  8 09:15:18 UTC 2026
 
 ===== BOT SERVICE =====
-● crypto-bot.service - Crypto Paper Bot V5.2
+○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: activating (start) since Tue 2026-09-08 09:09:22 UTC; 54s ago
+     Active: inactive (dead) since Tue 2026-09-08 09:11:42 UTC; 3min 35s ago
 TriggeredBy: ● crypto-bot.timer
-   Main PID: 598739 (python3)
-      Tasks: 1 (limit: 2315)
-     Memory: 102.3M (peak: 122.9M)
-        CPU: 462ms
-     CGroup: /system.slice/crypto-bot.service
-             └─598739 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
+    Process: 598739 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
+   Main PID: 598739 (code=exited, status=0/SUCCESS)
+        CPU: 782ms
 
-Sep 08 09:09:22 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
+Sep 08 09:11:42 srv6288706486 python3[598739]:   TRXUSDT      CORE  score=5.37/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+Sep 08 09:11:42 srv6288706486 python3[598739]: No CORE candidate passed the current adaptive threshold.
+Sep 08 09:11:42 srv6288706486 python3[598739]: No TREND candidate passed the stricter trend rules.
+Sep 08 09:11:42 srv6288706486 python3[598739]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
+Sep 08 09:11:42 srv6288706486 python3[598739]: Cash $99.9645 | Equity $99.9645 | Realized P/L $-0.0355 | W/L 1/2 | WinRate 33.3% | LossStreak 2
+Sep 08 09:11:42 srv6288706486 python3[598739]: AvgWin $+0.0014 | AvgLoss $-0.0184 | ProfitFactor 0.04 | Expectancy $-0.0118/trade | MaxDD 0.05%
+Sep 08 09:11:42 srv6288706486 python3[598739]: Open none
+Sep 08 09:11:42 srv6288706486 python3[598739]: Run complete. V5.2 state saved for next scheduled run.
+Sep 08 09:11:42 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
+Sep 08 09:11:42 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
-     Active: active (running) since Wed 2026-08-26 03:21:21 UTC; 1 week 6 days ago
-    Trigger: n/a
+     Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 1 week 6 days ago
+    Trigger: Tue 2026-09-08 09:16:42 UTC; 1min 24s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Tue 2026-09-08 09:20:00 UTC     9min Tue 2026-09-08 09:05:01 UTC     5min ago crypto-bot-balanced.timer         crypto-bot-balanced.service
--                                  - Tue 2026-09-08 09:10:00 UTC      16s ago crypto-bot-active.timer           crypto-bot-active.service
--                                  - Tue 2026-09-08 09:10:15 UTC       1s ago crypto-bot-report.timer           crypto-bot-report.service
--                                  - Tue 2026-09-08 09:09:22 UTC      54s ago crypto-bot.timer                  crypto-bot.service
+Tue 2026-09-08 09:16:42 UTC 1min 24s Tue 2026-09-08 09:09:22 UTC     5min ago crypto-bot.timer                  crypto-bot.service
+Tue 2026-09-08 09:20:00 UTC 4min 41s Tue 2026-09-08 09:05:01 UTC    10min ago crypto-bot-balanced.timer         crypto-bot-balanced.service
+Tue 2026-09-08 09:25:00 UTC     9min Tue 2026-09-08 09:10:00 UTC     5min ago crypto-bot-active.timer           crypto-bot-active.service
+-                                  - Tue 2026-09-08 09:15:15 UTC       2s ago crypto-bot-report.timer           crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       549Mi        99Mi       1.0Mi       1.5Gi       1.4Gi
+Mem:           1.9Gi       352Mi       1.5Gi       1.0Mi       242Mi       1.6Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/vda1        38G   14G   24G  38% /
+/dev/vda1        38G   15G   24G  39% /
 
 ===== PYTHON =====
 Python 3.12.3
