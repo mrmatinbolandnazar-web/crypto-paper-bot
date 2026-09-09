@@ -1,38 +1,44 @@
 ===== TIME =====
-Wed Sep  9 15:58:26 UTC 2026
+Wed Sep  9 16:03:26 UTC 2026
 
 ===== BOT SERVICE =====
-● crypto-bot.service - Crypto Paper Bot V5.2
+○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: activating (start) since Wed 2026-09-09 15:57:29 UTC; 57s ago
+     Active: inactive (dead) since Wed 2026-09-09 15:59:14 UTC; 4min 12s ago
 TriggeredBy: ● crypto-bot.timer
-   Main PID: 654701 (python3)
-      Tasks: 1 (limit: 2315)
-     Memory: 102.5M (peak: 123.2M)
-        CPU: 447ms
-     CGroup: /system.slice/crypto-bot.service
-             └─654701 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
+    Process: 654701 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
+   Main PID: 654701 (code=exited, status=0/SUCCESS)
+        CPU: 627ms
 
-Sep 09 15:57:29 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
+Sep 09 15:59:14 srv6288706486 python3[654701]:   INJUSDT      CORE  score=3.56/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+Sep 09 15:59:14 srv6288706486 python3[654701]: No CORE candidate passed the current adaptive threshold.
+Sep 09 15:59:14 srv6288706486 python3[654701]: No TREND candidate passed the stricter trend rules.
+Sep 09 15:59:14 srv6288706486 python3[654701]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
+Sep 09 15:59:14 srv6288706486 python3[654701]: Cash $99.9645 | Equity $99.9645 | Realized P/L $-0.0355 | W/L 1/2 | WinRate 33.3% | LossStreak 2
+Sep 09 15:59:14 srv6288706486 python3[654701]: AvgWin $+0.0014 | AvgLoss $-0.0184 | ProfitFactor 0.04 | Expectancy $-0.0118/trade | MaxDD 0.05%
+Sep 09 15:59:14 srv6288706486 python3[654701]: Open none
+Sep 09 15:59:14 srv6288706486 python3[654701]: Run complete. V5.2 state saved for next scheduled run.
+Sep 09 15:59:14 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
+Sep 09 15:59:14 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
-     Active: active (running) since Wed 2026-08-26 03:21:21 UTC; 2 weeks 0 days ago
-    Trigger: n/a
+     Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 2 weeks 0 days ago
+    Trigger: Wed 2026-09-09 16:04:14 UTC; 47s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Wed 2026-09-09 16:05:00 UTC     6min Wed 2026-09-09 15:50:00 UTC          8min ago crypto-bot-balanced.timer         crypto-bot-balanced.service
-Wed 2026-09-09 16:10:00 UTC    11min Wed 2026-09-09 15:55:00 UTC      3min 26s ago crypto-bot-active.timer           crypto-bot-active.service
--                                  - Wed 2026-09-09 15:58:25 UTC            1s ago crypto-bot-report.timer           crypto-bot-report.service
--                                  - Wed 2026-09-09 15:57:29 UTC           57s ago crypto-bot.timer                  crypto-bot.service
+Wed 2026-09-09 16:04:14 UTC      47s Wed 2026-09-09 15:57:29 UTC          5min ago crypto-bot.timer                  crypto-bot.service
+Wed 2026-09-09 16:05:00 UTC 1min 33s Wed 2026-09-09 15:50:00 UTC         13min ago crypto-bot-balanced.timer         crypto-bot-balanced.service
+Wed 2026-09-09 16:10:00 UTC     6min Wed 2026-09-09 15:55:00 UTC          8min ago crypto-bot-active.timer           crypto-bot-active.service
+-                                  - Wed 2026-09-09 16:03:25 UTC            1s ago crypto-bot-report.timer           crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       701Mi       169Mi       1.0Mi       1.3Gi       1.2Gi
+Mem:           1.9Gi       609Mi       261Mi       1.0Mi       1.3Gi       1.3Gi
 Swap:             0B          0B          0B
 
 ===== DISK =====
