@@ -1,47 +1,3 @@
-Sep 09 13:46:36 srv6288706486 nice[651875]: Saved: crowd_psychology_v5_5_latest.txt
-Sep 09 13:46:36 srv6288706486 nice[651875]: Saved: crowd_psychology_v5_5.csv
-Sep 09 13:46:36 srv6288706486 systemd[1]: crypto-crowd-shadow.service: Deactivated successfully.
-Sep 09 13:46:36 srv6288706486 systemd[1]: Finished crypto-crowd-shadow.service - V5.5 Crowd Psychology Shadow.
-Sep 09 14:00:00 srv6288706486 systemd[1]: Starting crypto-crowd-shadow.service - V5.5 Crowd Psychology Shadow...
-Sep 09 14:00:00 srv6288706486 nice[652192]: ====================================================================================================
-Sep 09 14:00:00 srv6288706486 nice[652192]: V5.5 CROWD PSYCHOLOGY / FOMO / TRAP SHADOW
-Sep 09 14:00:00 srv6288706486 nice[652192]: Behavior inference only - no real or paper trading decisions are changed.
-Sep 09 14:00:00 srv6288706486 nice[652192]: ====================================================================================================
-Sep 09 14:00:19 srv6288706486 nice[652192]: Candidates: 12
-Sep 09 14:00:22 srv6288706486 nice[652192]: BTCUSDT      24h= +1.38% RSI= 23.2 M15=-0.13% VOLx=0.93 | TEMPT=  6.4 TRAP= 17.3 SQZ=  8.3 PANIC= 39.7 | NEUTRAL cov=6/6
-Sep 09 14:00:25 srv6288706486 nice[652192]: ETHUSDT      24h= +1.65% RSI= 38.4 M15=-0.08% VOLx=0.88 | TEMPT= 12.4 TRAP= 22.9 SQZ=  7.4 PANIC= 25.0 | NEUTRAL cov=6/6
-Sep 09 14:00:28 srv6288706486 nice[652192]: IOSTUSDT     24h=+49.27% RSI= 68.2 M15=-0.96% VOLx=1.64 | TEMPT= 14.2 TRAP=  3.4 SQZ= 17.6 PANIC= 15.8 | NEUTRAL cov=6/6
-Sep 09 14:00:31 srv6288706486 nice[652192]: SOPHUSDT     24h=-43.36% RSI= 42.1 M15=-0.94% VOLx=4.83 | TEMPT= 22.3 TRAP= 15.9 SQZ=  1.4 PANIC= 45.9 | NEUTRAL cov=6/6
-Sep 09 14:00:33 srv6288706486 nice[652192]: KATUSDT      24h=+19.79% RSI= 42.5 M15=-3.10% VOLx=0.60 | TEMPT= 16.5 TRAP= 18.1 SQZ= 18.6 PANIC= 22.5 | NEUTRAL cov=6/6
-Sep 09 14:00:36 srv6288706486 nice[652192]: NEARUSDT     24h=+11.90% RSI= 33.6 M15=-0.08% VOLx=2.01 | TEMPT= 10.0 TRAP= 22.4 SQZ=  0.0 PANIC= 45.9 | NEUTRAL cov=6/6
-Sep 09 14:00:39 srv6288706486 nice[652192]: ZECUSDT      24h= +9.87% RSI= 54.6 M15=+0.03% VOLx=0.73 | TEMPT=  2.0 TRAP=  2.0 SQZ= 24.2 PANIC= 10.4 | NEUTRAL cov=6/6
-Sep 09 14:00:42 srv6288706486 nice[652192]: DOTUSDT      24h= +7.91% RSI= 28.9 M15=+0.17% VOLx=0.52 | TEMPT= 10.1 TRAP= 22.6 SQZ= 13.5 PANIC= 22.6 | NEUTRAL cov=6/6
-Sep 09 14:00:45 srv6288706486 nice[652192]: PUMPUSDT     24h= +6.97% RSI= 30.4 M15=+1.13% VOLx=0.50 | TEMPT=  5.9 TRAP= 18.0 SQZ=  6.9 PANIC= 24.1 | NEUTRAL cov=6/6
-Sep 09 14:00:47 srv6288706486 nice[652192]: FFUSDT       24h= +6.99% RSI= 43.8 M15=+0.26% VOLx=0.46 | TEMPT=  9.8 TRAP= 14.8 SQZ= 14.4 PANIC=  7.4 | NEUTRAL cov=6/6
-Sep 09 14:00:50 srv6288706486 nice[652192]: MARSCOINUSDT 24h= +6.56% RSI= 54.7 M15=+0.15% VOLx=0.37 | TEMPT=  6.4 TRAP=  9.1 SQZ= 11.1 PANIC=  0.7 | NEUTRAL cov=6/6
-Sep 09 14:00:53 srv6288706486 nice[652192]: PROMUSDT     24h= -5.61% RSI= 29.9 M15=-0.38% VOLx=0.83 | TEMPT= 12.0 TRAP=  6.4 SQZ= 25.6 PANIC= 22.2 | NEUTRAL cov=6/6
-Sep 09 14:00:53 srv6288706486 nice[652192]: V5.5 CROWD PSYCHOLOGY SHADOW
-Sep 09 14:00:53 srv6288706486 nice[652192]: Updated UTC: 2026-09-09T14:00:00.059858+00:00
-Sep 09 14:00:53 srv6288706486 nice[652192]: Candidates analyzed: 12
-Sep 09 14:00:53 srv6288706486 nice[652192]: Mode: SHADOW ONLY - no trading influence.
-Sep 09 14:00:53 srv6288706486 nice[652192]: Highest crowd temptation:
-Sep 09 14:00:53 srv6288706486 nice[652192]: SOPHUSDT     tempt=22.3 trap=15.9 squeeze=1.4 panic=45.9 | NEUTRAL | cov=6/6
-Sep 09 14:00:53 srv6288706486 nice[652192]: KATUSDT      tempt=16.5 trap=18.1 squeeze=18.6 panic=22.5 | NEUTRAL | cov=6/6
-Sep 09 14:00:53 srv6288706486 nice[652192]: IOSTUSDT     tempt=14.2 trap=3.4 squeeze=17.6 panic=15.8 | NEUTRAL | cov=6/6
-Sep 09 14:00:53 srv6288706486 nice[652192]: ETHUSDT      tempt=12.4 trap=22.9 squeeze=7.4 panic=25.0 | NEUTRAL | cov=6/6
-Sep 09 14:00:53 srv6288706486 nice[652192]: PROMUSDT     tempt=12.0 trap=6.4 squeeze=25.6 panic=22.2 | NEUTRAL | cov=6/6
-Sep 09 14:00:53 srv6288706486 nice[652192]: Highest trap risk:
-Sep 09 14:00:53 srv6288706486 nice[652192]: ETHUSDT      trap=22.9 tempt=12.4 | NEUTRAL
-Sep 09 14:00:53 srv6288706486 nice[652192]: DOTUSDT      trap=22.6 tempt=10.1 | NEUTRAL
-Sep 09 14:00:53 srv6288706486 nice[652192]: NEARUSDT     trap=22.4 tempt=10.0 | NEUTRAL
-Sep 09 14:00:53 srv6288706486 nice[652192]: KATUSDT      trap=18.1 tempt=16.5 | NEUTRAL
-Sep 09 14:00:53 srv6288706486 nice[652192]: PUMPUSDT     trap=18.0 tempt=5.9 | NEUTRAL
-Sep 09 14:00:53 srv6288706486 nice[652192]: Highest panic / exhaustion:
-Sep 09 14:00:53 srv6288706486 nice[652192]: SOPHUSDT     panic=45.9 | NEUTRAL
-Sep 09 14:00:53 srv6288706486 nice[652192]: NEARUSDT     panic=45.9 | NEUTRAL
-Sep 09 14:00:53 srv6288706486 nice[652192]: BTCUSDT      panic=39.7 | NEUTRAL
-Sep 09 14:00:53 srv6288706486 nice[652192]: ETHUSDT      panic=25.0 | NEUTRAL
-Sep 09 14:00:53 srv6288706486 nice[652192]: PUMPUSDT     panic=24.1 | NEUTRAL
 Sep 09 14:00:53 srv6288706486 nice[652192]: Saved: crowd_psychology_v5_5_latest.txt
 Sep 09 14:00:53 srv6288706486 nice[652192]: Saved: crowd_psychology_v5_5.csv
 Sep 09 14:00:53 srv6288706486 systemd[1]: crypto-crowd-shadow.service: Deactivated successfully.
@@ -178,3 +134,47 @@ Sep 09 14:45:58 srv6288706486 nice[653170]: Saved: crowd_psychology_v5_5_latest.
 Sep 09 14:45:58 srv6288706486 nice[653170]: Saved: crowd_psychology_v5_5.csv
 Sep 09 14:45:58 srv6288706486 systemd[1]: crypto-crowd-shadow.service: Deactivated successfully.
 Sep 09 14:45:58 srv6288706486 systemd[1]: Finished crypto-crowd-shadow.service - V5.5 Crowd Psychology Shadow.
+Sep 09 15:00:00 srv6288706486 systemd[1]: Starting crypto-crowd-shadow.service - V5.5 Crowd Psychology Shadow...
+Sep 09 15:00:00 srv6288706486 nice[653490]: ====================================================================================================
+Sep 09 15:00:00 srv6288706486 nice[653490]: V5.5 CROWD PSYCHOLOGY / FOMO / TRAP SHADOW
+Sep 09 15:00:00 srv6288706486 nice[653490]: Behavior inference only - no real or paper trading decisions are changed.
+Sep 09 15:00:00 srv6288706486 nice[653490]: ====================================================================================================
+Sep 09 15:00:18 srv6288706486 nice[653490]: Candidates: 12
+Sep 09 15:00:21 srv6288706486 nice[653490]: BTCUSDT      24h= +0.57% RSI= 39.3 M15=-0.05% VOLx=1.12 | TEMPT=  7.5 TRAP= 15.0 SQZ=  7.2 PANIC= 27.9 | NEUTRAL cov=6/6
+Sep 09 15:00:23 srv6288706486 nice[653490]: ETHUSDT      24h= +0.64% RSI= 41.3 M15=-0.09% VOLx=0.58 | TEMPT= 13.1 TRAP= 22.1 SQZ=  6.9 PANIC= 24.9 | NEUTRAL cov=6/6
+Sep 09 15:00:27 srv6288706486 nice[653490]: IOSTUSDT     24h=+57.44% RSI= 70.9 M15=+1.99% VOLx=0.92 | TEMPT= 40.5 TRAP= 22.5 SQZ= 52.3 PANIC=  0.1 | NEUTRAL cov=6/6
+Sep 09 15:00:29 srv6288706486 nice[653490]: SOPHUSDT     24h=-40.52% RSI= 42.4 M15=+0.00% VOLx=0.50 | TEMPT=  6.2 TRAP= 11.6 SQZ=  2.8 PANIC=  2.9 | NEUTRAL cov=6/6
+Sep 09 15:00:32 srv6288706486 nice[653490]: KATUSDT      24h=+16.32% RSI= 42.9 M15=+0.91% VOLx=0.44 | TEMPT= 11.5 TRAP= 18.2 SQZ=  9.1 PANIC=  3.7 | NEUTRAL cov=6/6
+Sep 09 15:00:35 srv6288706486 nice[653490]: NEARUSDT     24h=+10.83% RSI= 55.6 M15=-0.11% VOLx=0.73 | TEMPT=  5.2 TRAP= 25.3 SQZ=  4.7 PANIC= 12.3 | NEUTRAL cov=6/6
+Sep 09 15:00:38 srv6288706486 nice[653490]: ZECUSDT      24h= +9.74% RSI= 58.6 M15=+0.04% VOLx=1.32 | TEMPT= 18.1 TRAP= 11.1 SQZ= 37.3 PANIC=  3.7 | NEUTRAL cov=6/6
+Sep 09 15:00:40 srv6288706486 nice[653490]: PROMUSDT     24h= -8.52% RSI= 45.1 M15=+0.12% VOLx=0.57 | TEMPT= 11.8 TRAP=  6.4 SQZ= 26.2 PANIC=  9.0 | NEUTRAL cov=6/6
+Sep 09 15:00:44 srv6288706486 nice[653490]: ATOMUSDT     24h= +7.76% RSI= 20.2 M15=-0.42% VOLx=2.31 | TEMPT= 19.2 TRAP= 18.5 SQZ=  0.0 PANIC= 66.2 | NEUTRAL cov=6/6
+Sep 09 15:00:47 srv6288706486 nice[653490]: WLDUSDT      24h= -6.48% RSI= 37.3 M15=-0.34% VOLx=1.01 | TEMPT=  2.8 TRAP= 19.1 SQZ=  2.4 PANIC= 22.9 | NEUTRAL cov=6/6
+Sep 09 15:00:49 srv6288706486 nice[653490]: INJUSDT      24h= -6.44% RSI= 28.6 M15=-0.59% VOLx=1.23 | TEMPT=  9.9 TRAP= 19.3 SQZ=  0.0 PANIC= 47.8 | NEUTRAL cov=6/6
+Sep 09 15:00:53 srv6288706486 nice[653490]: FFUSDT       24h= +6.40% RSI= 51.4 M15=-0.05% VOLx=0.65 | TEMPT= 14.6 TRAP= 14.1 SQZ= 20.0 PANIC= 11.0 | NEUTRAL cov=6/6
+Sep 09 15:00:53 srv6288706486 nice[653490]: V5.5 CROWD PSYCHOLOGY SHADOW
+Sep 09 15:00:53 srv6288706486 nice[653490]: Updated UTC: 2026-09-09T15:00:00.060764+00:00
+Sep 09 15:00:53 srv6288706486 nice[653490]: Candidates analyzed: 12
+Sep 09 15:00:53 srv6288706486 nice[653490]: Mode: SHADOW ONLY - no trading influence.
+Sep 09 15:00:53 srv6288706486 nice[653490]: Highest crowd temptation:
+Sep 09 15:00:53 srv6288706486 nice[653490]: IOSTUSDT     tempt=40.5 trap=22.5 squeeze=52.3 panic=0.1 | NEUTRAL | cov=6/6
+Sep 09 15:00:53 srv6288706486 nice[653490]: ATOMUSDT     tempt=19.2 trap=18.5 squeeze=0.0 panic=66.2 | NEUTRAL | cov=6/6
+Sep 09 15:00:53 srv6288706486 nice[653490]: ZECUSDT      tempt=18.1 trap=11.1 squeeze=37.3 panic=3.7 | NEUTRAL | cov=6/6
+Sep 09 15:00:53 srv6288706486 nice[653490]: FFUSDT       tempt=14.6 trap=14.1 squeeze=20.0 panic=11.0 | NEUTRAL | cov=6/6
+Sep 09 15:00:53 srv6288706486 nice[653490]: ETHUSDT      tempt=13.1 trap=22.1 squeeze=6.9 panic=24.9 | NEUTRAL | cov=6/6
+Sep 09 15:00:53 srv6288706486 nice[653490]: Highest trap risk:
+Sep 09 15:00:53 srv6288706486 nice[653490]: NEARUSDT     trap=25.3 tempt=5.2 | NEUTRAL
+Sep 09 15:00:53 srv6288706486 nice[653490]: IOSTUSDT     trap=22.5 tempt=40.5 | NEUTRAL
+Sep 09 15:00:53 srv6288706486 nice[653490]: ETHUSDT      trap=22.1 tempt=13.1 | NEUTRAL
+Sep 09 15:00:53 srv6288706486 nice[653490]: INJUSDT      trap=19.3 tempt=9.9 | NEUTRAL
+Sep 09 15:00:53 srv6288706486 nice[653490]: WLDUSDT      trap=19.1 tempt=2.8 | NEUTRAL
+Sep 09 15:00:53 srv6288706486 nice[653490]: Highest panic / exhaustion:
+Sep 09 15:00:53 srv6288706486 nice[653490]: ATOMUSDT     panic=66.2 | NEUTRAL
+Sep 09 15:00:53 srv6288706486 nice[653490]: INJUSDT      panic=47.8 | NEUTRAL
+Sep 09 15:00:53 srv6288706486 nice[653490]: BTCUSDT      panic=27.9 | NEUTRAL
+Sep 09 15:00:53 srv6288706486 nice[653490]: ETHUSDT      panic=24.9 | NEUTRAL
+Sep 09 15:00:53 srv6288706486 nice[653490]: WLDUSDT      panic=22.9 | NEUTRAL
+Sep 09 15:00:53 srv6288706486 nice[653490]: Saved: crowd_psychology_v5_5_latest.txt
+Sep 09 15:00:53 srv6288706486 nice[653490]: Saved: crowd_psychology_v5_5.csv
+Sep 09 15:00:53 srv6288706486 systemd[1]: crypto-crowd-shadow.service: Deactivated successfully.
+Sep 09 15:00:53 srv6288706486 systemd[1]: Finished crypto-crowd-shadow.service - V5.5 Crowd Psychology Shadow.
