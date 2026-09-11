@@ -1,38 +1,44 @@
 ===== TIME =====
-Fri Sep 11 11:16:05 UTC 2026
+Fri Sep 11 11:21:05 UTC 2026
 
 ===== BOT SERVICE =====
-● crypto-bot.service - Crypto Paper Bot V5.2
+○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: activating (start) since Fri 2026-09-11 11:15:01 UTC; 1min 4s ago
+     Active: inactive (dead) since Fri 2026-09-11 11:16:37 UTC; 4min 28s ago
 TriggeredBy: ● crypto-bot.timer
-   Main PID: 781735 (python3)
-      Tasks: 1 (limit: 2315)
-     Memory: 103.3M (peak: 125.6M)
-        CPU: 461ms
-     CGroup: /system.slice/crypto-bot.service
-             └─781735 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
+    Process: 781735 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
+   Main PID: 781735 (code=exited, status=0/SUCCESS)
+        CPU: 578ms
 
-Sep 11 11:15:01 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
+Sep 11 11:16:37 srv6288706486 python3[781735]:   XRPUSDT      CORE  score=2.18/99.00 reject=PRECHECK TF15=N TF1H=N CHASE=Y SPREAD=N
+Sep 11 11:16:37 srv6288706486 python3[781735]: No CORE candidate passed the current adaptive threshold.
+Sep 11 11:16:37 srv6288706486 python3[781735]: No TREND candidate passed the stricter trend rules.
+Sep 11 11:16:37 srv6288706486 python3[781735]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
+Sep 11 11:16:37 srv6288706486 python3[781735]: Cash $99.9645 | Equity $99.9645 | Realized P/L $-0.0355 | W/L 1/2 | WinRate 33.3% | LossStreak 2
+Sep 11 11:16:37 srv6288706486 python3[781735]: AvgWin $+0.0014 | AvgLoss $-0.0184 | ProfitFactor 0.04 | Expectancy $-0.0118/trade | MaxDD 0.05%
+Sep 11 11:16:37 srv6288706486 python3[781735]: Open none
+Sep 11 11:16:37 srv6288706486 python3[781735]: Run complete. V5.2 state saved for next scheduled run.
+Sep 11 11:16:37 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
+Sep 11 11:16:37 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
-     Active: active (running) since Wed 2026-08-26 03:21:21 UTC; 2 weeks 2 days ago
-    Trigger: n/a
+     Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 2 weeks 2 days ago
+    Trigger: Fri 2026-09-11 11:21:37 UTC; 31s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Fri 2026-09-11 11:20:00 UTC  3min 54s Fri 2026-09-11 11:05:01 UTC         11min ago crypto-bot-balanced.timer         crypto-bot-balanced.service
-Fri 2026-09-11 11:25:00 UTC      8min Fri 2026-09-11 11:10:01 UTC          6min ago crypto-bot-active.timer           crypto-bot-active.service
--                                   - Fri 2026-09-11 11:16:02 UTC            2s ago crypto-bot-report.timer           crypto-bot-report.service
--                                   - Fri 2026-09-11 11:15:01 UTC       1min 4s ago crypto-bot.timer                  crypto-bot.service
+Fri 2026-09-11 11:21:37 UTC       31s Fri 2026-09-11 11:15:01 UTC          6min ago crypto-bot.timer                  crypto-bot.service
+Fri 2026-09-11 11:25:00 UTC  3min 53s Fri 2026-09-11 11:10:01 UTC         11min ago crypto-bot-active.timer           crypto-bot-active.service
+-                                   - Fri 2026-09-11 11:20:00 UTC       1min 5s ago crypto-bot-balanced.timer         crypto-bot-balanced.service
+-                                   - Fri 2026-09-11 11:21:03 UTC            2s ago crypto-bot-report.timer           crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       1.1Gi       404Mi       1.1Mi       603Mi       849Mi
+Mem:           1.9Gi       1.4Gi       257Mi       1.1Mi       429Mi       529Mi
 Swap:             0B          0B          0B
 
 ===== DISK =====
