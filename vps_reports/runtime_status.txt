@@ -1,47 +1,44 @@
 ===== TIME =====
-Fri Sep 11 10:15:44 UTC 2026
+Fri Sep 11 10:20:44 UTC 2026
 
 ===== BOT SERVICE =====
-● crypto-bot.service - Crypto Paper Bot V5.2
+○ crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: activating (start) since Fri 2026-09-11 10:14:01 UTC; 1min 43s ago
+     Active: inactive (dead) since Fri 2026-09-11 10:15:47 UTC; 4min 57s ago
 TriggeredBy: ● crypto-bot.timer
-   Main PID: 776624 (python3)
-      Tasks: 1 (limit: 2315)
-     Memory: 102.7M (peak: 124.5M)
-        CPU: 605ms
-     CGroup: /system.slice/crypto-bot.service
-             └─776624 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
+    Process: 776624 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
+   Main PID: 776624 (code=exited, status=0/SUCCESS)
+        CPU: 627ms
 
-Sep 11 10:15:41 srv6288706486 python3[776624]: AAVEUSDT     CORE  p=122.33000000 RSI= 36.0 M5=-0.05% M15=-0.06% VOLx=1.24 ATR=0.21% TF15=N TF1H=N EXT=-0.08% SCORE=1.57 ENTRY=N
-Sep 11 10:15:41 srv6288706486 python3[776624]: SOPHUSDT     CORE  p=0.00449000 RSI= 70.1 M5=-0.88% M15=+2.98% VOLx=2.04 ATR=2.27% TF15=N TF1H=N EXT=+1.58% SCORE=4.75 ENTRY=N
-Sep 11 10:15:41 srv6288706486 python3[776624]: MSTRBUSDT    CORE  p=129.35000000 RSI= 44.9 M5=-0.06% M15=+0.06% VOLx=0.93 ATR=0.20% TF15=N TF1H=N EXT=+0.02% SCORE=1.87 ENTRY=N
-Sep 11 10:15:41 srv6288706486 python3[776624]: GRAMUSDT     CORE  p=1.35600000 RSI= 61.1 M5=+0.00% M15=+0.07% VOLx=0.37 ATR=0.17% TF15=N TF1H=N EXT=+0.09% SCORE=4.38 ENTRY=N
-Sep 11 10:15:41 srv6288706486 python3[776624]: HEMIUSDT     CORE  p=0.00694000 RSI= 37.0 M5=+0.87% M15=+0.87% VOLx=1.08 ATR=0.65% TF15=N TF1H=N EXT=+0.44% SCORE=4.19 ENTRY=N
-Sep 11 10:15:41 srv6288706486 python3[776624]: POLUSDT      CORE  p=0.09402000 RSI= 42.9 M5=+0.07% M15=-0.80% VOLx=1.16 ATR=0.54% TF15=N TF1H=N EXT=-0.35% SCORE=2.14 ENTRY=N
-Sep 11 10:15:41 srv6288706486 python3[776624]: FETUSDT      CORE  p=0.16400000 RSI= 37.1 M5=+0.06% M15=+0.12% VOLx=0.89 ATR=0.28% TF15=N TF1H=N EXT=-0.01% SCORE=2.37 ENTRY=N
-Sep 11 10:15:41 srv6288706486 python3[776624]: FFUSDT       CORE  p=0.16560000 RSI= 51.7 M5=+0.25% M15=+0.55% VOLx=0.38 ATR=0.46% TF15=N TF1H=N EXT=+0.22% SCORE=4.34 ENTRY=N
-Sep 11 10:15:41 srv6288706486 python3[776624]: XPLUSDT      CORE  p=0.08505000 RSI= 27.1 M5=-0.05% M15=+0.71% VOLx=0.76 ATR=0.56% TF15=N TF1H=N EXT=+0.13% SCORE=1.87 ENTRY=N
-Sep 11 10:15:41 srv6288706486 python3[776624]: QQQBUSDT     CORE  p=713.51000000 RSI= 59.9 M5=-0.02% M15=+0.02% VOLx=4.81 ATR=0.03% TF15=N TF1H=N EXT=+0.03% SCORE=5.47 ENTRY=N
+Sep 11 10:15:47 srv6288706486 python3[776624]:   GRAMUSDT     CORE  score=4.38/99.50 reject=TF15 TF15=N TF1H=N CHASE=Y SPREAD=Y
+Sep 11 10:15:47 srv6288706486 python3[776624]: No CORE candidate passed the current adaptive threshold.
+Sep 11 10:15:47 srv6288706486 python3[776624]: No TREND candidate passed the stricter trend rules.
+Sep 11 10:15:47 srv6288706486 python3[776624]: No free risk slots for new positions this run.
+Sep 11 10:15:47 srv6288706486 python3[776624]: Cash $99.9645 | Equity $99.9645 | Realized P/L $-0.0355 | W/L 1/2 | WinRate 33.3% | LossStreak 2
+Sep 11 10:15:47 srv6288706486 python3[776624]: AvgWin $+0.0014 | AvgLoss $-0.0184 | ProfitFactor 0.04 | Expectancy $-0.0118/trade | MaxDD 0.05%
+Sep 11 10:15:47 srv6288706486 python3[776624]: Open none
+Sep 11 10:15:47 srv6288706486 python3[776624]: Run complete. V5.2 state saved for next scheduled run.
+Sep 11 10:15:47 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
+Sep 11 10:15:47 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
-     Active: active (running) since Wed 2026-08-26 03:21:21 UTC; 2 weeks 2 days ago
-    Trigger: n/a
+     Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 2 weeks 2 days ago
+    Trigger: Fri 2026-09-11 10:20:47 UTC; 2s left
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Fri 2026-09-11 10:20:00 UTC  4min 14s Fri 2026-09-11 10:05:01 UTC         10min ago crypto-bot-balanced.timer         crypto-bot-balanced.service
-Fri 2026-09-11 10:25:00 UTC      9min Fri 2026-09-11 10:10:01 UTC          5min ago crypto-bot-active.timer           crypto-bot-active.service
--                                   - Fri 2026-09-11 10:15:42 UTC            2s ago crypto-bot-report.timer           crypto-bot-report.service
--                                   - Fri 2026-09-11 10:14:01 UTC      1min 43s ago crypto-bot.timer                  crypto-bot.service
+Fri 2026-09-11 10:20:47 UTC        2s Fri 2026-09-11 10:14:01 UTC          6min ago crypto-bot.timer                  crypto-bot.service
+Fri 2026-09-11 10:25:00 UTC  4min 14s Fri 2026-09-11 10:10:01 UTC         10min ago crypto-bot-active.timer           crypto-bot-active.service
+-                                   - Fri 2026-09-11 10:20:01 UTC           43s ago crypto-bot-balanced.timer         crypto-bot-balanced.service
+-                                   - Fri 2026-09-11 10:20:42 UTC            2s ago crypto-bot-report.timer           crypto-bot-report.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       1.2Gi       531Mi       1.1Mi       379Mi       750Mi
+Mem:           1.9Gi       1.2Gi       380Mi       1.1Mi       551Mi       772Mi
 Swap:             0B          0B          0B
 
 ===== DISK =====
