@@ -1,8 +1,39 @@
 {
-  "cash_usdt": 19.523697160225492,
-  "positions": {},
+  "cash_usdt": 13.666588012157844,
+  "positions": {
+    "NEARUSDT": {
+      "source": "CORE",
+      "entry_price": 2.373,
+      "qty": 1.2328807498777032,
+      "cost_usdt": 2.9285545740338237,
+      "entry_fee_usdt": 0.002928554574033824,
+      "peak_price": 2.373,
+      "entry_score": 6.7540547694017565,
+      "opened_at": "2026-09-12T08:47:45.933173+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "PYTHUSDT": {
+      "source": "CORE",
+      "entry_price": 0.05273,
+      "qty": 55.483140896260004,
+      "cost_usdt": 2.9285545740338237,
+      "entry_fee_usdt": 0.002928554574033824,
+      "peak_price": 0.05273,
+      "entry_score": 6.5422824187158355,
+      "opened_at": "2026-09-12T08:47:45.933361+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.4763028397745157,
-  "total_fees_usdt": 0.5649934336905351,
+  "total_fees_usdt": 0.5708505428386028,
   "wins": 31,
   "losses": 57,
   "loss_streak": 3,
