@@ -1,19 +1,19 @@
 ===== TIME =====
-Mon Sep 14 08:01:18 UTC 2026
+Mon Sep 14 08:06:26 UTC 2026
 
 ===== BOT SERVICE =====
 ● crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: activating (start) since Mon 2026-09-14 07:59:33 UTC; 1min 45s ago
+     Active: activating (start) since Mon 2026-09-14 08:06:25 UTC; 1s ago
 TriggeredBy: ● crypto-bot.timer
-   Main PID: 983505 (python3)
+   Main PID: 983659 (python3)
       Tasks: 1 (limit: 2315)
-     Memory: 104.5M (peak: 125.2M)
-        CPU: 599ms
+     Memory: 12.8M (peak: 13.1M)
+        CPU: 60ms
      CGroup: /system.slice/crypto-bot.service
-             └─983505 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
+             └─983659 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
 
-Sep 14 07:59:33 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
+Sep 14 08:06:25 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
@@ -25,14 +25,14 @@ Sep 14 07:59:33 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto P
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Mon 2026-09-14 08:10:00 UTC     8min Mon 2026-09-14 07:55:01 UTC     6min ago crypto-bot-active.timer           crypto-bot-active.service
--                                  - Mon 2026-09-14 08:01:16 UTC       1s ago crypto-bot-report.timer           crypto-bot-report.service
--                                  - Mon 2026-09-14 07:59:33 UTC 1min 45s ago crypto-bot.timer                  crypto-bot.service
+Mon 2026-09-14 08:10:00 UTC 3min 33s Mon 2026-09-14 07:55:01 UTC    11min ago crypto-bot-active.timer           crypto-bot-active.service
+-                                  - Mon 2026-09-14 08:06:25 UTC       1s ago crypto-bot-report.timer           crypto-bot-report.service
+-                                  - Mon 2026-09-14 08:06:25 UTC       1s ago crypto-bot.timer                  crypto-bot.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       916Mi       151Mi        56Ki       1.1Gi       1.0Gi
-Swap:          2.0Gi       114Mi       1.9Gi
+Mem:           1.9Gi       840Mi       181Mi        56Ki       1.1Gi       1.1Gi
+Swap:          2.0Gi       112Mi       1.9Gi
 
 ===== DISK =====
 Filesystem      Size  Used Avail Use% Mounted on
