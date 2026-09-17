@@ -1,44 +1,38 @@
 ===== TIME =====
-Thu Sep 17 16:24:45 UTC 2026
+Thu Sep 17 16:29:48 UTC 2026
 
 ===== BOT SERVICE =====
-○ crypto-bot.service - Crypto Paper Bot V5.2
+● crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: inactive (dead) since Thu 2026-09-17 16:24:19 UTC; 26s ago
+     Active: activating (start) since Thu 2026-09-17 16:29:37 UTC; 11s ago
 TriggeredBy: ● crypto-bot.timer
-    Process: 1272727 ExecStart=/usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py (code=exited, status=0/SUCCESS)
-   Main PID: 1272727 (code=exited, status=0/SUCCESS)
-        CPU: 810ms
+   Main PID: 1273045 (python3)
+      Tasks: 1 (limit: 2315)
+     Memory: 22.6M (peak: 24.1M)
+        CPU: 113ms
+     CGroup: /system.slice/crypto-bot.service
+             └─1273045 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
 
-Sep 17 16:24:19 srv6288706486 python3[1272727]:   DASHUSDT     TREND score=4.70/99.35 reject=TF15 TF15=N TF1H=Y CHASE=N SPREAD=Y
-Sep 17 16:24:19 srv6288706486 python3[1272727]: No CORE candidate passed the current adaptive threshold.
-Sep 17 16:24:19 srv6288706486 python3[1272727]: No TREND candidate passed the stricter trend rules.
-Sep 17 16:24:19 srv6288706486 python3[1272727]: New buys blocked only because market is in genuine RISK_OFF / hard pause.
-Sep 17 16:24:19 srv6288706486 python3[1272727]: Cash $99.9645 | Equity $99.9645 | Realized P/L $-0.0355 | W/L 1/2 | WinRate 33.3% | LossStreak 2
-Sep 17 16:24:19 srv6288706486 python3[1272727]: AvgWin $+0.0014 | AvgLoss $-0.0184 | ProfitFactor 0.04 | Expectancy $-0.0118/trade | MaxDD 0.05%
-Sep 17 16:24:19 srv6288706486 python3[1272727]: Open none
-Sep 17 16:24:19 srv6288706486 python3[1272727]: Run complete. V5.2 state saved for next scheduled run.
-Sep 17 16:24:19 srv6288706486 systemd[1]: crypto-bot.service: Deactivated successfully.
-Sep 17 16:24:19 srv6288706486 systemd[1]: Finished crypto-bot.service - Crypto Paper Bot V5.2.
+Sep 17 16:29:37 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
      Loaded: loaded (/etc/systemd/system/crypto-bot.timer; enabled; preset: enabled)
-     Active: active (waiting) since Wed 2026-08-26 03:21:21 UTC; 3 weeks 1 day ago
-    Trigger: Thu 2026-09-17 16:29:19 UTC; 4min 33s left
+     Active: active (running) since Wed 2026-08-26 03:21:21 UTC; 3 weeks 1 day ago
+    Trigger: n/a
    Triggers: ● crypto-bot.service
 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
-Thu 2026-09-17 16:25:00 UTC       13s Thu 2026-09-17 16:10:00 UTC    14min ago crypto-bot-active.timer           crypto-bot-active.service
-Thu 2026-09-17 16:29:19 UTC  4min 33s Thu 2026-09-17 16:21:22 UTC 3min 23s ago crypto-bot.timer                  crypto-bot.service
--                                   - Thu 2026-09-17 16:24:43 UTC       2s ago crypto-bot-report.timer           crypto-bot-report.service
+Thu 2026-09-17 16:40:00 UTC     10min Thu 2026-09-17 16:25:01 UTC 4min 47s ago crypto-bot-active.timer           crypto-bot-active.service
+-                                   - Thu 2026-09-17 16:29:43 UTC       5s ago crypto-bot-report.timer           crypto-bot-report.service
+-                                   - Thu 2026-09-17 16:29:37 UTC      11s ago crypto-bot.timer                  crypto-bot.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       1.2Gi        93Mi        16Ki       836Mi       757Mi
-Swap:          2.0Gi       641Mi       1.4Gi
+Mem:           1.9Gi       1.3Gi        93Mi        20Ki       728Mi       651Mi
+Swap:          2.0Gi       629Mi       1.4Gi
 
 ===== DISK =====
 Filesystem      Size  Used Avail Use% Mounted on
