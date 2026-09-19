@@ -1,28 +1,19 @@
 ===== TIME =====
-Sat Sep 19 01:40:16 UTC 2026
+Sat Sep 19 01:45:20 UTC 2026
 
 ===== BOT SERVICE =====
 ● crypto-bot.service - Crypto Paper Bot V5.2
      Loaded: loaded (/etc/systemd/system/crypto-bot.service; disabled; preset: enabled)
-     Active: activating (start) since Sat 2026-09-19 01:36:33 UTC; 3min 43s ago
+     Active: activating (start) since Sat 2026-09-19 01:45:19 UTC; 986ms ago
 TriggeredBy: ● crypto-bot.timer
-   Main PID: 1428413 (python3)
+   Main PID: 1428725 (python3)
       Tasks: 1 (limit: 2315)
-     Memory: 110.4M (peak: 131.4M)
-        CPU: 873ms
+     Memory: 16.3M (peak: 16.5M)
+        CPU: 60ms
      CGroup: /system.slice/crypto-bot.service
-             └─1428413 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
+             └─1428725 /usr/bin/python3 /opt/crypto-paper-bot/bot_v5_2.py
 
-Sep 19 01:40:00 srv6288706486 python3[1428413]: FETUSDT      CORE  p=0.18190000 RSI= 29.5 M5=-0.38% M15=+0.39% VOLx=0.79 ATR=0.62% TF15=N TF1H=N EXT=-0.58% SCORE=1.08 ENTRY=N
-Sep 19 01:40:00 srv6288706486 python3[1428413]: FILUSDT      TREND p=0.95590000 RSI= 53.2 M5=-0.01% M15=+1.38% VOLx=0.62 ATR=1.12% TF15=N TF1H=N EXT=+0.13% SCORE=4.94 ENTRY=N 24h=+13.0%
-Sep 19 01:40:00 srv6288706486 python3[1428413]: MARSCOINUSDT CORE  p=0.11200000 RSI= 34.1 M5=-0.53% M15=-2.44% VOLx=0.92 ATR=1.43% TF15=N TF1H=N EXT=-1.80% SCORE=0.51 ENTRY=N
-Sep 19 01:40:00 srv6288706486 python3[1428413]: BNCBUSDT     TREND p=6.20000000 RSI= 69.2 M5=+0.16% M15=+0.16% VOLx=0.57 ATR=0.28% TF15=N TF1H=Y EXT=+0.21% SCORE=3.85 ENTRY=N 24h=+14.0%
-Sep 19 01:40:00 srv6288706486 python3[1428413]: SPCXBUSDT    CORE  p=152.42000000 RSI= 29.0 M5=+0.01% M15=-0.03% VOLx=0.41 ATR=0.03% TF15=N TF1H=N EXT=-0.03% SCORE=0.25 ENTRY=N
-Sep 19 01:40:00 srv6288706486 python3[1428413]: RAYUSDT      TREND p=1.72110000 RSI= 42.1 M5=-0.62% M15=-0.34% VOLx=0.51 ATR=0.64% TF15=N TF1H=N EXT=-0.55% SCORE=0.00 ENTRY=N 24h=+14.7%
-Sep 19 01:40:00 srv6288706486 python3[1428413]: OPUSDT       TREND p=0.11760000 RSI= 40.4 M5=-0.34% M15=+0.51% VOLx=0.43 ATR=0.90% TF15=N TF1H=N EXT=-0.74% SCORE=1.14 ENTRY=N 24h=+14.1%
-Sep 19 01:40:00 srv6288706486 python3[1428413]: SAGAUSDT     TREND p=0.02498000 RSI= 45.6 M5=-0.40% M15=-0.44% VOLx=0.67 ATR=1.01% TF15=N TF1H=N EXT=-0.46% SCORE=0.35 ENTRY=N 24h=+15.0%
-Sep 19 01:40:00 srv6288706486 python3[1428413]: DOTUSDT      CORE  p=1.12300000 RSI= 32.4 M5=-0.53% M15=-0.27% VOLx=1.72 ATR=0.36% TF15=N TF1H=N EXT=-0.61% SCORE=1.28 ENTRY=N
-Sep 19 01:40:00 srv6288706486 python3[1428413]: GENIUSUSDT   CORE  p=0.32970000 RSI= 22.1 M5=-0.39% M15=+0.09% VOLx=0.63 ATR=0.60% TF15=N TF1H=N EXT=-0.81% SCORE=0.00 ENTRY=N
+Sep 19 01:45:19 srv6288706486 systemd[1]: Starting crypto-bot.service - Crypto Paper Bot V5.2...
 
 ===== BOT TIMER =====
 ● crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes
@@ -34,14 +25,14 @@ Sep 19 01:40:00 srv6288706486 python3[1428413]: GENIUSUSDT   CORE  p=0.32970000 
 Aug 26 03:21:21 srv6288706486 systemd[1]: Started crypto-bot.timer - Run Crypto Paper Bot V5.2 every 5 minutes.
 
 ===== TIMERS =====
--                                   - Sat 2026-09-19 01:40:00 UTC           16s ago crypto-bot-active.timer           crypto-bot-active.service
--                                   - Sat 2026-09-19 01:40:13 UTC            3s ago crypto-bot-report.timer           crypto-bot-report.service
--                                   - Sat 2026-09-19 01:36:33 UTC      3min 43s ago crypto-bot.timer                  crypto-bot.service
+Sat 2026-09-19 01:55:00 UTC      9min Sat 2026-09-19 01:40:00 UTC          5min ago crypto-bot-active.timer           crypto-bot-active.service
+-                                   - Sat 2026-09-19 01:45:17 UTC            3s ago crypto-bot-report.timer           crypto-bot-report.service
+-                                   - Sat 2026-09-19 01:45:19 UTC            1s ago crypto-bot.timer                  crypto-bot.service
 
 ===== MEMORY =====
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       1.4Gi        83Mi        28Ki       593Mi       500Mi
-Swap:          2.0Gi       764Mi       1.3Gi
+Mem:           1.9Gi       1.2Gi        91Mi        24Ki       777Mi       693Mi
+Swap:          2.0Gi       795Mi       1.2Gi
 
 ===== DISK =====
 Filesystem      Size  Used Avail Use% Mounted on
