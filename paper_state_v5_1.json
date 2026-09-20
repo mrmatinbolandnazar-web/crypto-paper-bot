@@ -1,8 +1,39 @@
 {
-  "cash_usdt": 19.56333186306133,
-  "positions": {},
+  "cash_usdt": 14.574682237980689,
+  "positions": {
+    "TIAUSDT": {
+      "source": "CORE",
+      "entry_price": 0.4217,
+      "qty": 5.909012301939244,
+      "cost_usdt": 2.4943248125403197,
+      "entry_fee_usdt": 0.0024943248125403198,
+      "peak_price": 0.4217,
+      "entry_score": 6.781102977284795,
+      "opened_at": "2026-09-20T21:41:34.967629+00:00",
+      "stop_pct": 0.005325383651207718,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "ARBUSDT": {
+      "source": "CORE",
+      "entry_price": 0.2152,
+      "qty": 11.579137954125368,
+      "cost_usdt": 2.4943248125403197,
+      "entry_fee_usdt": 0.0024943248125403198,
+      "peak_price": 0.2152,
+      "entry_score": 6.550000000000001,
+      "opened_at": "2026-09-20T21:41:34.967821+00:00",
+      "stop_pct": 0.008802442910249604,
+      "take_profit_pct": 0.01628451938396177,
+      "trailing_trigger_pct": 0.009682687201274565,
+      "trailing_distance_pct": 0.005281465746149762,
+      "breakeven_trigger_pct": 0.007922198619224644
+    }
+  },
   "realized_pnl_usdt": -0.4366681369386698,
-  "total_fees_usdt": 0.7716699553728492,
+  "total_fees_usdt": 0.7766586049979298,
   "wins": 46,
   "losses": 75,
   "loss_streak": 1,
