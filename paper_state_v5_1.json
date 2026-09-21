@@ -1,5 +1,5 @@
 {
-  "cash_usdt": 14.607522123729469,
+  "cash_usdt": 9.712958919521125,
   "positions": {
     "LUNAUSDT": {
       "source": "TREND",
@@ -7,7 +7,7 @@
       "qty": 38.087398289053006,
       "cost_usdt": 2.058778285894757,
       "entry_fee_usdt": 0.002058778285894757,
-      "peak_price": 0.054,
+      "peak_price": 0.0545,
       "entry_score": 6.6,
       "opened_at": "2026-09-21T07:06:46.654954+00:00",
       "stop_pct": 0.006031746031746039,
@@ -16,30 +16,47 @@
       "trailing_distance_pct": 0.0036190476190476233,
       "breakeven_trigger_pct": 0.0065
     },
-    "XRPUSDT": {
+    "BNBUSDT": {
       "source": "CORE",
-      "entry_price": 1.44,
-      "qty": 2.0403963369135543,
-      "cost_usdt": 2.94111183699251,
-      "entry_fee_usdt": 0.00294111183699251,
-      "peak_price": 1.44,
-      "entry_score": 6.82256744036101,
-      "opened_at": "2026-09-21T07:06:46.655143+00:00",
+      "entry_price": 794.32,
+      "qty": 0.004942144813235741,
+      "cost_usdt": 3.9295740420915055,
+      "entry_fee_usdt": 0.0039295740420915055,
+      "peak_price": 794.32,
+      "entry_score": 6.949999999999999,
+      "opened_at": "2026-09-21T14:02:57.910048+00:00",
       "stop_pct": 0.0045,
       "take_profit_pct": 0.01,
       "trailing_trigger_pct": 0.0075,
       "trailing_distance_pct": 0.0035,
       "breakeven_trigger_pct": 0.0065
+    },
+    "INJUSDT": {
+      "source": "CORE",
+      "entry_price": 7.965,
+      "qty": 0.4928618290080871,
+      "cost_usdt": 3.9295740420915055,
+      "entry_fee_usdt": 0.0039295740420915055,
+      "peak_price": 7.965,
+      "entry_score": 6.522621155165232,
+      "opened_at": "2026-09-21T14:02:57.910281+00:00",
+      "stop_pct": 0.008243206887274703,
+      "take_profit_pct": 0.015249932741458201,
+      "trailing_trigger_pct": 0.009067527576002174,
+      "trailing_distance_pct": 0.004945924132364821,
+      "breakeven_trigger_pct": 0.007418886198547233
     }
   },
-  "realized_pnl_usdt": -0.3925877533832609,
-  "total_fees_usdt": 0.7916918252688667,
-  "wins": 48,
+  "realized_pnl_usdt": -0.3691147104011048,
+  "total_fees_usdt": 0.8025185257854568,
+  "wins": 49,
   "losses": 76,
   "loss_streak": 0,
   "cooldown_until": null,
-  "symbol_cooldowns": {},
-  "sum_win_pnl": 1.2595244627839726,
+  "symbol_cooldowns": {
+    "XRPUSDT": "2026-09-21T14:22:09.147664+00:00"
+  },
+  "sum_win_pnl": 1.2829975057661287,
   "sum_loss_pnl": -1.6521122161672335,
   "peak_equity": 20.0,
   "max_drawdown_pct": 0.030782548317889534,
