@@ -1,16 +1,29 @@
 {
-  "cash_usdt": 19.59128328083419,
-  "positions": {},
+  "cash_usdt": 17.240329287134088,
+  "positions": {
+    "SHIBUSDT": {
+      "source": "CORE",
+      "entry_price": 6.07e-06,
+      "qty": 386919.77589891315,
+      "cost_usdt": 2.3509539937001027,
+      "entry_fee_usdt": 0.002350953993700103,
+      "peak_price": 6.07e-06,
+      "entry_score": 6.944526985320319,
+      "opened_at": "2026-09-22T19:17:20.060157+00:00",
+      "stop_pct": 0.005507178159566927,
+      "take_profit_pct": 0.010188279595198815,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.408716719165807,
-  "total_fees_usdt": 0.8320427960384624,
+  "total_fees_usdt": 0.8343937500321625,
   "wins": 51,
   "losses": 80,
   "loss_streak": 2,
   "cooldown_until": null,
-  "symbol_cooldowns": {
-    "SOLUSDT": "2026-09-22T16:44:50.556783+00:00",
-    "TAOUSDT": "2026-09-22T16:45:14.295054+00:00"
-  },
+  "symbol_cooldowns": {},
   "sum_win_pnl": 1.3402081498958125,
   "sum_loss_pnl": -1.7489248690616195,
   "peak_equity": 20.0,
