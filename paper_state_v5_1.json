@@ -1,16 +1,29 @@
 {
-  "cash_usdt": 19.527758199464188,
-  "positions": {},
+  "cash_usdt": 17.887426510709197,
+  "positions": {
+    "ZROUSDT": {
+      "source": "TREND",
+      "entry_price": 1.495,
+      "qty": 1.096114620111195,
+      "cost_usdt": 1.6403316887549917,
+      "entry_fee_usdt": 0.0016403316887549917,
+      "peak_price": 1.495,
+      "entry_score": 6.949999999999999,
+      "opened_at": "2026-09-24T14:28:26.951059+00:00",
+      "stop_pct": 0.010377448638318217,
+      "take_profit_pct": 0.020754897276636434,
+      "trailing_trigger_pct": 0.011415193502150039,
+      "trailing_distance_pct": 0.00622646918299093,
+      "breakeven_trigger_pct": 0.009339703774486395
+    }
+  },
   "realized_pnl_usdt": -0.47224180053581155,
-  "total_fees_usdt": 0.8690000208099132,
+  "total_fees_usdt": 0.8706403524986682,
   "wins": 53,
   "losses": 86,
   "loss_streak": 2,
   "cooldown_until": null,
-  "symbol_cooldowns": {
-    "SHIBUSDT": "2026-09-24T10:44:57.418950+00:00",
-    "FETUSDT": "2026-09-24T10:45:04.838963+00:00"
-  },
+  "symbol_cooldowns": {},
   "sum_win_pnl": 1.381926872708883,
   "sum_loss_pnl": -1.8541686732446945,
   "peak_equity": 20.0,
