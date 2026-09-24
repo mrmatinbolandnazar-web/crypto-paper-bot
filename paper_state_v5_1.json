@@ -1,15 +1,44 @@
 {
-  "cash_usdt": 19.507490746461748,
-  "positions": {},
+  "cash_usdt": 11.70449444787705,
+  "positions": {
+    "DOGEUSDT": {
+      "source": "CORE",
+      "entry_price": 0.09626,
+      "qty": 40.49030387640824,
+      "cost_usdt": 3.9014981492923497,
+      "entry_fee_usdt": 0.00390149814929235,
+      "peak_price": 0.09626,
+      "entry_score": 6.103007750921227,
+      "opened_at": "2026-09-24T21:48:01.017850+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "CAKEUSDT": {
+      "source": "CORE",
+      "entry_price": 2.744,
+      "qty": 1.420406942836391,
+      "cost_usdt": 3.9014981492923497,
+      "entry_fee_usdt": 0.00390149814929235,
+      "peak_price": 2.744,
+      "entry_score": 6.0,
+      "opened_at": "2026-09-24T21:48:01.018011+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.4925092535382516,
-  "total_fees_usdt": 0.8722620384203424,
+  "total_fees_usdt": 0.880065034718927,
   "wins": 53,
   "losses": 87,
   "loss_streak": 3,
-  "cooldown_until": "2026-09-24T19:22:19.412581+00:00",
-  "symbol_cooldowns": {
-    "ZROUSDT": "2026-09-24T19:37:19.412610+00:00"
-  },
+  "cooldown_until": null,
+  "symbol_cooldowns": {},
   "sum_win_pnl": 1.381926872708883,
   "sum_loss_pnl": -1.8744361262471345,
   "peak_equity": 20.0,
