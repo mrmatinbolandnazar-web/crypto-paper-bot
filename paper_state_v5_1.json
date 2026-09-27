@@ -1,28 +1,13 @@
 {
-  "cash_usdt": 13.602384970083207,
+  "cash_usdt": 13.640447230784721,
   "positions": {
-    "PYTHUSDT": {
-      "source": "CORE",
-      "entry_price": 0.085,
-      "qty": 34.257435088520474,
-      "cost_usdt": 2.914796779303544,
-      "entry_fee_usdt": 0.002914796779303544,
-      "peak_price": 0.085,
-      "entry_score": 6.772257997030913,
-      "opened_at": "2026-09-27T07:02:47.562706+00:00",
-      "stop_pct": 0.009610084033613454,
-      "take_profit_pct": 0.01777865546218489,
-      "trailing_trigger_pct": 0.010571092436974799,
-      "trailing_distance_pct": 0.005766050420168072,
-      "breakeven_trigger_pct": 0.008649075630252108
-    },
     "ETCUSDT": {
       "source": "CORE",
       "entry_price": 9.48,
       "qty": 0.30716054667977216,
       "cost_usdt": 2.914796779303544,
       "entry_fee_usdt": 0.002914796779303544,
-      "peak_price": 9.48,
+      "peak_price": 9.53,
       "entry_score": 6.4519370091765245,
       "opened_at": "2026-09-27T07:02:47.562857+00:00",
       "stop_pct": 0.0045,
@@ -30,18 +15,33 @@
       "trailing_trigger_pct": 0.0075,
       "trailing_distance_pct": 0.0035,
       "breakeven_trigger_pct": 0.0065
+    },
+    "WLDUSDT": {
+      "source": "CORE",
+      "entry_price": 0.5807,
+      "qty": 5.027902172534055,
+      "cost_usdt": 2.922625417007533,
+      "entry_fee_usdt": 0.002922625417007533,
+      "peak_price": 0.5807,
+      "entry_score": 6.35,
+      "opened_at": "2026-09-27T12:57:09.940028+00:00",
+      "stop_pct": 0.011793648060222895,
+      "take_profit_pct": 0.021818248911412357,
+      "trailing_trigger_pct": 0.012973012866245186,
+      "trailing_distance_pct": 0.007076188836133737,
+      "breakeven_trigger_pct": 0.010614283254200605
     }
   },
-  "realized_pnl_usdt": -0.5680214713097096,
-  "total_fees_usdt": 0.9262982074473268,
-  "wins": 55,
+  "realized_pnl_usdt": -0.522130572904209,
+  "total_fees_usdt": 0.9321844841933724,
+  "wins": 56,
   "losses": 92,
   "loss_streak": 0,
   "cooldown_until": null,
   "symbol_cooldowns": {
-    "INJUSDT": "2026-09-27T07:22:26.698375+00:00"
+    "PYTHUSDT": "2026-09-27T13:17:02.233736+00:00"
   },
-  "sum_win_pnl": 1.4108921574122149,
+  "sum_win_pnl": 1.4567830558177155,
   "sum_loss_pnl": -1.9789136287219244,
   "peak_equity": 20.0,
   "max_drawdown_pct": 0.030782548317889534,
