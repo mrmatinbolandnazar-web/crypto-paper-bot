@@ -1,5 +1,5 @@
 {
-  "cash_usdt": 17.505370039131716,
+  "cash_usdt": 13.614830678177213,
   "positions": {
     "STXUSDT": {
       "source": "CORE",
@@ -7,9 +7,24 @@
       "qty": 6.043844710244542,
       "cost_usdt": 1.9450411154590797,
       "entry_fee_usdt": 0.0019450411154590798,
-      "peak_price": 0.3215,
+      "peak_price": 0.3232,
       "entry_score": 6.901933754734885,
       "opened_at": "2026-09-29T13:59:40.080754+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "RENDERUSDT": {
+      "source": "CORE",
+      "entry_price": 1.91,
+      "qty": 2.0348946709913864,
+      "cost_usdt": 3.890539360954502,
+      "entry_fee_usdt": 0.0038905393609545017,
+      "peak_price": 1.91,
+      "entry_score": 6.0,
+      "opened_at": "2026-09-29T19:17:07.385595+00:00",
       "stop_pct": 0.0045,
       "take_profit_pct": 0.01,
       "trailing_trigger_pct": 0.0075,
@@ -18,14 +33,12 @@
     }
   },
   "realized_pnl_usdt": -0.5495888454092139,
-  "total_fees_usdt": 0.9446112713802581,
+  "total_fees_usdt": 0.9485018107412126,
   "wins": 57,
   "losses": 94,
   "loss_streak": 0,
   "cooldown_until": null,
-  "symbol_cooldowns": {
-    "ENAUSDT": "2026-09-29T14:19:30.951685+00:00"
-  },
+  "symbol_cooldowns": {},
   "sum_win_pnl": 1.4753933035004407,
   "sum_loss_pnl": -2.024982148909655,
   "peak_equity": 20.0,
