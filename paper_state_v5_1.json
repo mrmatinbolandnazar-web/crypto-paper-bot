@@ -1,16 +1,29 @@
 {
-  "cash_usdt": 19.38015536517064,
-  "positions": {},
+  "cash_usdt": 17.442139828653577,
+  "positions": {
+    "AVAXUSDT": {
+      "source": "CORE",
+      "entry_price": 11.133,
+      "qty": 0.17390438524930812,
+      "cost_usdt": 1.9380155365170642,
+      "entry_fee_usdt": 0.0019380155365170642,
+      "peak_price": 11.133,
+      "entry_score": 6.937812087787466,
+      "opened_at": "2026-10-03T19:13:16.786242+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.619844634829372,
-  "total_fees_usdt": 0.9935036069510015,
+  "total_fees_usdt": 0.9954416224875186,
   "wins": 59,
   "losses": 100,
   "loss_streak": 0,
-  "cooldown_until": "2026-10-03T16:53:41.468097+00:00",
-  "symbol_cooldowns": {
-    "SUIUSDT": "2026-10-03T17:08:41.468122+00:00",
-    "ALGOUSDT": "2026-10-03T16:29:05.219993+00:00"
-  },
+  "cooldown_until": null,
+  "symbol_cooldowns": {},
   "sum_win_pnl": 1.5202799528788498,
   "sum_loss_pnl": -2.140124587708222,
   "peak_equity": 20.0,
