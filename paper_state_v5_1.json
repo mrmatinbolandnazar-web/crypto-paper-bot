@@ -1,34 +1,48 @@
 {
-  "cash_usdt": 17.36070812471408,
+  "cash_usdt": 14.360814082406,
   "positions": {
-    "ENAUSDT": {
+    "BONKUSDT": {
       "source": "CORE",
-      "entry_price": 0.2175,
-      "qty": 8.85994759468167,
-      "cost_usdt": 1.9289675694126758,
-      "entry_fee_usdt": 0.0019289675694126758,
-      "peak_price": 0.2175,
-      "entry_score": 6.803566833134808,
-      "opened_at": "2026-10-09T09:20:09.077972+00:00",
-      "stop_pct": 0.004965517241379288,
-      "take_profit_pct": 0.01,
+      "entry_price": 3.36e-06,
+      "qty": 730733.777449368,
+      "cost_usdt": 2.457723215445322,
+      "entry_fee_usdt": 0.0024577232154453224,
+      "peak_price": 3.36e-06,
+      "entry_score": 6.550000000000001,
+      "opened_at": "2026-10-09T16:22:36.115895+00:00",
+      "stop_pct": 0.006122448979591822,
+      "take_profit_pct": 0.01132653061224487,
       "trailing_trigger_pct": 0.0075,
-      "trailing_distance_pct": 0.0035,
+      "trailing_distance_pct": 0.0036734693877550927,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "LDOUSDT": {
+      "source": "CORE",
+      "entry_price": 0.4233,
+      "qty": 5.8002964616817305,
+      "cost_usdt": 2.457723215445322,
+      "entry_fee_usdt": 0.0024577232154453224,
+      "peak_price": 0.4233,
+      "entry_score": 6.515657077335136,
+      "opened_at": "2026-10-09T16:22:36.116091+00:00",
+      "stop_pct": 0.006277209679052325,
+      "take_profit_pct": 0.011612837906246802,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0037663258074313952,
       "breakeven_trigger_pct": 0.0065
     }
   },
-  "realized_pnl_usdt": -0.7103243058732536,
-  "total_fees_usdt": 1.072769187322282,
+  "realized_pnl_usdt": -0.7237394867033635,
+  "total_fees_usdt": 1.0796021036116135,
   "wins": 63,
-  "losses": 110,
-  "loss_streak": 0,
+  "losses": 111,
+  "loss_streak": 1,
   "cooldown_until": null,
   "symbol_cooldowns": {
-    "SOLUSDT": "2026-10-09T09:39:28.479708+00:00",
-    "XRPUSDT": "2026-10-09T09:39:29.252648+00:00"
+    "ENAUSDT": "2026-10-09T17:22:22.522254+00:00"
   },
   "sum_win_pnl": 1.6028084913562484,
-  "sum_loss_pnl": -2.313132797229502,
+  "sum_loss_pnl": -2.3265479780596117,
   "peak_equity": 20.0,
   "max_drawdown_pct": 0.03759510466496785,
   "started_at": "2026-08-24T11:00:07.094922+00:00"
