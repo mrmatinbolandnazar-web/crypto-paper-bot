@@ -1,28 +1,13 @@
 {
-  "cash_usdt": 12.717437356445647,
+  "cash_usdt": 12.940602779802447,
   "positions": {
-    "币安人生USDT": {
-      "source": "TREND",
-      "entry_price": 0.5195,
-      "qty": 5.187566099899345,
-      "cost_usdt": 2.6976382271248345,
-      "entry_fee_usdt": 0.0026976382271248346,
-      "peak_price": 0.5195,
-      "entry_score": 6.949999999999999,
-      "opened_at": "2026-10-08T22:22:19.963479+00:00",
-      "stop_pct": 0.0045,
-      "take_profit_pct": 0.01,
-      "trailing_trigger_pct": 0.0075,
-      "trailing_distance_pct": 0.0035,
-      "breakeven_trigger_pct": 0.0065
-    },
     "XRPUSDT": {
       "source": "CORE",
       "entry_price": 1.3827,
       "qty": 2.784345936932616,
       "cost_usdt": 3.8537688958926206,
       "entry_fee_usdt": 0.0038537688958926205,
-      "peak_price": 1.3827,
+      "peak_price": 1.3909,
       "entry_score": 6.949999999999999,
       "opened_at": "2026-10-08T22:22:19.963666+00:00",
       "stop_pct": 0.0045,
@@ -30,17 +15,34 @@
       "trailing_trigger_pct": 0.0075,
       "trailing_distance_pct": 0.0035,
       "breakeven_trigger_pct": 0.0065
+    },
+    "SOLUSDT": {
+      "source": "CORE",
+      "entry_price": 109.91,
+      "qty": 0.02233198211641423,
+      "cost_usdt": 2.4569651195346225,
+      "entry_fee_usdt": 0.0024569651195346224,
+      "peak_price": 109.91,
+      "entry_score": 6.550000000000001,
+      "opened_at": "2026-10-09T02:20:59.041118+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
     }
   },
-  "realized_pnl_usdt": -0.7311555205369069,
-  "total_fees_usdt": 1.05934501293442,
+  "realized_pnl_usdt": -0.7486632047703192,
+  "total_fees_usdt": 1.0644847914102022,
   "wins": 61,
-  "losses": 109,
-  "loss_streak": 0,
+  "losses": 110,
+  "loss_streak": 1,
   "cooldown_until": null,
-  "symbol_cooldowns": {},
+  "symbol_cooldowns": {
+    "币安人生USDT": "2026-10-09T03:20:58.440083+00:00"
+  },
   "sum_win_pnl": 1.5644695924591827,
-  "sum_loss_pnl": -2.2956251129960896,
+  "sum_loss_pnl": -2.313132797229502,
   "peak_equity": 20.0,
   "max_drawdown_pct": 0.03759510466496785,
   "started_at": "2026-08-24T11:00:07.094922+00:00"
