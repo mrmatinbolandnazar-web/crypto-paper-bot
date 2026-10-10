@@ -1,18 +1,47 @@
 {
-  "cash_usdt": 19.217294247348633,
-  "positions": {},
+  "cash_usdt": 13.452105973144043,
+  "positions": {
+    "ALGOUSDT": {
+      "source": "CORE",
+      "entry_price": 0.1204,
+      "qty": 23.917869958182663,
+      "cost_usdt": 2.882594137102295,
+      "entry_fee_usdt": 0.002882594137102295,
+      "peak_price": 0.1204,
+      "entry_score": 6.8266366244672545,
+      "opened_at": "2026-10-10T17:35:40.038972+00:00",
+      "stop_pct": 0.0063360227812055,
+      "take_profit_pct": 0.011721642145230176,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0038016136687232995,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "APTUSDT": {
+      "source": "CORE",
+      "entry_price": 0.8553,
+      "qty": 3.3669023067522423,
+      "cost_usdt": 2.882594137102295,
+      "entry_fee_usdt": 0.002882594137102295,
+      "peak_price": 0.8553,
+      "entry_score": 6.35,
+      "opened_at": "2026-10-10T17:35:40.039129+00:00",
+      "stop_pct": 0.007536202836097603,
+      "take_profit_pct": 0.013941975246780567,
+      "trailing_trigger_pct": 0.008289823119707364,
+      "trailing_distance_pct": 0.004521721701658561,
+      "breakeven_trigger_pct": 0.006782582552487843
+    }
+  },
   "realized_pnl_usdt": -0.7827057526513745,
-  "total_fees_usdt": 1.0902371395673274,
+  "total_fees_usdt": 1.0960023278415318,
   "wins": 63,
   "losses": 114,
   "loss_streak": 4,
-  "cooldown_until": "2026-10-10T13:38:45.548732+00:00",
-  "symbol_cooldowns": {
-    "PENDLEUSDT": "2026-10-10T13:53:45.548753+00:00"
-  },
+  "cooldown_until": null,
+  "symbol_cooldowns": {},
   "sum_win_pnl": 1.6028084913562484,
   "sum_loss_pnl": -2.3855142440076227,
   "peak_equity": 20.0,
-  "max_drawdown_pct": 0.03913528763256835,
+  "max_drawdown_pct": 0.039423547046278526,
   "started_at": "2026-08-24T11:00:07.094922+00:00"
 }
