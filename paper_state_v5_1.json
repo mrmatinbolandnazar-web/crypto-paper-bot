@@ -1,5 +1,5 @@
 {
-  "cash_usdt": 17.304885613934772,
+  "cash_usdt": 14.421407882257986,
   "positions": {
     "CAKEUSDT": {
       "source": "CORE",
@@ -15,17 +15,30 @@
       "trailing_trigger_pct": 0.0075,
       "trailing_distance_pct": 0.0035,
       "breakeven_trigger_pct": 0.0065
+    },
+    "RENDERUSDT": {
+      "source": "CORE",
+      "entry_price": 1.938,
+      "qty": 1.486374744037724,
+      "cost_usdt": 2.8834777316767854,
+      "entry_fee_usdt": 0.0028834777316767853,
+      "peak_price": 1.938,
+      "entry_score": 6.949999999999999,
+      "opened_at": "2026-10-11T02:54:16.942319+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
     }
   },
   "realized_pnl_usdt": -0.7723493178502587,
-  "total_fees_usdt": 1.1037064189447876,
+  "total_fees_usdt": 1.1065898966764645,
   "wins": 64,
   "losses": 115,
   "loss_streak": 0,
   "cooldown_until": null,
-  "symbol_cooldowns": {
-    "APTUSDT": "2026-10-11T00:12:09.684893+00:00"
-  },
+  "symbol_cooldowns": {},
   "sum_win_pnl": 1.63715490385902,
   "sum_loss_pnl": -2.4095042217092786,
   "peak_equity": 20.0,
