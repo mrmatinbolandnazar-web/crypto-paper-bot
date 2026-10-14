@@ -1,8 +1,39 @@
 {
-  "cash_usdt": 19.13463804494589,
-  "positions": {},
+  "cash_usdt": 14.255305343484691,
+  "positions": {
+    "ZECUSDT": {
+      "source": "TREND",
+      "entry_price": 1227.19,
+      "qty": 0.0016355477617358346,
+      "cost_usdt": 2.0091369947193183,
+      "entry_fee_usdt": 0.002009136994719318,
+      "peak_price": 1227.19,
+      "entry_score": 6.550000000000001,
+      "opened_at": "2026-10-14T00:20:56.372895+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "STXUSDT": {
+      "source": "CORE",
+      "entry_price": 0.436,
+      "qty": 6.57643465833748,
+      "cost_usdt": 2.8701957067418835,
+      "entry_fee_usdt": 0.0028701957067418836,
+      "peak_price": 0.436,
+      "entry_score": 6.940386431885827,
+      "opened_at": "2026-10-14T00:20:56.373105+00:00",
+      "stop_pct": 0.007136304062909578,
+      "take_profit_pct": 0.01320216251638272,
+      "trailing_trigger_pct": 0.007849934469200537,
+      "trailing_distance_pct": 0.004281782437745746,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.8653619550541147,
-  "total_fees_usdt": 1.140499887673834,
+  "total_fees_usdt": 1.145379220375295,
   "wins": 65,
   "losses": 121,
   "loss_streak": 4,
@@ -11,6 +42,6 @@
   "sum_win_pnl": 1.655542351648944,
   "sum_loss_pnl": -2.5209043067030588,
   "peak_equity": 20.0,
-  "max_drawdown_pct": 0.04326809775270544,
+  "max_drawdown_pct": 0.04351206438777844,
   "started_at": "2026-08-24T11:00:07.094922+00:00"
 }
