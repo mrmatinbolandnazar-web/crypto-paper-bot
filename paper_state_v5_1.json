@@ -1,8 +1,39 @@
 {
-  "cash_usdt": 19.000265542875507,
-  "positions": {},
+  "cash_usdt": 11.400159325725305,
+  "positions": {
+    "ETHUSDT": {
+      "source": "CORE",
+      "entry_price": 2409.57,
+      "qty": 0.0015754898407045765,
+      "cost_usdt": 3.8000531085751015,
+      "entry_fee_usdt": 0.0038000531085751015,
+      "peak_price": 2409.57,
+      "entry_score": 6.550000000000001,
+      "opened_at": "2026-10-18T23:32:42.977625+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "PEPEUSDT": {
+      "source": "CORE",
+      "entry_price": 4e-06,
+      "qty": 949063.2638666317,
+      "cost_usdt": 3.8000531085751015,
+      "entry_fee_usdt": 0.0038000531085751015,
+      "peak_price": 4e-06,
+      "entry_score": 6.550000000000001,
+      "opened_at": "2026-10-18T23:32:42.977786+00:00",
+      "stop_pct": 0.006428571428571367,
+      "take_profit_pct": 0.01189285714285703,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.00385714285714282,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -0.9997344571245008,
-  "total_fees_usdt": 1.2498252995332206,
+  "total_fees_usdt": 1.2574254057503709,
   "wins": 70,
   "losses": 133,
   "loss_streak": 12,
@@ -11,6 +42,6 @@
   "sum_win_pnl": 1.8038622233019141,
   "sum_loss_pnl": -2.803596680426415,
   "peak_equity": 20.0,
-  "max_drawdown_pct": 0.04998672285622465,
+  "max_drawdown_pct": 0.05036672816708219,
   "started_at": "2026-08-24T11:00:07.094922+00:00"
 }
