@@ -1,28 +1,13 @@
 {
-  "cash_usdt": 14.243111599672616,
+  "cash_usdt": 13.70945639377943,
   "positions": {
-    "XLMUSDT": {
-      "source": "CORE",
-      "entry_price": 0.1698,
-      "qty": 11.173475518103409,
-      "cost_usdt": 1.8991552982722313,
-      "entry_fee_usdt": 0.0018991552982722314,
-      "peak_price": 0.1704,
-      "entry_score": 6.80967638001438,
-      "opened_at": "2026-10-31T15:05:54.489331+00:00",
-      "stop_pct": 0.0045,
-      "take_profit_pct": 0.01,
-      "trailing_trigger_pct": 0.0075,
-      "trailing_distance_pct": 0.0035,
-      "breakeven_trigger_pct": 0.0065
-    },
     "INJUSDT": {
       "source": "CORE",
       "entry_price": 7.282,
       "qty": 0.3908866793041316,
       "cost_usdt": 2.849286084777464,
       "entry_fee_usdt": 0.002849286084777464,
-      "peak_price": 7.282,
+      "peak_price": 7.307,
       "entry_score": 6.550000000000001,
       "opened_at": "2026-10-31T22:34:28.255743+00:00",
       "stop_pct": 0.0045,
@@ -30,17 +15,34 @@
       "trailing_trigger_pct": 0.0075,
       "trailing_distance_pct": 0.0035,
       "breakeven_trigger_pct": 0.0065
+    },
+    "AAVEUSDT": {
+      "source": "CORE",
+      "entry_price": 134.77,
+      "qty": 0.01794215695448319,
+      "cost_usdt": 2.4204849777334334,
+      "entry_fee_usdt": 0.0024204849777334334,
+      "peak_price": 134.77,
+      "entry_score": 6.550000000000001,
+      "opened_at": "2026-11-01T01:26:21.030870+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
     }
   },
-  "realized_pnl_usdt": -1.0084470172776958,
-  "total_fees_usdt": 1.448668520483684,
+  "realized_pnl_usdt": -1.0207725437096815,
+  "total_fees_usdt": 1.452977723951748,
   "wins": 83,
-  "losses": 152,
-  "loss_streak": 0,
+  "losses": 153,
+  "loss_streak": 1,
   "cooldown_until": null,
-  "symbol_cooldowns": {},
+  "symbol_cooldowns": {
+    "XLMUSDT": "2026-11-01T02:25:58.917443+00:00"
+  },
   "sum_win_pnl": 2.166726011131256,
-  "sum_loss_pnl": -3.1751730284089508,
+  "sum_loss_pnl": -3.1874985548409365,
   "peak_equity": 20.0,
   "max_drawdown_pct": 0.0560608645868502,
   "started_at": "2026-08-24T11:00:07.094922+00:00"
