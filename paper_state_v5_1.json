@@ -1,8 +1,39 @@
 {
-  "cash_usdt": 18.980053491590475,
-  "positions": {},
+  "cash_usdt": 14.140139851234904,
+  "positions": {
+    "LTCUSDT": {
+      "source": "CORE",
+      "entry_price": 55.26,
+      "qty": 0.043748405055331306,
+      "cost_usdt": 2.4199568201777857,
+      "entry_fee_usdt": 0.002419956820177786,
+      "peak_price": 55.26,
+      "entry_score": 6.35,
+      "opened_at": "2026-11-02T09:16:20.532925+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "SHIBUSDT": {
+      "source": "CORE",
+      "entry_price": 4.66e-06,
+      "qty": 518784.73462609603,
+      "cost_usdt": 2.4199568201777857,
+      "entry_fee_usdt": 0.002419956820177786,
+      "peak_price": 4.66e-06,
+      "entry_score": 6.35,
+      "opened_at": "2026-11-02T09:16:20.533075+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -1.0199465084095343,
-  "total_fees_usdt": 1.4582535969225299,
+  "total_fees_usdt": 1.4630935105628853,
   "wins": 84,
   "losses": 154,
   "loss_streak": 1,
