@@ -1,21 +1,6 @@
 {
-  "cash_usdt": 11.396406733021028,
+  "cash_usdt": 8.72692373475936,
   "positions": {
-    "DOGEUSDT": {
-      "source": "CORE",
-      "entry_price": 0.07775,
-      "qty": 48.81033366039874,
-      "cost_usdt": 3.7988022443403424,
-      "entry_fee_usdt": 0.0037988022443403427,
-      "peak_price": 0.07775,
-      "entry_score": 6.35,
-      "opened_at": "2026-11-04T17:00:31.890300+00:00",
-      "stop_pct": 0.004674322462103821,
-      "take_profit_pct": 0.01,
-      "trailing_trigger_pct": 0.0075,
-      "trailing_distance_pct": 0.0035,
-      "breakeven_trigger_pct": 0.0065
-    },
     "XRPUSDT": {
       "source": "CORE",
       "entry_price": 1.3169,
@@ -30,20 +15,49 @@
       "trailing_trigger_pct": 0.0075,
       "trailing_distance_pct": 0.0035,
       "breakeven_trigger_pct": 0.0065
+    },
+    "ARBUSDT": {
+      "source": "CORE",
+      "entry_price": 0.1648,
+      "qty": 19.528298349654435,
+      "cost_usdt": 3.2214850530761274,
+      "entry_fee_usdt": 0.0032214850530761273,
+      "peak_price": 0.1648,
+      "entry_score": 6.404850010936916,
+      "opened_at": "2026-11-04T22:32:04.376913+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    },
+    "CAKEUSDT": {
+      "source": "CORE",
+      "entry_price": 2.026,
+      "qty": 1.5884815241969652,
+      "cost_usdt": 3.2214850530761274,
+      "entry_fee_usdt": 0.0032214850530761273,
+      "peak_price": 2.026,
+      "entry_score": 6.35,
+      "opened_at": "2026-11-04T22:32:04.377083+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
     }
   },
-  "realized_pnl_usdt": -1.0059887782982952,
-  "total_fees_usdt": 1.486924720893316,
+  "realized_pnl_usdt": -1.031303914748049,
+  "total_fees_usdt": 1.497144955371731,
   "wins": 86,
-  "losses": 156,
-  "loss_streak": 0,
+  "losses": 157,
+  "loss_streak": 1,
   "cooldown_until": null,
   "symbol_cooldowns": {
-    "STXUSDT": "2026-11-04T17:20:23.893429+00:00",
-    "LDOUSDT": "2026-11-04T17:20:25.601254+00:00"
+    "DOGEUSDT": "2026-11-04T23:31:29.886801+00:00"
   },
   "sum_win_pnl": 2.231412717360155,
-  "sum_loss_pnl": -3.237401495658449,
+  "sum_loss_pnl": -3.262716632108203,
   "peak_equity": 20.0,
   "max_drawdown_pct": 0.0560608645868502,
   "started_at": "2026-08-24T11:00:07.094922+00:00"
