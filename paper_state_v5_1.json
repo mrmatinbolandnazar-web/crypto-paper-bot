@@ -1,30 +1,32 @@
 {
-  "cash_usdt": 17.21605675535395,
+  "cash_usdt": 16.197241206848656,
   "positions": {
-    "ATOMUSDT": {
-      "source": "CORE",
-      "entry_price": 1.275,
-      "qty": 1.253103147438878,
-      "cost_usdt": 1.5993058188033726,
-      "entry_fee_usdt": 0.0015993058188033726,
-      "peak_price": 1.275,
-      "entry_score": 6.949999999999999,
-      "opened_at": "2026-11-23T20:23:30.102873+00:00",
-      "stop_pct": 0.00739495798319327,
-      "take_profit_pct": 0.013680672268907549,
-      "trailing_trigger_pct": 0.008134453781512598,
-      "trailing_distance_pct": 0.004436974789915961,
-      "breakeven_trigger_pct": 0.0066554621848739426
+    "NBISBUSDT": {
+      "source": "TREND",
+      "entry_price": 98.65,
+      "qty": 0.026701707412744757,
+      "cost_usdt": 2.6367601964637344,
+      "entry_fee_usdt": 0.0026367601964637343,
+      "peak_price": 98.65,
+      "entry_score": 6.6,
+      "opened_at": "2026-11-24T04:53:37.646110+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
     }
   },
-  "realized_pnl_usdt": -1.1846374258426908,
-  "total_fees_usdt": 1.662184144524921,
-  "wins": 96,
+  "realized_pnl_usdt": -1.1659985966876236,
+  "total_fees_usdt": 1.6664404689335552,
+  "wins": 97,
   "losses": 176,
-  "loss_streak": 1,
+  "loss_streak": 0,
   "cooldown_until": null,
-  "symbol_cooldowns": {},
-  "sum_win_pnl": 2.4548126346532144,
+  "symbol_cooldowns": {
+    "ATOMUSDT": "2026-11-24T05:13:03.159238+00:00"
+  },
+  "sum_win_pnl": 2.4734514638082814,
   "sum_loss_pnl": -3.639450060495904,
   "peak_equity": 20.0,
   "max_drawdown_pct": 0.06099466203344885,
