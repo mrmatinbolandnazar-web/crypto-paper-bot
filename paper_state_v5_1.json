@@ -1,15 +1,29 @@
 {
-  "cash_usdt": 18.82493312621907,
-  "positions": {},
+  "cash_usdt": 16.94243981359716,
+  "positions": {
+    "RENDERUSDT": {
+      "source": "CORE",
+      "entry_price": 1.337,
+      "qty": 1.406589992003953,
+      "cost_usdt": 1.882493312621907,
+      "entry_fee_usdt": 0.001882493312621907,
+      "peak_price": 1.337,
+      "entry_score": 6.949999999999999,
+      "opened_at": "2026-11-26T19:50:27.994709+00:00",
+      "stop_pct": 0.0045,
+      "take_profit_pct": 0.01,
+      "trailing_trigger_pct": 0.0075,
+      "trailing_distance_pct": 0.0035,
+      "breakeven_trigger_pct": 0.0065
+    }
+  },
   "realized_pnl_usdt": -1.1750668737809407,
-  "total_fees_usdt": 1.6767870843845574,
+  "total_fees_usdt": 1.6786695776971792,
   "wins": 98,
   "losses": 178,
   "loss_streak": 0,
   "cooldown_until": null,
-  "symbol_cooldowns": {
-    "BONKUSDT": "2026-11-26T10:59:26.611952+00:00"
-  },
+  "symbol_cooldowns": {},
   "sum_win_pnl": 2.4918761161692182,
   "sum_loss_pnl": -3.666942989950158,
   "peak_equity": 20.0,
